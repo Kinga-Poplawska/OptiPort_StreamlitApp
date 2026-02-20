@@ -1,0 +1,5548 @@
+{
+  "summary": {
+    "aggregated_totals": {
+      "total_job_time": 22.9378,
+      "optimization_time": 13.0183,
+      "dual_collection_time": 0.0,
+      "status_handling_time": 3.182,
+      "variable_fixing_time": 0.6753,
+      "model_load_time": 4.5509,
+      "num_jobs": 372,
+      "num_model_loads": 14,
+      "avg_total_job_time": 0.0617,
+      "avg_optimization_time": 0.035,
+      "avg_dual_collection_time": 0.0,
+      "avg_status_handling_time": 0.0086,
+      "avg_variable_fixing_time": 0.0018,
+      "avg_model_load_time": 0.3251
+    },
+    "iteration_statistics": {
+      "sum_of_max_times": 6.4591,
+      "avg_max_time_per_iteration": 0.1656,
+      "total_wall_clock_time": 6.9789,
+      "parallelization_efficiency": 0.0843,
+      "num_iterations": 39,
+      "max_of_max_times": 2.527,
+      "min_of_max_times": 0.0032,
+      "median_of_max_times": 0.0237
+    },
+    "bottleneck_phase_analysis": {
+      "max_job_phase_totals": {
+        "optimization_time": 2.6491,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 3.1443,
+        "variable_fixing_time": 0.0711,
+        "model_load_time": 0.4256
+      },
+      "max_job_phase_percentages": {
+        "optimization_time": 41.0,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 48.7,
+        "variable_fixing_time": 1.1,
+        "model_load_time": 6.6
+      },
+      "slowest_phase_frequency": {
+        "optimization": 35,
+        "dual_collection": 0,
+        "status_handling": 3,
+        "variable_fixing": 1,
+        "model_load": 0
+      }
+    }
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.8854,
+      "max_job_time": 0.8844,
+      "max_job_sp_idx": "(1, 0)",
+      "max_job_subprocess_idx": 7,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.4577,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.4256
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 51.8,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 48.1
+      },
+      "min_job_time": 0.1309,
+      "avg_job_time": 0.4196,
+      "median_job_time": 0.4413,
+      "sum_job_times": 5.8739,
+      "parallelization_efficiency": 0.4739,
+      "jobs": [
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.1309,
+          "model_load_time": 0.0992,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0157,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.1701,
+          "model_load_time": 0.1227,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0314,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.2605,
+          "model_load_time": 0.1227,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1378,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.3288,
+          "model_load_time": 0.2762,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0343,
+          "status_handling_time": 0.0011,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.3788,
+          "model_load_time": 0.2762,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1014,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.3946,
+          "model_load_time": 0.3513,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0344,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.4413,
+          "model_load_time": 0.4036,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.022,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.4413,
+          "model_load_time": 0.3723,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.066,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.4571,
+          "model_load_time": 0.4115,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0298,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.4886,
+          "model_load_time": 0.4256,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0474,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.4886,
+          "model_load_time": 0.4413,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0316,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.5089,
+          "model_load_time": 0.4086,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0993,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.4999,
+          "model_load_time": 0.414,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0858,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.8844,
+          "model_load_time": 0.4256,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.4577,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 2.527,
+      "max_job_time": 2.527,
+      "max_job_sp_idx": "(1, 0)",
+      "max_job_subprocess_idx": 7,
+      "max_job_slowest_phase": "status_handling",
+      "max_job_breakdown": {
+        "optimization_time": 0.0307,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 2.4963,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 1.2,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 98.8,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.003,
+      "avg_job_time": 0.284,
+      "median_job_time": 0.0852,
+      "sum_job_times": 3.9757,
+      "parallelization_efficiency": 0.1124,
+      "jobs": [
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.003,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0196,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0008,
+          "optimization_time": 0.0173,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0781,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0716,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0869,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0819,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0875,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0839,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0394,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0384,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.046,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0344,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0835,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0773,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.1108,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0003,
+          "optimization_time": 0.0996,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.176,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0011,
+          "optimization_time": 0.159,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.2466,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.2406,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.4632,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.4622,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 2.527,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0307,
+          "status_handling_time": 2.4963,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.6355,
+      "max_job_time": 0.6335,
+      "max_job_sp_idx": "(1, 2)",
+      "max_job_subprocess_idx": 8,
+      "max_job_slowest_phase": "status_handling",
+      "max_job_breakdown": {
+        "optimization_time": 0.1575,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.4738,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 24.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 74.8,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.002,
+      "avg_job_time": 0.0725,
+      "median_job_time": 0.0268,
+      "sum_job_times": 1.0148,
+      "parallelization_efficiency": 0.1141,
+      "jobs": [
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0429,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0356,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.012,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0026,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0005,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0075,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0015,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0221,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0201,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0439,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0389,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0315,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0255,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0996,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0966,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0062,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0062,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0536,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0496,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0494,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0474,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.6335,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1575,
+          "status_handling_time": 0.4738,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "where": "MIPSOL",
+      "num_subproblems": 13,
+      "wall_clock_time": 0.3229,
+      "max_job_time": 0.3168,
+      "max_job_sp_idx": "(1, 2)",
+      "max_job_subprocess_idx": 8,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.3158,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 99.7,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.002,
+      "avg_job_time": 0.0554,
+      "median_job_time": 0.0099,
+      "sum_job_times": 0.7204,
+      "parallelization_efficiency": 0.1716,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0061,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0021,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0061,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0021,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0131,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0061,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0081,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0041,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0176,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0155,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.014,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.003,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0118,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0053,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0099,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.3098,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.3088,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.3168,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.3158,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 5,
+      "where": "MIPSOL",
+      "num_subproblems": 12,
+      "wall_clock_time": 0.0428,
+      "max_job_time": 0.0383,
+      "max_job_sp_idx": "(1, 2)",
+      "max_job_subprocess_idx": 8,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0352,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 91.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.001,
+      "avg_job_time": 0.0095,
+      "median_job_time": 0.0044,
+      "sum_job_times": 0.1143,
+      "parallelization_efficiency": 0.2227,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0044,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0024,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0044,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0024,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0044,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0024,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.004,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0096,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0081,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.001,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0045,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.001,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0345,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0345,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0383,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0352,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 6,
+      "where": "MIPSOL",
+      "num_subproblems": 11,
+      "wall_clock_time": 0.0437,
+      "max_job_time": 0.0437,
+      "max_job_sp_idx": "(1, 0)",
+      "max_job_subprocess_idx": 7,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0407,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 93.1,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0018,
+      "avg_job_time": 0.0104,
+      "median_job_time": 0.0073,
+      "sum_job_times": 0.114,
+      "parallelization_efficiency": 0.2372,
+      "jobs": [
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0079,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0079,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0109,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0079,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0109,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0079,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0041,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0018,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0073,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0067,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0023,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0166,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0156,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0437,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0407,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 7,
+      "where": "MIPNODE",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.347,
+      "max_job_time": 0.3171,
+      "max_job_sp_idx": "(0, 6)",
+      "max_job_subprocess_idx": 3,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.3105,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 97.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0534,
+      "avg_job_time": 0.1803,
+      "median_job_time": 0.1782,
+      "sum_job_times": 2.5237,
+      "parallelization_efficiency": 0.5195,
+      "jobs": [
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0817,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0817,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0534,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0504,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.1562,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.1502,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.164,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0025,
+          "optimization_time": 0.1565,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.138,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.136,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.1848,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1808,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.2317,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.2267,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.1201,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.1151,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.1717,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0012,
+          "optimization_time": 0.1705,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.2031,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.2003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.2029,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.1943,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.2775,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.006,
+          "optimization_time": 0.2715,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.3171,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.3105,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.2214,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.2008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 8,
+      "where": "MIPNODE",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.0464,
+      "max_job_time": 0.0209,
+      "max_job_sp_idx": "(0, 2)",
+      "max_job_subprocess_idx": 1,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0136,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0043,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 65.1,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 20.5,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0046,
+      "avg_job_time": 0.0119,
+      "median_job_time": 0.011,
+      "sum_job_times": 0.1665,
+      "parallelization_efficiency": 0.2564,
+      "jobs": [
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.009,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0169,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0129,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0209,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0043,
+          "optimization_time": 0.0136,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0101,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0123,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0083,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.009,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0109,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0114,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0084,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0106,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0066,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0129,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0039,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0046,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0026,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 9,
+      "where": "MIPNODE",
+      "num_subproblems": 8,
+      "wall_clock_time": 0.0264,
+      "max_job_time": 0.0122,
+      "max_job_sp_idx": "(0, 14)",
+      "max_job_subprocess_idx": 5,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.007,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 57.2,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 16.3,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.006,
+      "avg_job_time": 0.0079,
+      "median_job_time": 0.0066,
+      "sum_job_times": 0.0628,
+      "parallelization_efficiency": 0.2972,
+      "jobs": [
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.009,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0062,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0032,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0069,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0049,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0122,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0061,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0022,
+          "optimization_time": 0.0039,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0103,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0063,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 10,
+      "where": "MIPNODE",
+      "num_subproblems": 1,
+      "wall_clock_time": 0.0152,
+      "max_job_time": 0.0152,
+      "max_job_sp_idx": "(0, 0)",
+      "max_job_subprocess_idx": 0,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0028,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 18.4,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0152,
+      "avg_job_time": 0.0152,
+      "median_job_time": 0.0152,
+      "sum_job_times": 0.0152,
+      "parallelization_efficiency": 1.0,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0152,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0028,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 13,
+      "where": "MIPNODE",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.0514,
+      "max_job_time": 0.0159,
+      "max_job_sp_idx": "(0, 9)",
+      "max_job_subprocess_idx": 4,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0081,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0008,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 50.8,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 5.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.004,
+      "avg_job_time": 0.0102,
+      "median_job_time": 0.0112,
+      "sum_job_times": 0.1429,
+      "parallelization_efficiency": 0.1986,
+      "jobs": [
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0152,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0096,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0117,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0056,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0152,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0056,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0065,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0011,
+          "optimization_time": 0.0045,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.004,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.005,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0116,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0076,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0066,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0015,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0119,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0159,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0008,
+          "optimization_time": 0.0081,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0109,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0068,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0148,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 14,
+      "where": "MIPNODE",
+      "num_subproblems": 1,
+      "wall_clock_time": 0.008,
+      "max_job_time": 0.008,
+      "max_job_sp_idx": "(0, 0)",
+      "max_job_subprocess_idx": 0,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.004,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 50.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.008,
+      "avg_job_time": 0.008,
+      "median_job_time": 0.008,
+      "sum_job_times": 0.008,
+      "parallelization_efficiency": 1.0,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 15,
+      "where": "MIPNODE",
+      "num_subproblems": 11,
+      "wall_clock_time": 0.0273,
+      "max_job_time": 0.0179,
+      "max_job_sp_idx": "(1, 4)",
+      "max_job_subprocess_idx": 9,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0179,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 100.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.001,
+      "avg_job_time": 0.006,
+      "median_job_time": 0.0049,
+      "sum_job_times": 0.0659,
+      "parallelization_efficiency": 0.2199,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0065,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0074,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0094,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0055,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.004,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.001,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.001,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0179,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0179,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0049,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0049,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0099,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0018,
+          "optimization_time": 0.0051,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 16,
+      "where": "MIPNODE",
+      "num_subproblems": 1,
+      "wall_clock_time": 0.0075,
+      "max_job_time": 0.0075,
+      "max_job_sp_idx": "(0, 0)",
+      "max_job_subprocess_idx": 0,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0055,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 73.4,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0075,
+      "avg_job_time": 0.0075,
+      "median_job_time": 0.0075,
+      "sum_job_times": 0.0075,
+      "parallelization_efficiency": 1.0,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0075,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0055,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 17,
+      "where": "MIPNODE",
+      "num_subproblems": 7,
+      "wall_clock_time": 0.0254,
+      "max_job_time": 0.0136,
+      "max_job_sp_idx": "(1, 14)",
+      "max_job_subprocess_idx": 12,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0136,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 100.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.006,
+      "avg_job_time": 0.0092,
+      "median_job_time": 0.0086,
+      "sum_job_times": 0.0642,
+      "parallelization_efficiency": 0.361,
+      "jobs": [
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0076,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0066,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0086,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0056,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0136,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0136,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0093,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0053,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0073,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0053,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0118,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0098,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 19,
+      "where": "MIPNODE",
+      "num_subproblems": 1,
+      "wall_clock_time": 0.0032,
+      "max_job_time": 0.0032,
+      "max_job_sp_idx": "(0, 0)",
+      "max_job_subprocess_idx": 0,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0026,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0006,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 80.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 20.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0032,
+      "avg_job_time": 0.0032,
+      "median_job_time": 0.0032,
+      "sum_job_times": 0.0032,
+      "parallelization_efficiency": 1.0,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0032,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0006,
+          "optimization_time": 0.0026,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 24,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.1816,
+      "max_job_time": 0.101,
+      "max_job_sp_idx": "(0, 9)",
+      "max_job_subprocess_idx": 4,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.097,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0031,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 96.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 3.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.008,
+      "avg_job_time": 0.0466,
+      "median_job_time": 0.0384,
+      "sum_job_times": 0.6519,
+      "parallelization_efficiency": 0.2564,
+      "jobs": [
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0535,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0474,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.009,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.012,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.018,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.016,
+          "status_handling_time": 0.002,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.009,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.069,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.065,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0725,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0675,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0846,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0796,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0234,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0203,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0809,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0799,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0999,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0989,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.101,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0031,
+          "optimization_time": 0.097,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 25,
+      "where": "MIPNODE",
+      "num_subproblems": 4,
+      "wall_clock_time": 0.0393,
+      "max_job_time": 0.0393,
+      "max_job_sp_idx": "(1, 9)",
+      "max_job_subprocess_idx": 11,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0293,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.006,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 74.5,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 15.3,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0215,
+      "avg_job_time": 0.0285,
+      "median_job_time": 0.0266,
+      "sum_job_times": 0.114,
+      "parallelization_efficiency": 0.7247,
+      "jobs": [
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0215,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0215,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0256,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0195,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0276,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0215,
+          "status_handling_time": 0.002,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0393,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.006,
+          "optimization_time": 0.0293,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 26,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.1765,
+      "max_job_time": 0.1745,
+      "max_job_sp_idx": "(0, 6)",
+      "max_job_subprocess_idx": 3,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.1668,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.002,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 95.6,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 1.1,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.008,
+      "avg_job_time": 0.0766,
+      "median_job_time": 0.0846,
+      "sum_job_times": 1.0718,
+      "parallelization_efficiency": 0.4337,
+      "jobs": [
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.009,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0188,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0188,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0188,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0158,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0218,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0063,
+          "optimization_time": 0.0155,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0878,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0058,
+          "optimization_time": 0.0781,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0862,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0812,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0679,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0629,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.1065,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0984,
+          "status_handling_time": 0.0017,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.1105,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0055,
+          "optimization_time": 0.101,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.083,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0062,
+          "optimization_time": 0.0682,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.141,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.1274,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.138,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0015,
+          "optimization_time": 0.1324,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.1745,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1668,
+          "status_handling_time": 0.002,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 27,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.185,
+      "max_job_time": 0.1544,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.1483,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 96.1,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 1.3,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.002,
+      "avg_job_time": 0.0289,
+      "median_job_time": 0.015,
+      "sum_job_times": 0.4039,
+      "parallelization_efficiency": 0.1559,
+      "jobs": [
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.002,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.012,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.007,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.013,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0141,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0031,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0151,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0031,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0161,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0031,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.015,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0166,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0051,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0146,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0041,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0135,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0055,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0384,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0256,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0534,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0434,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0258,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0158,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.1544,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.1483,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 28,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.2348,
+      "max_job_time": 0.2017,
+      "max_job_sp_idx": "(0, 4)",
+      "max_job_subprocess_idx": 2,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.1947,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.003,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 96.5,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 1.5,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0,
+      "avg_job_time": 0.0985,
+      "median_job_time": 0.0676,
+      "sum_job_times": 1.3793,
+      "parallelization_efficiency": 0.4197,
+      "jobs": [
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0107,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0027,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0127,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0027,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0202,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0041,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0718,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0718,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0198,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0037,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0218,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0635,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0587,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.184,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0005,
+          "optimization_time": 0.1794,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.186,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.1762,
+          "status_handling_time": 0.0058,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.1957,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0027,
+          "optimization_time": 0.189,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.2017,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.1947,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.1904,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0037,
+          "optimization_time": 0.1847,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.201,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.197,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 29,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.3035,
+      "max_job_time": 0.2706,
+      "max_job_sp_idx": "(0, 9)",
+      "max_job_subprocess_idx": 4,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.2629,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 97.1,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.7,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.004,
+      "avg_job_time": 0.1112,
+      "median_job_time": 0.0808,
+      "sum_job_times": 1.5561,
+      "parallelization_efficiency": 0.3662,
+      "jobs": [
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0075,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0092,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0055,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.004,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0148,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0042,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0147,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0236,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0035,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.1381,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.1331,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.1506,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.1446,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.1925,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.1877,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.2225,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.2135,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.256,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.2472,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.2362,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.2242,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.2706,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.2629,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 30,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.1147,
+      "max_job_time": 0.1047,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0977,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.001,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 93.3,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 1.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.008,
+      "avg_job_time": 0.0333,
+      "median_job_time": 0.0207,
+      "sum_job_times": 0.4667,
+      "parallelization_efficiency": 0.2906,
+      "jobs": [
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.009,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0256,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.016,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0256,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.017,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0126,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0066,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0258,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0158,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0354,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0314,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0138,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0037,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0717,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0651,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0929,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0849,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.1047,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0977,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 31,
+      "where": "MIPSOL",
+      "num_subproblems": 14,
+      "wall_clock_time": 0.1222,
+      "max_job_time": 0.0947,
+      "max_job_sp_idx": "(0, 2)",
+      "max_job_subprocess_idx": 1,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0846,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.004,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 89.4,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 4.2,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0098,
+      "avg_job_time": 0.0401,
+      "median_job_time": 0.0267,
+      "sum_job_times": 0.562,
+      "parallelization_efficiency": 0.3285,
+      "jobs": [
+        {
+          "sp_idx": "(1, 6)",
+          "subprocess_idx": 10,
+          "total_job_time": 0.0098,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0058,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 2)",
+          "subprocess_idx": 8,
+          "total_job_time": 0.0178,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0098,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 0)",
+          "subprocess_idx": 7,
+          "total_job_time": 0.0138,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0038,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0276,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0178,
+          "status_handling_time": 0.0018,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 4)",
+          "subprocess_idx": 9,
+          "total_job_time": 0.0135,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0078,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0393,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.006,
+          "optimization_time": 0.0293,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.016,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0258,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.014,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0218,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0473,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.006,
+          "optimization_time": 0.0353,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0611,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0058,
+          "optimization_time": 0.0235,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0866,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0037,
+          "optimization_time": 0.0751,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0947,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0846,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0869,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0771,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 33,
+      "where": "MIPSOL",
+      "num_subproblems": 2,
+      "wall_clock_time": 0.0156,
+      "max_job_time": 0.0156,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.004,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.001,
+        "variable_fixing_time": 0.0036,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 25.6,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 6.4,
+        "variable_fixing_pct": 23.1,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0106,
+      "avg_job_time": 0.0131,
+      "median_job_time": 0.0131,
+      "sum_job_times": 0.0262,
+      "parallelization_efficiency": 0.8397,
+      "jobs": [
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0106,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0026,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0156,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0036,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 34,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0453,
+      "max_job_time": 0.0255,
+      "max_job_sp_idx": "(0, 14)",
+      "max_job_subprocess_idx": 5,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0155,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.004,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 60.8,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 15.7,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.014,
+      "avg_job_time": 0.0184,
+      "median_job_time": 0.0178,
+      "sum_job_times": 0.1658,
+      "parallelization_efficiency": 0.4065,
+      "jobs": [
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0178,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0118,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.014,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0198,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.014,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0215,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0138,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0058,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0178,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0058,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0195,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0118,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0255,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0155,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 35,
+      "where": "MIPSOL",
+      "num_subproblems": 1,
+      "wall_clock_time": 0.008,
+      "max_job_time": 0.007,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.003,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 42.8,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.007,
+      "avg_job_time": 0.007,
+      "median_job_time": 0.007,
+      "sum_job_times": 0.007,
+      "parallelization_efficiency": 0.875,
+      "jobs": [
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.007,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 36,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0336,
+      "max_job_time": 0.0195,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.006,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.004,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 30.8,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 20.5,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0098,
+      "avg_job_time": 0.0153,
+      "median_job_time": 0.0158,
+      "sum_job_times": 0.138,
+      "parallelization_efficiency": 0.4568,
+      "jobs": [
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.014,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0098,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0038,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0138,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.002,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0178,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0195,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 38,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0396,
+      "max_job_time": 0.0215,
+      "max_job_sp_idx": "(0, 0)",
+      "max_job_subprocess_idx": 0,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.012,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 55.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 8.1,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.008,
+      "avg_job_time": 0.0163,
+      "median_job_time": 0.0163,
+      "sum_job_times": 0.1465,
+      "parallelization_efficiency": 0.4115,
+      "jobs": [
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0198,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0215,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0178,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.002,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0118,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0058,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0163,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.0085,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0198,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0022,
+          "optimization_time": 0.01,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 39,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0341,
+      "max_job_time": 0.022,
+      "max_job_sp_idx": "(1, 19)",
+      "max_job_subprocess_idx": 13,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.008,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.004,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 36.5,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 18.3,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0111,
+      "avg_job_time": 0.0136,
+      "median_job_time": 0.0131,
+      "sum_job_times": 0.1228,
+      "parallelization_efficiency": 0.3998,
+      "jobs": [
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0111,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0021,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0131,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0041,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0131,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0041,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0121,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0131,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0111,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0021,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0151,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0121,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.022,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 40,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0241,
+      "max_job_time": 0.0139,
+      "max_job_sp_idx": "(0, 2)",
+      "max_job_subprocess_idx": 1,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0059,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 42.3,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 14.4,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0058,
+      "avg_job_time": 0.0113,
+      "median_job_time": 0.0119,
+      "sum_job_times": 0.1013,
+      "parallelization_efficiency": 0.4663,
+      "jobs": [
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0099,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0099,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0059,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0119,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0079,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0058,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0099,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0017,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0122,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0051,
+          "optimization_time": 0.0048,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 41,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0209,
+      "max_job_time": 0.0128,
+      "max_job_sp_idx": "(0, 14)",
+      "max_job_subprocess_idx": 5,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.005,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 39.1,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 15.6,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.007,
+      "avg_job_time": 0.0098,
+      "median_job_time": 0.01,
+      "sum_job_times": 0.0882,
+      "parallelization_efficiency": 0.4694,
+      "jobs": [
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.008,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.008,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.012,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.012,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.007,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0081,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0128,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 42,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0535,
+      "max_job_time": 0.0312,
+      "max_job_sp_idx": "(0, 2)",
+      "max_job_subprocess_idx": 1,
+      "max_job_slowest_phase": "variable_fixing",
+      "max_job_breakdown": {
+        "optimization_time": 0.009,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0162,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 28.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 51.9,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.014,
+      "avg_job_time": 0.0241,
+      "median_job_time": 0.0228,
+      "sum_job_times": 0.2173,
+      "parallelization_efficiency": 0.4511,
+      "jobs": [
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0212,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0192,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0212,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0182,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0252,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0202,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0292,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0142,
+          "optimization_time": 0.0089,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0312,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0162,
+          "optimization_time": 0.009,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.014,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0088,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.022,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0041,
+          "optimization_time": 0.0168,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0228,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0148,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0304,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0284,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 43,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.1893,
+      "max_job_time": 0.1795,
+      "max_job_sp_idx": "(1, 14)",
+      "max_job_subprocess_idx": 12,
+      "max_job_slowest_phase": "status_handling",
+      "max_job_breakdown": {
+        "optimization_time": 0.0113,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.1672,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 6.3,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 93.1,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.007,
+      "avg_job_time": 0.0333,
+      "median_job_time": 0.0137,
+      "sum_job_times": 0.3001,
+      "parallelization_efficiency": 0.1762,
+      "jobs": [
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0088,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0021,
+          "optimization_time": 0.0037,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0118,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0017,
+          "optimization_time": 0.0057,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.007,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0034,
+          "optimization_time": 0.0044,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0137,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0047,
+          "status_handling_time": 0.001,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0158,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0034,
+          "optimization_time": 0.0054,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0137,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0054,
+          "status_handling_time": 0.0003,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.034,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0054,
+          "optimization_time": 0.0286,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.1795,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0113,
+          "status_handling_time": 0.1672,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 44,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0424,
+      "max_job_time": 0.0309,
+      "max_job_sp_idx": "(1, 14)",
+      "max_job_subprocess_idx": 12,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0268,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0004,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 86.9,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 1.2,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0096,
+      "avg_job_time": 0.0156,
+      "median_job_time": 0.0116,
+      "sum_job_times": 0.1401,
+      "parallelization_efficiency": 0.3669,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0116,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0035,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0096,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0035,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0096,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0015,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0096,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0015,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0116,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0055,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0154,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0055,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0114,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0023,
+          "optimization_time": 0.0035,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 9)",
+          "subprocess_idx": 11,
+          "total_job_time": 0.0306,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.006,
+          "optimization_time": 0.0176,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0309,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0004,
+          "optimization_time": 0.0268,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 46,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.025,
+      "max_job_time": 0.0149,
+      "max_job_sp_idx": "(1, 14)",
+      "max_job_subprocess_idx": 12,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0082,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0023,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 55.2,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 15.5,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0067,
+      "avg_job_time": 0.0094,
+      "median_job_time": 0.0095,
+      "sum_job_times": 0.0849,
+      "parallelization_efficiency": 0.3781,
+      "jobs": [
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0067,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0025,
+          "optimization_time": 0.0011,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.007,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0037,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0072,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0024,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0109,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0015,
+          "optimization_time": 0.0041,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0096,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0014,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0085,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0028,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0095,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0033,
+          "optimization_time": 0.0005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0149,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0023,
+          "optimization_time": 0.0082,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0107,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0048,
+          "optimization_time": 0.0059,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 47,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0152,
+      "max_job_time": 0.011,
+      "max_job_sp_idx": "(0, 14)",
+      "max_job_subprocess_idx": 5,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.004,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.001,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 36.4,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 9.1,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.006,
+      "avg_job_time": 0.0085,
+      "median_job_time": 0.0088,
+      "sum_job_times": 0.0762,
+      "parallelization_efficiency": 0.5567,
+      "jobs": [
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.0,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.006,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0088,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0038,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0088,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.003,
+          "optimization_time": 0.001,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.011,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.011,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.011,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.003,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0072,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.005,
+          "optimization_time": 0.0022,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0064,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0032,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 48,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0342,
+      "max_job_time": 0.0237,
+      "max_job_sp_idx": "(0, 14)",
+      "max_job_subprocess_idx": 5,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.012,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0039,
+        "variable_fixing_time": 0.001,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 50.6,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 16.7,
+        "variable_fixing_pct": 4.2,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0089,
+      "avg_job_time": 0.0154,
+      "median_job_time": 0.0143,
+      "sum_job_times": 0.1389,
+      "parallelization_efficiency": 0.4508,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0089,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0039,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0119,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.006,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0139,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0099,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0159,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.009,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.01,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.005,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0199,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.005,
+          "optimization_time": 0.009,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0237,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.012,
+          "status_handling_time": 0.0039,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0143,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0097,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0203,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.0093,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    },
+    {
+      "iteration": 49,
+      "where": "MIPSOL",
+      "num_subproblems": 9,
+      "wall_clock_time": 0.0252,
+      "max_job_time": 0.0137,
+      "max_job_sp_idx": "(1, 14)",
+      "max_job_subprocess_idx": 12,
+      "max_job_slowest_phase": "optimization",
+      "max_job_breakdown": {
+        "optimization_time": 0.0137,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0,
+        "model_load_time": 0.0
+      },
+      "max_job_breakdown_pct": {
+        "optimization_pct": 100.0,
+        "dual_collection_pct": 0.0,
+        "status_handling_pct": 0.0,
+        "variable_fixing_pct": 0.0,
+        "model_load_pct": 0.0
+      },
+      "min_job_time": 0.0084,
+      "avg_job_time": 0.0117,
+      "median_job_time": 0.0117,
+      "sum_job_times": 0.1057,
+      "parallelization_efficiency": 0.4656,
+      "jobs": [
+        {
+          "sp_idx": "(0, 0)",
+          "subprocess_idx": 0,
+          "total_job_time": 0.0084,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0014,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 4)",
+          "subprocess_idx": 2,
+          "total_job_time": 0.0115,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0074,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 9)",
+          "subprocess_idx": 4,
+          "total_job_time": 0.0112,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0061,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 2)",
+          "subprocess_idx": 1,
+          "total_job_time": 0.0135,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.001,
+          "optimization_time": 0.0064,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 6)",
+          "subprocess_idx": 3,
+          "total_job_time": 0.0135,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.0054,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 19)",
+          "subprocess_idx": 6,
+          "total_job_time": 0.0101,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.004,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(0, 14)",
+          "subprocess_idx": 5,
+          "total_job_time": 0.0121,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.004,
+          "optimization_time": 0.002,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 14)",
+          "subprocess_idx": 12,
+          "total_job_time": 0.0137,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.0,
+          "optimization_time": 0.0137,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        },
+        {
+          "sp_idx": "(1, 19)",
+          "subprocess_idx": 13,
+          "total_job_time": 0.0117,
+          "model_load_time": 0.0,
+          "variable_fixing_time": 0.002,
+          "optimization_time": 0.006,
+          "status_handling_time": 0.0,
+          "dual_collection_time": 0.0
+        }
+      ]
+    }
+  ],
+  "slowest_subproblems_top_20": [
+    {
+      "sp_idx": "(1, 0)",
+      "total_time": 4.2225,
+      "num_calls": 19,
+      "avg_time": 0.2222,
+      "avg_breakdown": {
+        "optimization_time": 0.0643,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.1314,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0224
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 28.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 59.1,
+        "variable_fixing_time_pct": 0.7,
+        "model_load_time_pct": 10.1
+      }
+    },
+    {
+      "sp_idx": "(1, 2)",
+      "total_time": 2.0463,
+      "num_calls": 18,
+      "avg_time": 0.1137,
+      "avg_breakdown": {
+        "optimization_time": 0.0775,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0265,
+        "variable_fixing_time": 0.0008,
+        "model_load_time": 0.0068
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 68.2,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 23.3,
+        "variable_fixing_time_pct": 0.7,
+        "model_load_time_pct": 6.0
+      }
+    },
+    {
+      "sp_idx": "(0, 14)",
+      "total_time": 1.9308,
+      "num_calls": 28,
+      "avg_time": 0.069,
+      "avg_breakdown": {
+        "optimization_time": 0.0434,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0002,
+        "variable_fixing_time": 0.0023,
+        "model_load_time": 0.0158
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 62.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.3,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 22.9
+      }
+    },
+    {
+      "sp_idx": "(0, 9)",
+      "total_time": 1.7827,
+      "num_calls": 26,
+      "avg_time": 0.0686,
+      "avg_breakdown": {
+        "optimization_time": 0.0455,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0158
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 66.4,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 2.5,
+        "model_load_time_pct": 23.1
+      }
+    },
+    {
+      "sp_idx": "(0, 2)",
+      "total_time": 1.8504,
+      "num_calls": 30,
+      "avg_time": 0.0617,
+      "avg_breakdown": {
+        "optimization_time": 0.0395,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0024,
+        "model_load_time": 0.0142
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 64.1,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.2,
+        "variable_fixing_time_pct": 3.8,
+        "model_load_time_pct": 23.0
+      }
+    },
+    {
+      "sp_idx": "(0, 6)",
+      "total_time": 1.5804,
+      "num_calls": 29,
+      "avg_time": 0.0545,
+      "avg_breakdown": {
+        "optimization_time": 0.0426,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0018,
+        "model_load_time": 0.0042
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 78.1,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.1,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 7.8
+      }
+    },
+    {
+      "sp_idx": "(0, 19)",
+      "total_time": 1.5831,
+      "num_calls": 30,
+      "avg_time": 0.0528,
+      "avg_breakdown": {
+        "optimization_time": 0.0332,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0003,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0135
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 62.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.5,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 25.5
+      }
+    },
+    {
+      "sp_idx": "(0, 4)",
+      "total_time": 1.5182,
+      "num_calls": 30,
+      "avg_time": 0.0506,
+      "avg_breakdown": {
+        "optimization_time": 0.0325,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0117
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 64.3,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.1,
+        "variable_fixing_time_pct": 3.9,
+        "model_load_time_pct": 23.1
+      }
+    },
+    {
+      "sp_idx": "(0, 0)",
+      "total_time": 1.7303,
+      "num_calls": 35,
+      "avg_time": 0.0494,
+      "avg_breakdown": {
+        "optimization_time": 0.0349,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0003,
+        "variable_fixing_time": 0.0016,
+        "model_load_time": 0.0079
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 70.6,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.6,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 16.0
+      }
+    },
+    {
+      "sp_idx": "(1, 9)",
+      "total_time": 1.0102,
+      "num_calls": 21,
+      "avg_time": 0.0481,
+      "avg_breakdown": {
+        "optimization_time": 0.023,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0021,
+        "model_load_time": 0.0197
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 47.8,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 4.3,
+        "model_load_time_pct": 41.0
+      }
+    },
+    {
+      "sp_idx": "(1, 6)",
+      "total_time": 0.7901,
+      "num_calls": 20,
+      "avg_time": 0.0395,
+      "avg_breakdown": {
+        "optimization_time": 0.0159,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0014,
+        "model_load_time": 0.0204
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 40.4,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 3.6,
+        "model_load_time_pct": 51.7
+      }
+    },
+    {
+      "sp_idx": "(1, 4)",
+      "total_time": 0.7547,
+      "num_calls": 20,
+      "avg_time": 0.0377,
+      "avg_breakdown": {
+        "optimization_time": 0.0195,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0016,
+        "model_load_time": 0.0138
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 51.7,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.3,
+        "variable_fixing_time_pct": 4.2,
+        "model_load_time_pct": 36.6
+      }
+    },
+    {
+      "sp_idx": "(1, 19)",
+      "total_time": 1.0845,
+      "num_calls": 33,
+      "avg_time": 0.0329,
+      "avg_breakdown": {
+        "optimization_time": 0.0234,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0026,
+        "model_load_time": 0.003
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 71.3,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.4,
+        "variable_fixing_time_pct": 7.9,
+        "model_load_time_pct": 9.2
+      }
+    },
+    {
+      "sp_idx": "(1, 14)",
+      "total_time": 1.0537,
+      "num_calls": 33,
+      "avg_time": 0.0319,
+      "avg_breakdown": {
+        "optimization_time": 0.0128,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0052,
+        "variable_fixing_time": 0.0012,
+        "model_load_time": 0.0113
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 40.0,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 16.2,
+        "variable_fixing_time_pct": 3.8,
+        "model_load_time_pct": 35.3
+      }
+    }
+  ],
+  "all_subproblems": [
+    {
+      "sp_idx": "(1, 0)",
+      "total_time": 4.2225,
+      "num_calls": 19,
+      "avg_time": 0.2222,
+      "avg_breakdown": {
+        "optimization_time": 0.0643,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.1314,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0224
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 28.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 59.1,
+        "variable_fixing_time_pct": 0.7,
+        "model_load_time_pct": 10.1
+      }
+    },
+    {
+      "sp_idx": "(1, 2)",
+      "total_time": 2.0463,
+      "num_calls": 18,
+      "avg_time": 0.1137,
+      "avg_breakdown": {
+        "optimization_time": 0.0775,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0265,
+        "variable_fixing_time": 0.0008,
+        "model_load_time": 0.0068
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 68.2,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 23.3,
+        "variable_fixing_time_pct": 0.7,
+        "model_load_time_pct": 6.0
+      }
+    },
+    {
+      "sp_idx": "(0, 14)",
+      "total_time": 1.9308,
+      "num_calls": 28,
+      "avg_time": 0.069,
+      "avg_breakdown": {
+        "optimization_time": 0.0434,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0002,
+        "variable_fixing_time": 0.0023,
+        "model_load_time": 0.0158
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 62.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.3,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 22.9
+      }
+    },
+    {
+      "sp_idx": "(0, 9)",
+      "total_time": 1.7827,
+      "num_calls": 26,
+      "avg_time": 0.0686,
+      "avg_breakdown": {
+        "optimization_time": 0.0455,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0158
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 66.4,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 2.5,
+        "model_load_time_pct": 23.1
+      }
+    },
+    {
+      "sp_idx": "(0, 2)",
+      "total_time": 1.8504,
+      "num_calls": 30,
+      "avg_time": 0.0617,
+      "avg_breakdown": {
+        "optimization_time": 0.0395,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0024,
+        "model_load_time": 0.0142
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 64.1,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.2,
+        "variable_fixing_time_pct": 3.8,
+        "model_load_time_pct": 23.0
+      }
+    },
+    {
+      "sp_idx": "(0, 6)",
+      "total_time": 1.5804,
+      "num_calls": 29,
+      "avg_time": 0.0545,
+      "avg_breakdown": {
+        "optimization_time": 0.0426,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0018,
+        "model_load_time": 0.0042
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 78.1,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.1,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 7.8
+      }
+    },
+    {
+      "sp_idx": "(0, 19)",
+      "total_time": 1.5831,
+      "num_calls": 30,
+      "avg_time": 0.0528,
+      "avg_breakdown": {
+        "optimization_time": 0.0332,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0003,
+        "variable_fixing_time": 0.0017,
+        "model_load_time": 0.0135
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 62.9,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.5,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 25.5
+      }
+    },
+    {
+      "sp_idx": "(0, 4)",
+      "total_time": 1.5182,
+      "num_calls": 30,
+      "avg_time": 0.0506,
+      "avg_breakdown": {
+        "optimization_time": 0.0325,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.002,
+        "model_load_time": 0.0117
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 64.3,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.1,
+        "variable_fixing_time_pct": 3.9,
+        "model_load_time_pct": 23.1
+      }
+    },
+    {
+      "sp_idx": "(0, 0)",
+      "total_time": 1.7303,
+      "num_calls": 35,
+      "avg_time": 0.0494,
+      "avg_breakdown": {
+        "optimization_time": 0.0349,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0003,
+        "variable_fixing_time": 0.0016,
+        "model_load_time": 0.0079
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 70.6,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.6,
+        "variable_fixing_time_pct": 3.3,
+        "model_load_time_pct": 16.0
+      }
+    },
+    {
+      "sp_idx": "(1, 9)",
+      "total_time": 1.0102,
+      "num_calls": 21,
+      "avg_time": 0.0481,
+      "avg_breakdown": {
+        "optimization_time": 0.023,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0021,
+        "model_load_time": 0.0197
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 47.8,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 4.3,
+        "model_load_time_pct": 41.0
+      }
+    },
+    {
+      "sp_idx": "(1, 6)",
+      "total_time": 0.7901,
+      "num_calls": 20,
+      "avg_time": 0.0395,
+      "avg_breakdown": {
+        "optimization_time": 0.0159,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0,
+        "variable_fixing_time": 0.0014,
+        "model_load_time": 0.0204
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 40.4,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.0,
+        "variable_fixing_time_pct": 3.6,
+        "model_load_time_pct": 51.7
+      }
+    },
+    {
+      "sp_idx": "(1, 4)",
+      "total_time": 0.7547,
+      "num_calls": 20,
+      "avg_time": 0.0377,
+      "avg_breakdown": {
+        "optimization_time": 0.0195,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0016,
+        "model_load_time": 0.0138
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 51.7,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.3,
+        "variable_fixing_time_pct": 4.2,
+        "model_load_time_pct": 36.6
+      }
+    },
+    {
+      "sp_idx": "(1, 19)",
+      "total_time": 1.0845,
+      "num_calls": 33,
+      "avg_time": 0.0329,
+      "avg_breakdown": {
+        "optimization_time": 0.0234,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0001,
+        "variable_fixing_time": 0.0026,
+        "model_load_time": 0.003
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 71.3,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 0.4,
+        "variable_fixing_time_pct": 7.9,
+        "model_load_time_pct": 9.2
+      }
+    },
+    {
+      "sp_idx": "(1, 14)",
+      "total_time": 1.0537,
+      "num_calls": 33,
+      "avg_time": 0.0319,
+      "avg_breakdown": {
+        "optimization_time": 0.0128,
+        "dual_collection_time": 0.0,
+        "status_handling_time": 0.0052,
+        "variable_fixing_time": 0.0012,
+        "model_load_time": 0.0113
+      },
+      "breakdown_pct": {
+        "optimization_time_pct": 40.0,
+        "dual_collection_time_pct": 0.0,
+        "status_handling_time_pct": 16.2,
+        "variable_fixing_time_pct": 3.8,
+        "model_load_time_pct": 35.3
+      }
+    }
+  ]
+}

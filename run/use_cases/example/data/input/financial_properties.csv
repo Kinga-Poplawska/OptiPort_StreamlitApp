@@ -1,0 +1,3 @@
+id;rent-1;rent-2;rent-3;cap_rent;cap_warm_rent;c_comp;c_comp_increase;En_Gas_cost;En_HP_cost;En_El_cost;c_misc;c_misc_ten;p_loss;tense_market
+0;7;7;7;11;20;8;0.05;;;;0;0;0.05;0
+1;9;9;9;11;20;10;0.04;;;;0;0;0.05;1

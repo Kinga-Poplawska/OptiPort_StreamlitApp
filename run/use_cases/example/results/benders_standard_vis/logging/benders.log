@@ -1,0 +1,782 @@
+2026-01-23 14:55:06 | INFO     | MainProcess     | setup_benders_logging          | Logging initialized: level=INFO, console=True, file=True, rotation=True
+2026-01-23 14:55:06 | INFO     | MainProcess     | b_bc                           | ====================================================================================================
+2026-01-23 14:55:06 | INFO     | MainProcess     | b_bc                           |                                          Optimization: B&BC                                         
+2026-01-23 14:55:06 | INFO     | MainProcess     | b_bc                           | ====================================================================================================
+2026-01-23 14:55:06 | INFO     | MainProcess     | determine_number_subprocesses  | Number of subprocesses is set to number of Benders SPs (14)
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:11 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:11 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:11 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:11 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:12 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:12 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:12 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:12 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:13 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:13 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:13 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:14 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:15 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:15 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:16 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:16 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:16 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:17 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:17 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:17 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:17 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:18 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:19 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:19 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:19 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:20 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:21 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:21 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:21 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:21 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:21 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:22 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:22 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:22 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:22 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:22 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:23 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:24 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:24 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:25 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:25 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:25 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:25 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:26 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:26 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:26 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:27 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:27 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:27 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:27 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:28 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:28 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:28 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:28 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:28 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:29 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:29 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:29 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:30 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:30 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:31 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:31 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:32 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:32 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:32 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:32 2026
+
+2026-01-23 14:55:35 | INFO     | MainProcess     | parallel_sps_setup             | Precomputing efficiency dominance sets for cut strengthening...
+2026-01-23 14:55:35 | INFO     | MainProcess     | precompute_all_dominance_sets  | Precomputing dominance sets for 14 subproblems...
+2026-01-23 14:55:35 | INFO     | MainProcess     | precompute_all_dominance_sets  | Saved dominance sets to cache: D:\GIT\OptiPort\run\use_cases\example\results\benders_standard_vis\temp\dominance_sets.pkl
+2026-01-23 14:55:35 | INFO     | MainProcess     | precompute_all_dominance_sets  | Dominance set computation complete for 14 phis
+2026-01-23 14:55:35 | INFO     | MainProcess     | parallel_sps_setup             | Dominance set precomputation complete for 14 subproblems
+2026-01-23 14:55:36 | INFO     | MainProcess     | add_aux_vars                   | Found existing auxiliary variables in Benders RMP. Assuming correct objective setup.
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:36 2026
+
+Set parameter LogFile to value "D:\GIT\OptiPort\run\use_cases\example\results\benders_standard_vis\logging\benders.log"
+2026-01-23 14:55:36 | INFO     | MainProcess     | b_bc                           | Starting Benders job 1/1: phi=1.0, period=None, building=None
+2026-01-23 14:55:36 | INFO     | MainProcess     | b_bc                           | No time period restriction - free optimization
+Set parameter PreCrush to value 1
+Gurobi Optimizer version 12.0.3 build v12.0.3rc0 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: Intel(R) Core(TM) Ultra 7 165H, instruction set [SSE2|AVX|AVX2]
+Thread count: 16 physical cores, 22 logical processors, using up to 8 threads
+
+Non-default parameters:
+TimeLimit  216000
+PreCrush  1
+Threads  8
+LazyConstraints  1
+
+Optimize a model with 12277 rows, 15538 columns and 108702 nonzeros
+Model fingerprint: 0x46158e80
+Variable types: 13812 continuous, 1726 integer (1726 binary)
+Coefficient statistics:
+  Matrix range     [1e-03, 2e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 7e+05]
+Presolve removed 4945 rows and 4923 columns
+Presolve time: 0.22s
+Presolved: 7332 rows, 10615 columns, 64106 nonzeros
+Variable types: 9507 continuous, 1108 integer (1108 binary)
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:37 2026
+
+2026-01-23 14:55:37 | INFO     | MainProcess     | benders_cut_manager            | Iteration 1 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 0)), violation: 1813154.231944
+Warning: Markowitz tolerance tightened to 0.03125
+
+Root relaxation: objective 2.524082e+05, 6290 iterations, 0.19 seconds (0.29 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 252408.195    0   70          - 252408.195      -     -    1s
+2026-01-23 14:55:40 | INFO     | MainProcess     | benders_cut_manager            | Iteration 2 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 0)), violation: 732662332.603033
+2026-01-23 14:55:40 | INFO     | MainProcess     | benders_cut_manager            | Iteration 2 -- Integral: Added Benders optimality cut for building 0 (SP (0, 9)), violation: 16.671233
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 3 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 2)), violation: 106790.876204
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 3 -- Integral: Added Benders optimality cut for building 0 (SP (0, 9)), violation: 16.965300
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 4 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 4)), violation: 10753288.387564
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 4 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 14.198778
+     0     0 252408.195    0   70          - 252408.195      -     -    5s
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 5 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 4)), violation: 703926.263044
+2026-01-23 14:55:41 | INFO     | MainProcess     | benders_cut_manager            | Iteration 5 -- Integral: Added Benders optimality cut for building 0 (SP (0, 6)), violation: 11.378563
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 6 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 6)), violation: 42400.790633
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 6 -- Integral: Added Benders optimality cut for building 0 (SP (0, 19)), violation: 11.349812
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 7 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 7
+     0     0 255168.325    0   79          - 255168.325      -     -    5s
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 8 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 5
+     0     0 255312.997    0   89          - 255312.997      -     -    5s
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 9 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 4
+     0     0 255357.983    0   77          - 255357.983      -     -    5s
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 10 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 4
+     0     0 255434.075    0   77          - 255434.075      -     -    6s
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 11 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 4
+     0     0 255434.075    0   77          - 255434.075      -     -    6s
+2026-01-23 14:55:42 | INFO     | MainProcess     | benders_cut_manager            | Iteration 12 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 4
+     0     0 256363.035    0   90          - 256363.035      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 13 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256370.501    0   90          - 256370.501      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 14 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256457.633    0  105          - 256457.633      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 15 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  105          - 256728.421      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 16 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  103          - 256728.421      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 17 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  103          - 256728.421      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 18 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  103          - 256728.421      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 19 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  103          - 256728.421      -     -    6s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 20 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0  103          - 256728.421      -     -    7s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 21 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0   96          - 256728.421      -     -    7s
+2026-01-23 14:55:43 | INFO     | MainProcess     | benders_cut_manager            | Iteration 22 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     0 256728.421    0   96          - 256728.421      -     -    7s
+2026-01-23 14:55:44 | INFO     | MainProcess     | benders_cut_manager            | Iteration 23 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+2026-01-23 14:55:44 | INFO     | MainProcess     | benders_cut_manager            | Iteration 24 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 4)), violation: 122754.591934
+2026-01-23 14:55:44 | INFO     | MainProcess     | benders_cut_manager            | Iteration 24 -- Integral: Added Benders feasibility cut for building 0 (SP (0, 9)), violation: 10831.132470
+2026-01-23 14:55:45 | INFO     | MainProcess     | benders_cut_manager            | Iteration 25 -- Fractional: Feasibility cuts added: 7, optimality cuts added: 2
+     0     2 256742.971    0   96          - 256742.971      -     -    8s
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 26 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 0)), violation: 45.853619
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 26 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 765.832733
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 27 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 14)), violation: 1.410477
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 27 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 765.832733
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 28 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 14)), violation: 0.521464
+2026-01-23 14:55:46 | INFO     | MainProcess     | benders_cut_manager            | Iteration 28 -- Integral: Added Benders feasibility cut for building 0 (SP (0, 14)), violation: 2207154.341917
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 29 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 14)), violation: 0.393179
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 29 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 298.745978
+   476   459 275077.739   36    -          - 264029.132      -   122   10s
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 30 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 14)), violation: 82.254874
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 30 -- Integral: Added Benders optimality cut for building 0 (SP (0, 9)), violation: 173.859906
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 31 -- Found new incumbent with true objective 273326.7040 (will add disaggregated cuts)
+H  623   498                    273326.84399 266137.750  2.63%   113   11s
+2026-01-23 14:55:47 | WARNING  | MainProcess     | check_identical_sols           | Iteration 33 -- Optimality cut VIOLATED for integral SP (0, 19) - inserted obj: 26445.902013, cur obj: 26445.877577, violation: 0.024436, re-solving
+2026-01-23 14:55:47 | WARNING  | MainProcess     | check_identical_sols           | Iteration 33 -- Optimality cut VIOLATED for integral SP (1, 19) - inserted obj: 4967.147834, cur obj: 4967.063042, violation: 0.084793, re-solving
+2026-01-23 14:55:47 | INFO     | MainProcess     | benders_cut_manager            | Iteration 33 -- Found new incumbent with true objective 273326.7340 (will add disaggregated cuts)
+H  679   426                    273326.62476 266330.141  2.56%   107   11s
+2026-01-23 14:55:48 | INFO     | MainProcess     | benders_cut_manager            | Iteration 34 -- Found new incumbent with true objective 271070.5789 (will add disaggregated cuts)
+2026-01-23 14:55:48 | INFO     | MainProcess     | benders_cut_manager            | Iteration 35 -- Found new incumbent with true objective 271070.6589 (will add disaggregated cuts)
+H  754   469                    271070.65889 266330.141  1.75%   102   11s
+2026-01-23 14:55:48 | INFO     | MainProcess     | benders_cut_manager            | Iteration 36 -- Found new incumbent with true objective 270481.1856 (will add disaggregated cuts)
+H  836   434                    270481.27556 267897.110  0.96%  95.6   12s
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 38 -- Found new incumbent with true objective 270480.4839 (will add disaggregated cuts)
+H  928   433                    270480.40316 268315.629  0.80%  89.9   12s
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 0) - inserted obj: 21473.081727, cur obj: 21473.072358, violation: 0.009369, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 2) - inserted obj: 19806.698091, cur obj: 19806.689808, violation: 0.008284, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 4) - inserted obj: 18356.346648, cur obj: 18356.338326, violation: 0.008322, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 6) - inserted obj: 25375.349657, cur obj: 25375.338609, violation: 0.011048, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 9) - inserted obj: 37673.629742, cur obj: 37673.613197, violation: 0.016545, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.634556, cur obj: 32472.617860, violation: 0.016696, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 39 -- Optimality cut VIOLATED for integral SP (0, 19) - inserted obj: 26418.677455, cur obj: 26418.663803, violation: 0.013651, re-solving
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 39 -- Found new incumbent with true objective 270474.2335 (will add disaggregated cuts)
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 0) - inserted obj: 21473.081727, cur obj: 21473.072358, violation: 0.009369, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 2) - inserted obj: 19806.698091, cur obj: 19806.689808, violation: 0.008284, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 4) - inserted obj: 18356.346648, cur obj: 18356.338326, violation: 0.008322, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 6) - inserted obj: 25375.349657, cur obj: 25375.338609, violation: 0.011048, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 9) - inserted obj: 37673.629742, cur obj: 37673.613197, violation: 0.016545, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.632798, cur obj: 32472.617860, violation: 0.014938, re-solving
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 40 -- Optimality cut VIOLATED for integral SP (0, 19) - inserted obj: 26418.676029, cur obj: 26418.663803, violation: 0.012226, re-solving
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 40 -- Integral: Added single Benders optimality cut as aggregated cut for SP (0, 9)
+*  937   435              25    270480.39998 268315.629  0.80%  89.0   12s
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 41 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 19)), violation: 11.202227
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 41 -- Integral: Added Benders optimality cut for building 0 (SP (0, 9)), violation: 0.015272
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 42 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 19)), violation: 1214.970463
+2026-01-23 14:55:49 | INFO     | MainProcess     | benders_cut_manager            | Iteration 42 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 0.019177
+2026-01-23 14:55:49 | WARNING  | MainProcess     | check_identical_sols           | Iteration 43 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.651997, cur obj: 32472.632820, violation: 0.019177, re-solving
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 43 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 19)), violation: 204.224697
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 43 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 0.019177
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 44 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.651997, cur obj: 32472.632820, violation: 0.019177, re-solving
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 44 -- Found new incumbent with true objective 269226.1044 (will add disaggregated cuts)
+H  993   456                    269226.19441 268686.957  0.20%  85.1   13s
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 0) - inserted obj: 21473.083365, cur obj: 21473.080638, violation: 0.002727, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 2) - inserted obj: 19806.699477, cur obj: 19806.697065, violation: 0.002412, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 4) - inserted obj: 18356.347828, cur obj: 18356.345681, violation: 0.002147, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 6) - inserted obj: 25375.351107, cur obj: 25375.348312, violation: 0.002795, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 9) - inserted obj: 37673.631928, cur obj: 37673.627736, violation: 0.004192, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.651997, cur obj: 32472.632820, violation: 0.019177, re-solving
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 46 -- Optimality cut VIOLATED for integral SP (0, 19) - inserted obj: 26418.691256, cur obj: 26418.676034, violation: 0.015222, re-solving
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 46 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 19)), violation: 1.560786
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 46 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 0.019177
+* 1056   452              48    269013.49192 268849.309  0.06%  80.8   13s
+2026-01-23 14:55:50 | WARNING  | MainProcess     | check_identical_sols           | Iteration 47 -- Optimality cut VIOLATED for integral SP (0, 14) - inserted obj: 32472.651997, cur obj: 32472.632820, violation: 0.019177, re-solving
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 47 -- Integral: Added Benders feasibility cut for building 1 (SP (1, 14)), violation: 1.506612
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 47 -- Integral: Added Benders optimality cut for building 0 (SP (0, 14)), violation: 0.019177
+* 1060   452              47    269013.30039 268849.309  0.06%  80.6   13s
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 48 -- Found new incumbent with true objective 269004.5256 (will add disaggregated cuts)
+H 1078   255                    269004.47342 268849.309  0.06%  79.4   13s
+2026-01-23 14:55:50 | INFO     | MainProcess     | benders_cut_manager            | Iteration 49 -- Found new incumbent with true objective 268997.4304 (will add disaggregated cuts)
+
+Cutting planes:
+  User: 1
+  Learned: 2
+  Gomory: 9
+  Implied bound: 88
+  MIR: 44
+  Flow cover: 220
+  RLT: 3
+  Relax-and-lift: 12
+  Lazy constraints: 95
+
+Explored 1251 nodes (94031 simplex iterations) in 14.09 seconds (4.77 work units)
+Thread count was 8 (of 22 available processors)
+
+Solution count 8: 269004 269013 269013 ... 273327
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.690044734240e+05, best bound 2.689832124858e+05, gap 0.0079%
+
+User-callback calls 3695, time in user-callback 9.72 sec
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | CALLBACK TIMING SUMMARY
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | Total callback time:                      9.6445s (100%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Cut generation:                      6.9789s ( 72.4%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Integrality check:                   0.0000s (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Cut management:                      1.4705s ( 15.2%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Identical solution check:            0.0256s (  0.3%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Solution retrieval:                  0.0325s (  0.3%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Data tracking:                       0.0000s (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Eviction (memory cleanup):           0.0000s (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   └─ Injection:                           1.1105s ( 11.5%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | CUT GENERATION DETAILED BREAKDOWN
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | Total cut generation time:                6.9789s (100%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Job submission:                      0.0021s (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Waiting for subprocesses:            6.9089s ( 99.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   ├─ Cut assembly (LinExpr build):        0.0010s (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   └─ Communication overhead:              0.0669s (  1.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | UNIFIED SUBPROBLEM TIMING ANALYSIS
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | Aggregated Totals (all jobs):
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Total jobs:                      372
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Total job time:                22.94s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Gurobi optimization:           13.02s  ( 56.8%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Dual collection:                0.00s  (  0.0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Status handling:                3.18s  ( 13.9%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Variable fixing:                0.68s  (  2.9%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Model loading:                  4.55s  ( 19.8%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | 
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Avg time per job:             0.0617s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Avg optimization:             0.0350s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Avg dual collection:          0.0000s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Avg model load:               0.3251s  (14 loads)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | 
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | --------------------------------------------------------------------------------
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | Iteration Statistics:
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Number of iterations:             39
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Sum of max job times:           6.46s  (KEY BOTTLENECK METRIC)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Total wall-clock time:          6.98s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Parallelization efficiency:    8.43%
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Avg max time/iteration:       0.1656s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Max of max times:             2.5270s  (worst iteration)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Median of max times:          0.0237s
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | 
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | --------------------------------------------------------------------------------
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | Bottleneck Phase Analysis (what's slowing down max jobs):
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Optimization:                   2.65s  ( 41.0%)  [slowest in  35 iters]
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Dual collection:                0.00s  (  0.0%)  [slowest in   0 iters]
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Status handling:                3.14s  ( 48.7%)  [slowest in   3 iters]
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Variable fixing:                0.07s  (  1.1%)  [slowest in   1 iters]
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   Model loading:                  0.43s  (  6.6%)  [slowest in   0 iters]
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | 
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | --------------------------------------------------------------------------------
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | Slowest Subproblems (by avg time per call):
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    1. SP (1, 0)              :  0.2222s avg  ( 19 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0643s opt (29%), 0.0000s dual (0%), 0.1314s status (59%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    2. SP (1, 2)              :  0.1137s avg  ( 18 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0775s opt (68%), 0.0000s dual (0%), 0.0265s status (23%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    3. SP (0, 14)             :  0.0690s avg  ( 28 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0434s opt (63%), 0.0000s dual (0%), 0.0002s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    4. SP (0, 9)              :  0.0686s avg  ( 26 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0455s opt (66%), 0.0000s dual (0%), 0.0000s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    5. SP (0, 2)              :  0.0617s avg  ( 30 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0395s opt (64%), 0.0000s dual (0%), 0.0001s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    6. SP (0, 6)              :  0.0545s avg  ( 29 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0426s opt (78%), 0.0000s dual (0%), 0.0001s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    7. SP (0, 19)             :  0.0528s avg  ( 30 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0332s opt (63%), 0.0000s dual (0%), 0.0003s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    8. SP (0, 4)              :  0.0506s avg  ( 30 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0325s opt (64%), 0.0000s dual (0%), 0.0001s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |    9. SP (0, 0)              :  0.0494s avg  ( 35 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0349s opt (71%), 0.0000s dual (0%), 0.0003s status (1%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |   10. SP (1, 9)              :  0.0481s avg  ( 21 calls)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings |       └─ 0.0230s opt (48%), 0.0000s dual (0%), 0.0000s status (0%)
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | 
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | Detailed timing data saved to: D:\GIT\OptiPort\run\use_cases\example\results\benders_standard_vis\logging\iteration_timings.json
+2026-01-23 14:55:50 | INFO     | MainProcess     | analyze_and_save_iteration_timings | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | Benders Cut Statistics:
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | Integral Solutions:
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Feasibility Cuts:  Separated    72, Added    19 (Stored    53)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Optimality Cuts:   Separated   224, Added    77 (Stored   147)
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Aggregated Cuts:   Added     0
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Building-Aggregated Cuts: Added     0
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | Fractional Solutions:
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Feasibility Cuts:  Separated    45, Added   126
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           |   Optimality Cuts:   Separated    31, Added    52
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | In-Out Method Cuts:
+2026-01-23 14:55:50 | INFO     | MainProcess     | b_bc                           | ================================================================================

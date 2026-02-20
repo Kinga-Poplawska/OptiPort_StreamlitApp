@@ -1,0 +1,25 @@
+{
+  "equity": {
+    "initial_equity": 500000,
+    "minimal_equity": 10000,
+    "minimum_equity_quota":  0.5
+  },
+
+   "liquidity": {
+        "initial_liquidity": 100000,
+        "minimal_liquidity": 5000,
+        "liquidity_rate": 0.02
+   },
+
+  "liabilities": {
+    "initial_liabilities": 80000,
+    "remaining_credit_years": 5,
+    "debt_interest_rate":  0.05
+  },
+
+  "rates": {
+    "credit_rate": 0.05,
+    "credit_type": "repayment_loan"
+  },
+  "alpha_credit": 1
+}

@@ -1,0 +1,3 @@
+building_id;measure;availability_constraint;installation_constraint;always_available
+1;hp_geo_col, hp_geo_probe;None,None;Start-2030,2028-2030;tes_dhw
+2;boi_oil;2025-End;Start-End;tes_dhw

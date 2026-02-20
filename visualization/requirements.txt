@@ -1,0 +1,5 @@
+numpy==2.4.2
+pandas==3.0.1
+plotly==6.3.0
+pydevd_pycharm==252.25557.178
+streamlit==1.48.0

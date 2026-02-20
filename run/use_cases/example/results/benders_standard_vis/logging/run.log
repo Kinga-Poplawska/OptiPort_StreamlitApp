@@ -1,0 +1,7 @@
+
+Gurobi 12.0.3 (win64) logging started Fri Jan 23 14:55:36 2026
+
+Set parameter LogFile to value "D:\GIT\OptiPort\run\use_cases\example\results\benders_standard_vis\logging\run.log"
+Set parameter TimeLimit to value 216000
+Set parameter Threads to value 8
+Warning: constraint name "valid_ineq_min_avail_energy_prod[(1, 6),0,hp_geo_col]" has a space

@@ -1,0 +1,11 @@
+{   "emissions":{
+    "2030": 100000,
+    "2045": 100000,
+    "interpolate": false
+   },
+   "district_heating":{
+    "2030": 20,
+    "2045": 20,
+    "interpolate": true
+   }
+}

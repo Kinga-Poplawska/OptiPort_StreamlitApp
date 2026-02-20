@@ -1,0 +1,3 @@
+id;type;year;location;region;num;area;num_floors;num_flats;persons_per_appartment;ex_heat_prim;cap_heat_prim;ex_heat_sec;cap_heat_sec;ex_sto;cap_sto;ex_dhw_sto;cap_dhw_sto;sup_temp;area_solar;cap_solar;ex_wall;ex_win;ex_roof;ex_pv;ex_dis;roofs;rad_area;ex_wall_u;ex_win_u;ex_roof_u;yearly_el_demand;wall_age;windows_age;roof_age;heat_age;dhw_age;solar_age;storage_age;rad_age
+1;MFH;1960;Aachen;0;1;800;6;8;2;boi_gas;30;None;0;None;0;tes_dhw;None;60;50;10;1;1;2;1;rad_11;(-5:30:50);800x500;None;None;None;8000000;2010;2010;2010;2015;None;None;None;1970
+2;MFH;2002;Aachen;0;1;120;5;1;4;boi_gas;10;None;0;None;0;tes_dhw;None;60;0;0;1;1;1;1;rad_11;None,None;800x500;None;None;None;8000000;2009;2009;2009;2009;None;None;None;2009
