@@ -1,3 +1,0 @@
-03.03.2026-10:01:15 INFO DymolaAPI: -------------------------Initializing class DymolaAPI-------------------------
-03.03.2026-10:01:15 INFO DymolaAPI: Using dymola.exe: C:\Program Files\Dymola 2024x Refresh 1\bin64\Dymola.exe
-03.03.2026-10:01:15 INFO DymolaAPI: Using dymola interface: C:\Program Files\Dymola 2024x Refresh 1\Modelica\Library\python_interface\dymola-2024.1-py3-none-any.whl

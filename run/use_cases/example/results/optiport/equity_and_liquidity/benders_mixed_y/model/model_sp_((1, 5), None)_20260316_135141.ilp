@@ -1,7 +1,0 @@
-\ Model benders_sp_copy
-\ LP format - for model browsing. Use MPS format to capture full model detail.
-Minimize
- 
-Subject To
-Bounds
-End

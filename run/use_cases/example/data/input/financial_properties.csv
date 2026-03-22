@@ -1,3 +1,0 @@
-id;rent-1 in €/m2;rent-2 in €/m2;rent-3 in €/m2;cap_rent in €/m2;cap_warm_rent in €/m2;c_comp in €/m2;c_comp_increase in -;En_Gas_cost in €/Wh;En_HP_cost in €/Wh;En_El_cost in €/Wh;c_misc in €;c_misc_ten in €/m2;p_loss in -;tense_market (bool)
-0;7;7;7;15;10;8;0.05;;;;0;0;0.05;0
-1;9;9;9;15;13;10;0.04;;;;0;0;0.05;1
