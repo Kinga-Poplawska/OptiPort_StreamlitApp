@@ -1,0 +1,880 @@
+\ Model benders_sp_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ linking_building_eff_state_hull_measure[1,3,roof_1]: - X_avail_1_3_roof_1
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   + Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   + Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_1','roof_1','win_3')_ufh
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_1','win_1')_ufh = 0
+ linking_building_eff_state_hull_measure[1,3,wall_3]: - X_avail_1_3_wall_3
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   + Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   + Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_2','win_3')_ufh = 0
+ linking_building_eff_state_hull_measure[1,3,roof_3]: - X_avail_1_3_roof_3
+   + Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   + Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   + Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_1','roof_3','win_3')_ufh
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_1')_ufh = 0
+ linking_building_eff_state_hull_measure[1,3,wall_2]: - X_avail_1_3_wall_2
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   + Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   + Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_2','win_3')_ufh
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_1')_ufh = 0
+ linking_building_eff_state_hull_measure[1,3,win_1]: - X_avail_1_3_win_1
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   + Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   + Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_1','win_1')_ufh
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_1')_ufh = 0
+ linking_building_eff_state_dis_measure[1,3,rad_11]: - X_avail_1_3_rad_11
+   + Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   + Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_3_('wall_2','roof_3','win_1')_rad_11 = 0
+ linking_building_eff_state_dis_measure[1,3,ufh]: - X_avail_1_3_ufh
+   + Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + Y_1_3_('wall_1','roof_3','win_3')_ufh
+   + Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + Y_1_3_('wall_1','roof_2','win_3')_ufh
+   + Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + Y_1_3_('wall_1','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + Y_1_3_('wall_1','roof_1','win_3')_ufh
+   + Y_1_3_('wall_2','roof_2','win_3')_ufh
+   + Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + Y_1_3_('wall_3','roof_2','win_3')_ufh
+   + Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + Y_1_3_('wall_1','roof_1','win_1')_ufh
+   + Y_1_3_('wall_2','roof_3','win_1')_ufh = 0
+ output_energy_constraint[1,3,1,7,boi_gas]: 1000 E_avail_1_3_boi_gas
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_0
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_2
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_3
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_1 - 100 P_out_1_3_1_7_boi_gas_dhw
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,eh]: 1000 E_avail_1_3_eh
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_0 - 100 P_out_1_3_1_7_eh_th_pre_tes_2
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_3 - 100 P_out_1_3_1_7_eh_th_pre_tes_1
+   - 100 P_out_1_3_1_7_eh_dhw - 100 P_out_1_3_1_7_eh_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,hp_air]: 1000 E_avail_1_3_hp_air
+   - 116.252588105179 P_out_1_3_1_7_hp_air_th_pre_tes_0
+   - 107.0382367770904 P_out_1_3_1_7_hp_air_th_pre_tes_2
+   - 103.2916109685679 P_out_1_3_1_7_hp_air_th_pre_tes_3
+   - 112.2342287188444 P_out_1_3_1_7_hp_air_th_pre_tes_1
+   - 117.9872803401174 P_out_1_3_1_7_hp_air_dhw
+   - 100.1052222361772 P_out_1_3_1_7_hp_air_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,boi_pel]: 1000 E_avail_1_3_boi_pel
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_0
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_2
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_3
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_1 - 100 P_out_1_3_1_7_boi_pel_dhw
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,chp]: 1000 E_avail_1_3_chp
+   - 100 P_out_1_3_1_7_chp_el_chp_grid - 100 P_out_1_3_1_7_chp_th_pre_tes_0
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_2
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_3
+   - 56.88622754491018 P_out_1_3_1_7_chp_el
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_1 - 100 P_out_1_3_1_7_chp_dhw
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,hp_geo_probe]:
+   1000 E_avail_1_3_hp_geo_probe
+   - 99.39155186091506 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_0
+   - 98.99611527870894 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_2
+   - 105.1908529873807 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_3
+   - 97.48473726835878 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_1
+   - 100.7878791787677 P_out_1_3_1_7_hp_geo_probe_dhw
+   - 112.7162585812749 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,hp_geo_col]: 1000 E_avail_1_3_hp_geo_col
+   - 130.7535313484122 P_out_1_3_1_7_hp_geo_col_th_pre_tes_0
+   - 134.8940100923186 P_out_1_3_1_7_hp_geo_col_th_pre_tes_2
+   - 146.2828984450871 P_out_1_3_1_7_hp_geo_col_th_pre_tes_3
+   - 130.5372031409342 P_out_1_3_1_7_hp_geo_col_th_pre_tes_1
+   - 131.5689687716508 P_out_1_3_1_7_hp_geo_col_dhw
+   - 160.5475566356792 P_out_1_3_1_7_hp_geo_col_th_pre_tes_4 >= 0
+ output_energy_constraint[1,3,1,7,dh]: 1000 E_avail_1_3_dh
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_0 - 100 P_out_1_3_1_7_dh_th_pre_tes_2
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_3 - 100 P_out_1_3_1_7_dh_th_pre_tes_1
+   - 100 P_out_1_3_1_7_dh_dhw - 100 P_out_1_3_1_7_dh_th_pre_tes_4 >= 0
+ sto_balance[1,3,1,7,tes_dhw,0]: 50 E_avail_1_3_tes_dhw
+   - 995 S_1_3_1_6_tes_dhw_0 + 1000 S_1_3_1_7_tes_dhw_0
+   - 1000 R_in_1_3_1_7_tes_dhw_0_dhw + 1000 R_out_1_3_1_7_tes_dhw_0_dhw
+   = 0
+ sto_balance[1,3,1,7,tes,0]: 10.268686521466 E_avail_1_3_tes
+   - 997.7369299038517 S_1_3_1_6_tes_0 + 1000 S_1_3_1_7_tes_0
+   - 1000 R_in_1_3_1_7_tes_0_th_pre_tes_0 - 1000 R_in_1_3_1_7_tes_0_th
+   + 1000 R_out_1_3_1_7_tes_0_th_pre_tes_0
+   + 1000 R_out_1_3_1_7_tes_0_th_pre_tes_1
+   + 1000 R_out_1_3_1_7_tes_0_th_pre_tes_2
+   + 1000 R_out_1_3_1_7_tes_0_th_pre_tes_3
+   + 1000 R_out_1_3_1_7_tes_0_th_pre_tes_4 + 1000 R_out_1_3_1_7_tes_0_th
+   = 0
+ sto_balance[1,3,1,7,tes,1]: - 0.3475922617559755 E_avail_1_3_tes
+   - 2.263070096148319 S_1_3_1_6_tes_0 - 998.1675519134211 S_1_3_1_6_tes_1
+   + 1000 S_1_3_1_7_tes_1 - 1000 R_in_1_3_1_7_tes_1_th_pre_tes_1
+   - 1000 R_in_1_3_1_7_tes_1_th + 1000 R_out_1_3_1_7_tes_1_th_pre_tes_0
+   + 1000 R_out_1_3_1_7_tes_1_th_pre_tes_1
+   + 1000 R_out_1_3_1_7_tes_1_th_pre_tes_2
+   + 1000 R_out_1_3_1_7_tes_1_th_pre_tes_3
+   + 1000 R_out_1_3_1_7_tes_1_th_pre_tes_4 + 1000 R_out_1_3_1_7_tes_1_th
+   = 0
+ sto_balance[1,3,1,7,tes,2]: - 1.832448086578942 S_1_3_1_6_tes_1
+   - 998.5981739229904 S_1_3_1_6_tes_2 + 1000 S_1_3_1_7_tes_2
+   - 1000 R_in_1_3_1_7_tes_2_th_pre_tes_2 - 1000 R_in_1_3_1_7_tes_2_th
+   + 1000 R_out_1_3_1_7_tes_2_th_pre_tes_0
+   + 1000 R_out_1_3_1_7_tes_2_th_pre_tes_1
+   + 1000 R_out_1_3_1_7_tes_2_th_pre_tes_2
+   + 1000 R_out_1_3_1_7_tes_2_th_pre_tes_3
+   + 1000 R_out_1_3_1_7_tes_2_th_pre_tes_4 + 1000 R_out_1_3_1_7_tes_2_th
+   = 0
+ sto_balance[1,3,1,7,tes,4]: - 9.921094259710021 E_avail_1_3_tes
+   - 0.9712040674401863 S_1_3_1_6_tes_3 - 1000 S_1_3_1_6_tes_4
+   + 1000 S_1_3_1_7_tes_4 - 1000 R_in_1_3_1_7_tes_4_th_pre_tes_4
+   - 1000 R_in_1_3_1_7_tes_4_th + 1000 R_out_1_3_1_7_tes_4_th_pre_tes_0
+   + 1000 R_out_1_3_1_7_tes_4_th_pre_tes_1
+   + 1000 R_out_1_3_1_7_tes_4_th_pre_tes_2
+   + 1000 R_out_1_3_1_7_tes_4_th_pre_tes_3
+   + 1000 R_out_1_3_1_7_tes_4_th_pre_tes_4 + 1000 R_out_1_3_1_7_tes_4_th
+   = 0
+ max_size_sto[1,3,1,6,tes_dhw]: - 10000 E_avail_1_3_tes_dhw
+   + 1000 S_1_3_1_6_tes_dhw_0 <= 0
+ max_size_sto[1,3,1,6,tes]: - 10000 E_avail_1_3_tes + 1000 S_1_3_1_6_tes_0
+   + 1000 S_1_3_1_6_tes_1 + 1000 S_1_3_1_6_tes_2 + 1000 S_1_3_1_6_tes_3
+   + 1000 S_1_3_1_6_tes_4 <= 0
+ max_size_sto[1,3,1,7,tes]: - 10000 E_avail_1_3_tes + 1000 S_1_3_1_7_tes_0
+   + 1000 S_1_3_1_7_tes_1 + 1000 S_1_3_1_7_tes_2 + 1000 S_1_3_1_7_tes_3
+   + 1000 S_1_3_1_7_tes_4 <= 0
+ min_state_of_charge[1,3,1,7,tes_dhw]:
+   - 7142.857142857143 E_avail_1_3_tes_dhw + 1000 S_1_3_1_7_tes_dhw_0 >= 0
+ mass_balance_in_out[1,3,0,12,tes,th]: 1000 R_in_1_3_0_12_tes_0_th
+   + 1000 R_in_1_3_0_12_tes_1_th + 1000 R_in_1_3_0_12_tes_2_th
+   + 1000 R_in_1_3_0_12_tes_3_th + 1000 R_in_1_3_0_12_tes_4_th
+   - 1000 R_out_1_3_0_12_tes_0_th - 1000 R_out_1_3_0_12_tes_1_th
+   - 1000 R_out_1_3_0_12_tes_2_th - 1000 R_out_1_3_0_12_tes_3_th
+   - 1000 R_out_1_3_0_12_tes_4_th = 0
+ mass_balance_in_out[1,3,1,7,tes,th_pre_tes_0]:
+   1000 R_in_1_3_1_7_tes_0_th_pre_tes_0
+   - 1000 R_out_1_3_1_7_tes_0_th_pre_tes_0
+   - 1000 R_out_1_3_1_7_tes_1_th_pre_tes_0
+   - 1000 R_out_1_3_1_7_tes_2_th_pre_tes_0
+   - 1000 R_out_1_3_1_7_tes_3_th_pre_tes_0
+   - 1000 R_out_1_3_1_7_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,3,1,7,tes,th_pre_tes_2]:
+   1000 R_in_1_3_1_7_tes_2_th_pre_tes_2
+   - 1000 R_out_1_3_1_7_tes_0_th_pre_tes_2
+   - 1000 R_out_1_3_1_7_tes_1_th_pre_tes_2
+   - 1000 R_out_1_3_1_7_tes_2_th_pre_tes_2
+   - 1000 R_out_1_3_1_7_tes_3_th_pre_tes_2
+   - 1000 R_out_1_3_1_7_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,3,1,7,tes,th_pre_tes_3]:
+   1000 R_in_1_3_1_7_tes_3_th_pre_tes_3
+   - 1000 R_out_1_3_1_7_tes_0_th_pre_tes_3
+   - 1000 R_out_1_3_1_7_tes_1_th_pre_tes_3
+   - 1000 R_out_1_3_1_7_tes_2_th_pre_tes_3
+   - 1000 R_out_1_3_1_7_tes_3_th_pre_tes_3
+   - 1000 R_out_1_3_1_7_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,3,1,7,tes,th_pre_tes_1]:
+   1000 R_in_1_3_1_7_tes_1_th_pre_tes_1
+   - 1000 R_out_1_3_1_7_tes_0_th_pre_tes_1
+   - 1000 R_out_1_3_1_7_tes_1_th_pre_tes_1
+   - 1000 R_out_1_3_1_7_tes_2_th_pre_tes_1
+   - 1000 R_out_1_3_1_7_tes_3_th_pre_tes_1
+   - 1000 R_out_1_3_1_7_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,3,1,7,tes,th]: 1000 R_in_1_3_1_7_tes_0_th
+   + 1000 R_in_1_3_1_7_tes_1_th + 1000 R_in_1_3_1_7_tes_2_th
+   + 1000 R_in_1_3_1_7_tes_3_th + 1000 R_in_1_3_1_7_tes_4_th
+   - 1000 R_out_1_3_1_7_tes_0_th - 1000 R_out_1_3_1_7_tes_1_th
+   - 1000 R_out_1_3_1_7_tes_2_th - 1000 R_out_1_3_1_7_tes_3_th
+   - 1000 R_out_1_3_1_7_tes_4_th = 0
+ mass_balance_in_out[1,3,1,7,tes,th_pre_tes_4]:
+   1000 R_in_1_3_1_7_tes_4_th_pre_tes_4
+   - 1000 R_out_1_3_1_7_tes_0_th_pre_tes_4
+   - 1000 R_out_1_3_1_7_tes_1_th_pre_tes_4
+   - 1000 R_out_1_3_1_7_tes_2_th_pre_tes_4
+   - 1000 R_out_1_3_1_7_tes_3_th_pre_tes_4
+   - 1000 R_out_1_3_1_7_tes_4_th_pre_tes_4 = 0
+ fixing_energy_storage_inflow[1,3,0,12,tes,1]:
+   - 68.4969027868914 Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   - 51.29244791914528 Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   - 85.76229571077035 Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   - 51.29244791914528 Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   - 22.13494880556457 Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   - 68.4969027868914 Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   - 85.76229571077035 Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   - 11.03263903672682 Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + 1000 R_in_1_3_0_12_tes_1_th = 0
+ fixing_energy_storage_inflow[1,3,0,12,tes,2]:
+   - 93.35494436273549 Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   - 152.7180448148827 Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   - 84.40831543820563 Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   - 179.0664164930627 Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   - 101.4510173648013 Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   - 38.7350201872632 Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   - 206.8859708267738 Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   - 105.1269731352932 Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   - 36.37067609932802 Y_1_3_('wall_1','roof_2','win_3')_rad_22
+   - 193.3791438891371 Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   - 37.34640039327079 Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   - 171.136756023022 Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   - 105.9202397022157 Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   - 147.5758962909364 Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   - 84.40831543820563 Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   - 179.0664164930627 Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   - 14.19063391222271 Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   - 154.6589198553591 Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   - 36.37067609932802 Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   - 193.3791438891371 Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   - 38.7350201872632 Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   - 206.8859708267738 Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   - 56.81070696358115 Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   - 161.2970058454337 Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   - 70.04637947884355 Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   - 14.19063391222271 Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   - 154.6589198553591 Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   - 93.35494436273549 Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   - 152.7180448148827 Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   - 105.9202397022157 Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   - 147.5758962909364 Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   - 47.68290007053643 Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   - 163.7161880336846 Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + 1000 R_in_1_3_0_12_tes_2_th = 0
+ fixing_energy_storage_inflow[1,3,0,12,tes,3]:
+   - 237.3099184419405 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   - 149.7565629189884 Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   - 235.6637684352061 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   - 166.1848433936291 Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   - 138.9918336761139 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   - 185.7915210865346 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   - 56.83283307576575 Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   - 206.9475123225523 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   - 210.2574378417199 Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   - 21.93517205704869 Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   - 143.4604980261669 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   - 192.2532040811672 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   - 60.30615126774867 Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   - 197.5928259067558 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   - 200.2139639135803 Y_1_3_('wall_1','roof_2','win_3')_rad_22
+   - 20.35996384339489 Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   - 175.6011626821799 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   - 167.317966688363 Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   - 5.716170252696337 Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   - 251.4456723067165 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   - 147.0338596749472 Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   - 235.6637684352061 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   - 166.1848433936291 Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   - 178.9760850731412 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   - 217.3261594573808 Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   - 53.16421242571943 Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   - 197.5928259067558 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   - 200.2139639135803 Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   - 20.35996384339489 Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   - 206.9475123225523 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   - 210.2574378417199 Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   - 21.93517205704869 Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   - 192.7654626177389 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   - 153.8105034068966 Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   - 119.9929242534015 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   - 158.8995058009612 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   - 78.53152671912228 Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   - 178.9760850731412 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   - 217.3261594573808 Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   - 53.16421242571943 Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   - 237.3099184419405 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   - 149.7565629189884 Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   - 251.4456723067165 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   - 147.0338596749472 Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   - 181.4427737511974 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   - 155.0403123325803 Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + 1000 R_in_1_3_0_12_tes_3_th = 0
+ fixing_energy_storage_inflow[1,3,0,12,tes,4]:
+   - 15.7582686439907 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   - 240.6515046775356 Y_1_3_('wall_2','roof_2','win_1')_ufh
+   - 23.79039593603872 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   - 225.5274020570058 Y_1_3_('wall_3','roof_1','win_1')_ufh
+   - 66.04472265012997 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   - 1.244595697051187 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   - 171.8971597783871 Y_1_3_('wall_1','roof_3','win_3')_ufh
+   - 53.95706533263294 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   - 183.5468916775355 Y_1_3_('wall_2','roof_1','win_3')_ufh
+   - 68.03489937148905 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   - 1.554746096804023 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   - 167.7987831186566 Y_1_3_('wall_2','roof_3','win_3')_ufh
+   - 52.41132186102282 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   - 187.6006722164769 Y_1_3_('wall_1','roof_2','win_3')_ufh
+   - 43.76781801064337 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   - 210.367713162806 Y_1_3_('wall_3','roof_3','win_1')_ufh
+   - 9.971009343489378 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   - 244.5563588377142 Y_1_3_('wall_1','roof_2','win_1')_ufh
+   - 23.79039593603872 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   - 225.5274020570058 Y_1_3_('wall_3','roof_2','win_1')_ufh
+   - 66.59135360941701 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   - 168.1092069036188 Y_1_3_('wall_3','roof_1','win_3')_ufh
+   - 52.41132186102282 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   - 187.6006722164769 Y_1_3_('wall_1','roof_1','win_3')_ufh
+   - 53.95706533263294 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   - 183.5468916775355 Y_1_3_('wall_2','roof_2','win_3')_ufh
+   - 31.92308139288235 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   - 229.644440161595 Y_1_3_('wall_1','roof_3','win_1')_ufh
+   - 76.10552814680788 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   - 18.67482679804507 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   - 152.1959769303175 Y_1_3_('wall_3','roof_3','win_3')_ufh
+   - 66.59135360941701 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   - 168.1092069036188 Y_1_3_('wall_3','roof_2','win_3')_ufh
+   - 15.7582686439907 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   - 240.6515046775356 Y_1_3_('wall_2','roof_1','win_1')_ufh
+   - 9.971009343489378 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   - 244.5563588377142 Y_1_3_('wall_1','roof_1','win_1')_ufh
+   - 36.11531489781623 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   - 225.6859297180482 Y_1_3_('wall_2','roof_3','win_1')_ufh
+   + 1000 R_in_1_3_0_12_tes_4_th = 0
+ fixing_energy_storage_inflow[1,3,1,7,tes,0]: 1000 R_in_1_3_1_7_tes_0_th
+   = 0
+ fixing_energy_storage_inflow[1,3,1,7,tes,4]:
+   - 9.837190397996713 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   - 233.6496500746188 Y_1_3_('wall_2','roof_2','win_1')_ufh
+   - 24.20455474834488 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   - 217.3156166320956 Y_1_3_('wall_3','roof_1','win_1')_ufh
+   - 65.04077161334639 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   - 4.118694841653135 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   - 169.7346594570451 Y_1_3_('wall_1','roof_3','win_3')_ufh
+   - 53.31060976410333 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   - 180.2710328911675 Y_1_3_('wall_2','roof_1','win_3')_ufh
+   - 66.23231531984938 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   - 1.670818325646452 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   - 165.8311750139321 Y_1_3_('wall_2','roof_3','win_3')_ufh
+   - 53.34643737298767 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   - 184.1533860780906 Y_1_3_('wall_1','roof_2','win_3')_ufh
+   - 43.48376882044525 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   - 203.1468431381106 Y_1_3_('wall_3','roof_3','win_1')_ufh
+   - 8.353686320035514 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   - 237.421805441055 Y_1_3_('wall_1','roof_2','win_1')_ufh
+   - 24.20455474834488 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   - 217.3156166320956 Y_1_3_('wall_3','roof_2','win_1')_ufh
+   - 66.73382351295612 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   - 163.4544148175407 Y_1_3_('wall_3','roof_1','win_3')_ufh
+   - 53.34643737298767 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   - 184.1533860780906 Y_1_3_('wall_1','roof_1','win_3')_ufh
+   - 53.31060976410333 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   - 180.2710328911675 Y_1_3_('wall_2','roof_2','win_3')_ufh
+   - 29.97374573627471 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   - 223.4074064826741 Y_1_3_('wall_1','roof_3','win_1')_ufh
+   - 74.61938898004976 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   - 22.0277475858339 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   - 148.8787050971789 Y_1_3_('wall_3','roof_3','win_3')_ufh
+   - 66.73382351295612 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   - 163.4544148175407 Y_1_3_('wall_3','roof_2','win_3')_ufh
+   - 9.837190397996713 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   - 233.6496500746188 Y_1_3_('wall_2','roof_1','win_1')_ufh
+   - 8.353686320035514 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   - 237.421805441055 Y_1_3_('wall_1','roof_1','win_1')_ufh
+   - 31.61915463481258 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   - 219.6086024610333 Y_1_3_('wall_2','roof_3','win_1')_ufh
+   + 1000 R_in_1_3_1_7_tes_4_th = 0
+ energy_balance[1,3,0,12,th]:
+   2334.507080078125 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   + 2334.507080078125 Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   + 2334.507080078125 Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + 2334.507099188439 Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + 2187.79150390625 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + 2187.79150390625 Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + 2187.79150390625 Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + 2187.791519812396 Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + 1667.536376953125 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   + 1667.536376953125 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   + 1667.536376953125 Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   + 1667.536383662737 Y_1_3_('wall_1','roof_3','win_3')_ufh
+   + 1780.5478515625 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   + 1780.5478515625 Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   + 1780.5478515625 Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + 1780.547859982597 Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + 1627.778930664063 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   + 1627.778930664063 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   + 1627.778930664063 Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + 1627.778936809831 Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + 1819.872680664063 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   + 1819.872680664063 Y_1_3_('wall_1','roof_2','win_3')_rad_22
+   + 1819.872680664063 Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   + 1819.872689716746 Y_1_3_('wall_1','roof_2','win_3')_ufh
+   + 2040.730712890625 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + 2040.730712890625 Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + 2040.730712890625 Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + 2040.73072585468 Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + 2372.38720703125 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   + 2372.38720703125 Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   + 2372.38720703125 Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   + 2372.387227012478 Y_1_3_('wall_1','roof_2','win_1')_ufh
+   + 2187.79150390625 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   + 2187.79150390625 Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   + 2187.79150390625 Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + 2187.791519812396 Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + 1630.790283203125 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   + 1630.790283203125 Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   + 1630.790283203125 Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + 1630.79028939091 Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + 1819.872680664063 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   + 1819.872680664063 Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   + 1819.872680664063 Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   + 1819.872689716746 Y_1_3_('wall_1','roof_1','win_3')_ufh
+   + 1780.5478515625 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   + 1780.5478515625 Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   + 1780.5478515625 Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   + 1780.547859982597 Y_1_3_('wall_2','roof_2','win_3')_ufh
+   + 2227.72998046875 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   + 2227.72998046875 Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   + 2227.72998046875 Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + 2227.729997220511 Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + 1476.419555664063 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   + 1476.419555664063 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   + 1476.419555664063 Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + 1476.419559843762 Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + 1630.790283203125 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   + 1630.790283203125 Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   + 1630.790283203125 Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   + 1630.79028939091 Y_1_3_('wall_3','roof_2','win_3')_ufh
+   + 2334.507080078125 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + 2334.507080078125 Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + 2334.507080078125 Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + 2334.507099188439 Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + 2372.38720703125 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   + 2372.38720703125 Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   + 2372.38720703125 Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + 2372.387227012478 Y_1_3_('wall_1','roof_1','win_1')_ufh
+   + 2189.329345703125 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + 2189.329345703125 Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + 2189.329345703125 Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + 2189.329361641463 Y_1_3_('wall_2','roof_3','win_1')_ufh
+   + 54593.30152602126 R_in_1_3_0_12_tes_0_th
+   + 46750.53170952561 R_in_1_3_0_12_tes_1_th
+   + 38907.76189302996 R_in_1_3_0_12_tes_2_th
+   + 31064.9920765343 R_in_1_3_0_12_tes_3_th
+   + 23222.22226003865 R_in_1_3_0_12_tes_4_th
+   - 54593.30152602126 R_out_1_3_0_12_tes_0_th
+   - 46750.53170952561 R_out_1_3_0_12_tes_1_th
+   - 38907.76189302996 R_out_1_3_0_12_tes_2_th
+   - 31064.9920765343 R_out_1_3_0_12_tes_3_th
+   - 23222.22226003865 R_out_1_3_0_12_tes_4_th = 0
+ energy_balance[1,3,1,7,th_pre_tes_0]:
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_0
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_0
+   - 100 P_out_1_3_1_7_hp_air_th_pre_tes_0
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_0
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_0
+   - 100 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_0
+   - 100 P_out_1_3_1_7_hp_geo_col_th_pre_tes_0
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_0
+   + 60219.38078430379 R_in_1_3_1_7_tes_0_th_pre_tes_0
+   - 60219.38078430379 R_out_1_3_1_7_tes_0_th_pre_tes_0
+   - 50970.09115603033 R_out_1_3_1_7_tes_1_th_pre_tes_0
+   - 41720.80152775687 R_out_1_3_1_7_tes_2_th_pre_tes_0
+   - 32471.51189948342 R_out_1_3_1_7_tes_3_th_pre_tes_0
+   - 23222.22227120995 R_out_1_3_1_7_tes_4_th_pre_tes_0 = 0
+ energy_balance[1,3,1,7,th_pre_tes_2]:
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_2
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_2
+   - 100 P_out_1_3_1_7_hp_air_th_pre_tes_2
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_2
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_2
+   - 100 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_2
+   - 100 P_out_1_3_1_7_hp_geo_col_th_pre_tes_2
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_2
+   + 41720.80152775687 R_in_1_3_1_7_tes_2_th_pre_tes_2
+   - 60219.38078430379 R_out_1_3_1_7_tes_0_th_pre_tes_2
+   - 50970.09115603033 R_out_1_3_1_7_tes_1_th_pre_tes_2
+   - 41720.80152775687 R_out_1_3_1_7_tes_2_th_pre_tes_2
+   - 32471.51189948342 R_out_1_3_1_7_tes_3_th_pre_tes_2
+   - 23222.22227120995 R_out_1_3_1_7_tes_4_th_pre_tes_2 = 0
+ energy_balance[1,3,1,7,th_pre_tes_3]:
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_3
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_3
+   - 100 P_out_1_3_1_7_hp_air_th_pre_tes_3
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_3
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_3
+   - 100 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_3
+   - 100 P_out_1_3_1_7_hp_geo_col_th_pre_tes_3
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_3
+   + 32471.51189948342 R_in_1_3_1_7_tes_3_th_pre_tes_3
+   - 60219.38078430379 R_out_1_3_1_7_tes_0_th_pre_tes_3
+   - 50970.09115603033 R_out_1_3_1_7_tes_1_th_pre_tes_3
+   - 41720.80152775687 R_out_1_3_1_7_tes_2_th_pre_tes_3
+   - 32471.51189948342 R_out_1_3_1_7_tes_3_th_pre_tes_3
+   - 23222.22227120995 R_out_1_3_1_7_tes_4_th_pre_tes_3 = 0
+ energy_balance[1,3,1,7,th]:
+   3039.612060546875 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   + 3039.612060546875 Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   + 3039.612060546875 Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + 3039.61207582495 Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + 2827.1181640625 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + 2827.1181640625 Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + 2827.1181640625 Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + 2827.118176163786 Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + 2208.12451171875 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   + 2208.12451171875 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   + 2208.12451171875 Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   + 2208.124516372707 Y_1_3_('wall_1','roof_3','win_3')_ufh
+   + 2345.195068359375 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   + 2345.195068359375 Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   + 2345.195068359375 Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + 2345.195074430602 Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + 2157.343017578125 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   + 2157.343017578125 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   + 2157.343017578125 Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + 2157.343021740501 Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + 2395.70166015625 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   + 2395.70166015625 Y_1_3_('wall_1','roof_2','win_3')_rad_22
+   + 2395.70166015625 Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   + 2395.701666782956 Y_1_3_('wall_1','roof_2','win_3')_ufh
+   + 2642.792724609375 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + 2642.792724609375 Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + 2642.792724609375 Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + 2642.79273421174 Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + 3088.68505859375 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   + 3088.68505859375 Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   + 3088.68505859375 Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   + 3088.685074650524 Y_1_3_('wall_1','roof_2','win_1')_ufh
+   + 2827.1181640625 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   + 2827.1181640625 Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   + 2827.1181640625 Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + 2827.118176163786 Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + 2126.423095703125 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   + 2126.423095703125 Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   + 2126.423095703125 Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + 2126.423099575054 Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + 2395.70166015625 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   + 2395.70166015625 Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   + 2395.70166015625 Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   + 2395.701666782956 Y_1_3_('wall_1','roof_1','win_3')_ufh
+   + 2345.195068359375 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   + 2345.195068359375 Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   + 2345.195068359375 Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   + 2345.195074430602 Y_1_3_('wall_2','roof_2','win_3')_ufh
+   + 2906.367919921875 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   + 2906.367919921875 Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   + 2906.367919921875 Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + 2906.367933170881 Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + 1936.8037109375 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   + 1936.8037109375 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   + 1936.8037109375 Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + 1936.803713175023 Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + 2126.423095703125 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   + 2126.423095703125 Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   + 2126.423095703125 Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   + 2126.423099575054 Y_1_3_('wall_3','roof_2','win_3')_ufh
+   + 3039.612060546875 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + 3039.612060546875 Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + 3039.612060546875 Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + 3039.61207582495 Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + 3088.68505859375 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   + 3088.68505859375 Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   + 3088.68505859375 Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + 3088.685074650524 Y_1_3_('wall_1','roof_1','win_1')_ufh
+   + 2856.9482421875 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + 2856.9482421875 Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + 2856.9482421875 Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + 2856.94825471562 Y_1_3_('wall_2','roof_3','win_1')_ufh
+   + 60219.38078430379 R_in_1_3_1_7_tes_0_th
+   + 50970.09115603033 R_in_1_3_1_7_tes_1_th
+   + 41720.80152775687 R_in_1_3_1_7_tes_2_th
+   + 32471.51189948342 R_in_1_3_1_7_tes_3_th
+   + 23222.22227120995 R_in_1_3_1_7_tes_4_th
+   - 60219.38078430379 R_out_1_3_1_7_tes_0_th
+   - 50970.09115603033 R_out_1_3_1_7_tes_1_th
+   - 41720.80152775687 R_out_1_3_1_7_tes_2_th
+   - 32471.51189948342 R_out_1_3_1_7_tes_3_th
+   - 23222.22227120995 R_out_1_3_1_7_tes_4_th = 0
+ energy_balance[1,3,1,7,th_pre_tes_1]:
+   - 100 P_out_1_3_1_7_boi_gas_th_pre_tes_1
+   - 100 P_out_1_3_1_7_eh_th_pre_tes_1
+   - 100 P_out_1_3_1_7_hp_air_th_pre_tes_1
+   - 100 P_out_1_3_1_7_boi_pel_th_pre_tes_1
+   - 100 P_out_1_3_1_7_chp_th_pre_tes_1
+   - 100 P_out_1_3_1_7_hp_geo_probe_th_pre_tes_1
+   - 100 P_out_1_3_1_7_hp_geo_col_th_pre_tes_1
+   - 100 P_out_1_3_1_7_dh_th_pre_tes_1
+   + 50970.09115603033 R_in_1_3_1_7_tes_1_th_pre_tes_1
+   - 60219.38078430379 R_out_1_3_1_7_tes_0_th_pre_tes_1
+   - 50970.09115603033 R_out_1_3_1_7_tes_1_th_pre_tes_1
+   - 41720.80152775687 R_out_1_3_1_7_tes_2_th_pre_tes_1
+   - 32471.51189948342 R_out_1_3_1_7_tes_3_th_pre_tes_1
+   - 23222.22227120995 R_out_1_3_1_7_tes_4_th_pre_tes_1 = 0
+ energy_balance[1,3,1,7,dhw]:
+   1239.724139594736 Y_1_3_('wall_2','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_3','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_3','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_1','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_3_('wall_2','roof_3','win_1')_ufh
+   - 100 P_out_1_3_1_7_boi_gas_dhw - 100 P_out_1_3_1_7_eh_dhw
+   - 100 P_out_1_3_1_7_hp_air_dhw - 100 P_out_1_3_1_7_boi_pel_dhw
+   - 100 P_out_1_3_1_7_chp_dhw - 100 P_out_1_3_1_7_hp_geo_probe_dhw
+   - 100 P_out_1_3_1_7_hp_geo_col_dhw - 100 P_out_1_3_1_7_dh_dhw
+   + 1000 R_in_1_3_1_7_tes_dhw_0_dhw - 1000 R_out_1_3_1_7_tes_dhw_0_dhw
+   = 0
+Bounds
+ X_avail_1_3_roof_1 >= 1
+ -infinity <= X_avail_1_3_wall_3 <= 0
+ -infinity <= X_avail_1_3_wall_2 <= 1
+ X_avail_1_3_win_1 >= 1
+ X_avail_1_3_rad_11 >= 1
+ -infinity <= X_avail_1_3_ufh <= 0
+ -infinity <= E_avail_1_3_eh <= 3.466371938603402
+ -infinity <= E_avail_1_3_chp <= 0
+ -infinity <= E_avail_1_3_tes_dhw <= 0.00387832601592497
+ -infinity <= E_avail_1_3_hp_air <= 0
+ -infinity <= E_avail_1_3_boi_pel <= 0
+ -infinity <= E_avail_1_3_hp_geo_col <= 0
+ -infinity <= E_avail_1_3_boi_gas <= 0
+ -infinity <= E_avail_1_3_hp_geo_probe <= 0
+ -infinity <= E_avail_1_3_dh <= 0
+ -infinity <= E_avail_1_3_tes <= 0
+ Y_1_3_('wall_2','roof_1','win_3')_ufh free
+ Y_1_3_('wall_3','roof_3','win_3')_ufh free
+ P_out_1_3_1_7_boi_gas_th_pre_tes_0 free
+ P_out_1_3_1_7_boi_gas_th_pre_tes_2 free
+ P_out_1_3_1_7_boi_gas_th_pre_tes_1 free
+ P_out_1_3_1_7_boi_gas_dhw free
+ P_out_1_3_1_7_eh_th_pre_tes_0 free
+ P_out_1_3_1_7_eh_th_pre_tes_2 free
+ P_out_1_3_1_7_eh_th_pre_tes_1 free
+ P_out_1_3_1_7_eh_dhw free
+ P_out_1_3_1_7_boi_pel_th_pre_tes_0 free
+ P_out_1_3_1_7_boi_pel_th_pre_tes_2 free
+ P_out_1_3_1_7_boi_pel_th_pre_tes_1 free
+ P_out_1_3_1_7_boi_pel_dhw free
+ P_out_1_3_1_7_chp_th_pre_tes_0 free
+ P_out_1_3_1_7_chp_th_pre_tes_2 free
+ P_out_1_3_1_7_chp_th_pre_tes_1 free
+ P_out_1_3_1_7_chp_dhw free
+ P_out_1_3_1_7_hp_geo_probe_th_pre_tes_1 free
+ P_out_1_3_1_7_hp_geo_col_th_pre_tes_1 free
+ P_out_1_3_1_7_dh_th_pre_tes_0 free
+ P_out_1_3_1_7_dh_th_pre_tes_2 free
+ P_out_1_3_1_7_dh_th_pre_tes_1 free
+ P_out_1_3_1_7_dh_dhw free
+ S_1_3_1_6_tes_0 free
+ S_1_3_1_7_tes_dhw_0 free
+ S_1_3_1_7_tes_4 free
+ R_in_1_3_0_12_tes_0_th free
+ R_in_1_3_0_12_tes_1_th free
+ R_in_1_3_0_12_tes_2_th free
+ R_in_1_3_0_12_tes_3_th free
+ R_in_1_3_0_12_tes_4_th free
+ R_in_1_3_1_7_tes_dhw_0_dhw free
+ R_in_1_3_1_7_tes_0_th_pre_tes_0 free
+ R_in_1_3_1_7_tes_1_th_pre_tes_1 free
+ R_in_1_3_1_7_tes_1_th free
+ R_in_1_3_1_7_tes_2_th_pre_tes_2 free
+ R_in_1_3_1_7_tes_2_th free
+ R_in_1_3_1_7_tes_3_th_pre_tes_3 free
+ R_in_1_3_1_7_tes_3_th free
+ R_in_1_3_1_7_tes_4_th_pre_tes_4 free
+ R_out_1_3_0_12_tes_0_th free
+ R_out_1_3_1_7_tes_dhw_0_dhw free
+ R_out_1_3_1_7_tes_0_th_pre_tes_0 free
+ R_out_1_3_1_7_tes_0_th_pre_tes_1 free
+ R_out_1_3_1_7_tes_0_th_pre_tes_2 free
+ R_out_1_3_1_7_tes_0_th free
+ R_out_1_3_1_7_tes_1_th_pre_tes_1 free
+ R_out_1_3_1_7_tes_1_th free
+ R_out_1_3_1_7_tes_2_th_pre_tes_1 free
+ R_out_1_3_1_7_tes_2_th free
+ R_out_1_3_1_7_tes_3_th_pre_tes_1 free
+ R_out_1_3_1_7_tes_3_th free
+ R_out_1_3_1_7_tes_4_th_pre_tes_4 free
+End

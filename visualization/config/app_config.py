@@ -2,7 +2,6 @@
 Configuration settings for the OptiPort Visualization Application
 """
 from pathlib import Path
-from typing import Dict, List, Any
 
 # Application settings
 APP_TITLE = "OptiPort WebApp Prototyp"
@@ -13,45 +12,36 @@ INITIAL_SIDEBAR_STATE = "expanded"
 # Paths
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 USE_CASES_PATH = PROJECT_ROOT / "run" / "use_cases"
-DATA_PATH = PROJECT_ROOT / "data"
-INSTANCES_PATH = DATA_PATH / "instances"
 
-# File patterns
-SOLUTION_FILE_PATTERN = "*.sol"
-INSTANCE_CONFIG_FILES = [
-    "building_constraints.csv",
-    "financial_properties.csv", 
-    "general_finances.json",
-    "portfolio_caps.csv",
-    "portfolio_caps.json",
-    "stock_properties.csv"
-]
 
-# Variable categories for MILP solution 
-VARIABLE_CATEGORIES = {
-    "X": "Binäre Installationsentscheidungen",
-    "E": "Energiekapazitätsvariablen", 
-    "P": "Energiefluss-Variablen",
-    "Q": "Betriebsvariablen",
-    "Y": "Zusätzliche binäre Variablen",
-    "Z": "Kontinuierliche Betriebsvariablen"
-}
+def get_processed_results_path(use_case: str, scenario: str = None, mode: str = None) -> Path:
+    """Return the processed_results directory for a given use case.
 
-# Technology mappings (will be expanded based on actual data)
-TECHNOLOGY_CATEGORIES = {
-    "Heizung": ["boi_gas", "boi_oil", "boi_pel", "hp_air", "hp_geo_probe", "hp_geo_col", "chp", "eh", "dh"],
-    "Gebäudehülle": ["wall_1", "wall_2", "wall_3", "roof_1", "roof_2", "roof_3", "win_1", "win_2", "win_3"],
-    "Verteilung": ["rad_11", "rad_22", "rad_33", "ufh"],
-    "Speicher": ["tes", "tes_dhw", "bat"],
-    "Erneuerbare": ["pv_0", "stc_vt_0", "stc_fp_0"],
-    "Anschlüsse": ["_connection"]
-}
+    Structure: results/optiport/{scenario}/{mode}/processed_results/
+    If no scenario/mode given, falls back to results/optiport/processed_results/.
+    """
+    if scenario and mode:
+        return USE_CASES_PATH / use_case / "results" / "optiport" / scenario / mode / "processed_results"
+    if scenario:
+        return USE_CASES_PATH / use_case / "results" / "optiport" / scenario / "processed_results"
+    return USE_CASES_PATH / use_case / "results" / "optiport" / "processed_results"
+
+
+def get_scenarios_root(use_case: str) -> Path:
+    """Return the root folder containing all scenario subfolders for a use case."""
+    return USE_CASES_PATH / use_case / "results" / "optiport"
+
+
+def get_input_path(use_case: str) -> Path:
+    """Return the input data folder for a use case."""
+    return USE_CASES_PATH / use_case / "data" / "input"
+
 
 # Color schemes for visualizations
 COLOR_SCHEMES = {
     "technology": {
         "heating": "#FF6B6B",
-        "envelope": "#4ECDC4", 
+        "envelope": "#4ECDC4",
         "distribution": "#45B7D1",
         "storage": "#96CEB4",
         "renewable": "#FECA57",

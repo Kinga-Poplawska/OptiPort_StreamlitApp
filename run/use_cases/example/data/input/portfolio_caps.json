@@ -1,12 +1,6 @@
 {   
-"investment":{
-    "2026": 50000,
-    "2045": 50000,
-    "interpolate": true
-   },
-"district_heating":{
-    "2030": 20000,
-    "2045": 20000,
-    "interpolate": true
+"emissions":{
+    "2045": 10000,
+    "interpolate": false
    }
 }

@@ -1,0 +1,1612 @@
+\ Model benders_sp_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ exactly_one_building_eff[1,7]: Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_7_('wall_3','roof_1','win_1')_ufh = 1
+ conversion_efficiency[1,7,3,0,chp]: 100 P_in_1_7_3_0_chp_gas
+   - 175.7894736842105 P_out_1_7_3_0_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_0_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_0_chp_el
+   - 175.7894736842105 P_out_1_7_3_0_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_0_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_0_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_0_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_0_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,0,el_converter]:
+   100 P_in_1_7_3_0_el_converter_el_grid
+   - 100 P_out_1_7_3_0_el_converter_el = 0
+ conversion_efficiency[1,7,3,1,chp]: 100 P_in_1_7_3_1_chp_gas
+   - 175.7894736842105 P_out_1_7_3_1_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_1_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_1_chp_el
+   - 175.7894736842105 P_out_1_7_3_1_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_1_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_1_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_1_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_1_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,1,el_converter]:
+   100 P_in_1_7_3_1_el_converter_el_grid
+   - 100 P_out_1_7_3_1_el_converter_el = 0
+ conversion_efficiency[1,7,3,2,eh]: 100 P_in_1_7_3_2_eh_el
+   - 100 P_out_1_7_3_2_eh_dhw - 100 P_out_1_7_3_2_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_2_eh_th_pre_tes_2 - 100 P_out_1_7_3_2_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_2_eh_th_pre_tes_1 - 100 P_out_1_7_3_2_eh_th_pre_tes_3
+   = 0
+ conversion_efficiency[1,7,3,2,chp]: 100 P_in_1_7_3_2_chp_gas
+   - 175.7894736842105 P_out_1_7_3_2_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_2_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_2_chp_el
+   - 175.7894736842105 P_out_1_7_3_2_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_2_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_2_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_2_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_2_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,2,el_converter]:
+   100 P_in_1_7_3_2_el_converter_el_grid
+   - 100 P_out_1_7_3_2_el_converter_el = 0
+ conversion_efficiency[1,7,3,3,el_converter]:
+   100 P_in_1_7_3_3_el_converter_el_grid
+   - 100 P_out_1_7_3_3_el_converter_el = 0
+ conversion_efficiency[1,7,3,14,eh]: 100 P_in_1_7_3_14_eh_el
+   - 100 P_out_1_7_3_14_eh_dhw - 100 P_out_1_7_3_14_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_14_eh_th_pre_tes_2
+   - 100 P_out_1_7_3_14_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_14_eh_th_pre_tes_1
+   - 100 P_out_1_7_3_14_eh_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,14,chp]: 100 P_in_1_7_3_14_chp_gas
+   - 175.7894736842105 P_out_1_7_3_14_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_14_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_14_chp_el
+   - 175.7894736842105 P_out_1_7_3_14_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_14_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_14_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_14_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_14_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,14,el_converter]:
+   100 P_in_1_7_3_14_el_converter_el_grid
+   - 100 P_out_1_7_3_14_el_converter_el = 0
+ conversion_efficiency[1,7,3,15,eh]: 100 P_in_1_7_3_15_eh_el
+   - 100 P_out_1_7_3_15_eh_dhw - 100 P_out_1_7_3_15_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_15_eh_th_pre_tes_2
+   - 100 P_out_1_7_3_15_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_15_eh_th_pre_tes_1
+   - 100 P_out_1_7_3_15_eh_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,15,chp]: 100 P_in_1_7_3_15_chp_gas
+   - 175.7894736842105 P_out_1_7_3_15_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_15_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_15_chp_el
+   - 175.7894736842105 P_out_1_7_3_15_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_15_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_15_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_15_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_15_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,15,el_converter]:
+   100 P_in_1_7_3_15_el_converter_el_grid
+   - 100 P_out_1_7_3_15_el_converter_el = 0
+ conversion_efficiency[1,7,3,16,chp]: 100 P_in_1_7_3_16_chp_gas
+   - 175.7894736842105 P_out_1_7_3_16_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_16_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_16_chp_el
+   - 175.7894736842105 P_out_1_7_3_16_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_16_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_16_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_16_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_16_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,16,el_converter]:
+   100 P_in_1_7_3_16_el_converter_el_grid
+   - 100 P_out_1_7_3_16_el_converter_el = 0
+ conversion_efficiency[1,7,3,17,chp]: 100 P_in_1_7_3_17_chp_gas
+   - 175.7894736842105 P_out_1_7_3_17_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_17_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_17_chp_el
+   - 175.7894736842105 P_out_1_7_3_17_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_17_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_17_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_17_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_17_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,17,el_converter]:
+   100 P_in_1_7_3_17_el_converter_el_grid
+   - 100 P_out_1_7_3_17_el_converter_el = 0
+ conversion_efficiency[1,7,3,18,eh]: 100 P_in_1_7_3_18_eh_el
+   - 100 P_out_1_7_3_18_eh_dhw - 100 P_out_1_7_3_18_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_18_eh_th_pre_tes_2
+   - 100 P_out_1_7_3_18_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_18_eh_th_pre_tes_1
+   - 100 P_out_1_7_3_18_eh_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,18,chp]: 100 P_in_1_7_3_18_chp_gas
+   - 175.7894736842105 P_out_1_7_3_18_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_18_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_18_chp_el
+   - 175.7894736842105 P_out_1_7_3_18_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_18_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_18_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_18_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_18_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,18,el_converter]:
+   100 P_in_1_7_3_18_el_converter_el_grid
+   - 100 P_out_1_7_3_18_el_converter_el = 0
+ conversion_efficiency[1,7,3,19,chp]: 100 P_in_1_7_3_19_chp_gas
+   - 175.7894736842105 P_out_1_7_3_19_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_19_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_19_chp_el
+   - 175.7894736842105 P_out_1_7_3_19_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_19_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_19_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_19_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_19_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,19,el_converter]:
+   100 P_in_1_7_3_19_el_converter_el_grid
+   - 100 P_out_1_7_3_19_el_converter_el = 0
+ conversion_efficiency[1,7,3,20,chp]: 100 P_in_1_7_3_20_chp_gas
+   - 175.7894736842105 P_out_1_7_3_20_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_20_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_20_chp_el
+   - 175.7894736842105 P_out_1_7_3_20_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_20_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_20_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_20_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_20_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,20,el_converter]:
+   100 P_in_1_7_3_20_el_converter_el_grid
+   - 100 P_out_1_7_3_20_el_converter_el = 0
+ conversion_efficiency[1,7,3,21,eh]: 100 P_in_1_7_3_21_eh_el
+   - 100 P_out_1_7_3_21_eh_dhw - 100 P_out_1_7_3_21_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_21_eh_th_pre_tes_2
+   - 100 P_out_1_7_3_21_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_21_eh_th_pre_tes_1
+   - 100 P_out_1_7_3_21_eh_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,21,chp]: 100 P_in_1_7_3_21_chp_gas
+   - 175.7894736842105 P_out_1_7_3_21_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_21_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_21_chp_el
+   - 175.7894736842105 P_out_1_7_3_21_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_21_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_21_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_21_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_21_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,21,el_converter]:
+   100 P_in_1_7_3_21_el_converter_el_grid
+   - 100 P_out_1_7_3_21_el_converter_el = 0
+ conversion_efficiency[1,7,3,22,eh]: 100 P_in_1_7_3_22_eh_el
+   - 100 P_out_1_7_3_22_eh_dhw - 100 P_out_1_7_3_22_eh_th_pre_tes_4
+   - 100 P_out_1_7_3_22_eh_th_pre_tes_2
+   - 100 P_out_1_7_3_22_eh_th_pre_tes_0
+   - 100 P_out_1_7_3_22_eh_th_pre_tes_1
+   - 100 P_out_1_7_3_22_eh_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,22,chp]: 100 P_in_1_7_3_22_chp_gas
+   - 175.7894736842105 P_out_1_7_3_22_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_22_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_22_chp_el
+   - 175.7894736842105 P_out_1_7_3_22_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_22_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_22_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_22_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_22_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,22,el_converter]:
+   100 P_in_1_7_3_22_el_converter_el_grid
+   - 100 P_out_1_7_3_22_el_converter_el = 0
+ conversion_efficiency[1,7,3,23,chp]: 100 P_in_1_7_3_23_chp_gas
+   - 175.7894736842105 P_out_1_7_3_23_chp_dhw
+   - 175.7894736842105 P_out_1_7_3_23_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_7_3_23_chp_el
+   - 175.7894736842105 P_out_1_7_3_23_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_7_3_23_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_7_3_23_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_7_3_23_chp_th_pre_tes_1
+   - 175.7894736842105 P_out_1_7_3_23_chp_th_pre_tes_3 = 0
+ conversion_efficiency[1,7,3,23,el_converter]:
+   100 P_in_1_7_3_23_el_converter_el_grid
+   - 100 P_out_1_7_3_23_el_converter_el = 0
+ energy_transformation_coproduction[1,7,3,14,chp]:
+   - 67 P_out_1_7_3_14_chp_dhw - 67 P_out_1_7_3_14_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_14_chp_el + 100 P_out_1_7_3_14_chp_el_chp_grid
+   - 67 P_out_1_7_3_14_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_14_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_14_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_14_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,15,chp]:
+   - 67 P_out_1_7_3_15_chp_dhw - 67 P_out_1_7_3_15_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_15_chp_el + 100 P_out_1_7_3_15_chp_el_chp_grid
+   - 67 P_out_1_7_3_15_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_15_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_15_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_15_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,16,chp]:
+   - 67 P_out_1_7_3_16_chp_dhw - 67 P_out_1_7_3_16_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_16_chp_el + 100 P_out_1_7_3_16_chp_el_chp_grid
+   - 67 P_out_1_7_3_16_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_16_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_16_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_16_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,18,chp]:
+   - 67 P_out_1_7_3_18_chp_dhw - 67 P_out_1_7_3_18_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_18_chp_el + 100 P_out_1_7_3_18_chp_el_chp_grid
+   - 67 P_out_1_7_3_18_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_18_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_18_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_18_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,19,chp]:
+   - 67 P_out_1_7_3_19_chp_dhw - 67 P_out_1_7_3_19_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_19_chp_el + 100 P_out_1_7_3_19_chp_el_chp_grid
+   - 67 P_out_1_7_3_19_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_19_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_19_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_19_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,21,chp]:
+   - 67 P_out_1_7_3_21_chp_dhw - 67 P_out_1_7_3_21_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_21_chp_el + 100 P_out_1_7_3_21_chp_el_chp_grid
+   - 67 P_out_1_7_3_21_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_21_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_21_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_21_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,22,chp]:
+   - 67 P_out_1_7_3_22_chp_dhw - 67 P_out_1_7_3_22_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_22_chp_el + 100 P_out_1_7_3_22_chp_el_chp_grid
+   - 67 P_out_1_7_3_22_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_22_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_22_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_22_chp_th_pre_tes_3 = 0
+ energy_transformation_coproduction[1,7,3,23,chp]:
+   - 67 P_out_1_7_3_23_chp_dhw - 67 P_out_1_7_3_23_chp_th_pre_tes_4
+   + 100 P_out_1_7_3_23_chp_el + 100 P_out_1_7_3_23_chp_el_chp_grid
+   - 67 P_out_1_7_3_23_chp_th_pre_tes_2
+   - 67 P_out_1_7_3_23_chp_th_pre_tes_0
+   - 67 P_out_1_7_3_23_chp_th_pre_tes_1
+   - 67 P_out_1_7_3_23_chp_th_pre_tes_3 = 0
+ sto_balance[1,7,3,0,bat,0]: 1000 S_1_7_3_0_bat_0 - 990 S_1_7_3_23_bat_0
+   - 1000 R_in_1_7_3_0_bat_0_el + 1000 R_out_1_7_3_0_bat_0_el = 0
+ sto_balance[1,7,3,1,bat,0]: - 990 S_1_7_3_0_bat_0 + 1000 S_1_7_3_1_bat_0
+   - 1000 R_in_1_7_3_1_bat_0_el + 1000 R_out_1_7_3_1_bat_0_el = 0
+ sto_balance[1,7,3,2,bat,0]: - 990 S_1_7_3_1_bat_0 + 1000 S_1_7_3_2_bat_0
+   - 1000 R_in_1_7_3_2_bat_0_el + 1000 R_out_1_7_3_2_bat_0_el = 0
+ sto_balance[1,7,3,14,bat,0]: - 990 S_1_7_3_13_bat_0
+   + 1000 S_1_7_3_14_bat_0 - 1000 R_in_1_7_3_14_bat_0_el
+   + 1000 R_out_1_7_3_14_bat_0_el = 0
+ sto_balance[1,7,3,15,bat,0]: - 990 S_1_7_3_14_bat_0
+   + 1000 S_1_7_3_15_bat_0 - 1000 R_in_1_7_3_15_bat_0_el
+   + 1000 R_out_1_7_3_15_bat_0_el = 0
+ sto_balance[1,7,3,16,bat,0]: - 990 S_1_7_3_15_bat_0
+   + 1000 S_1_7_3_16_bat_0 - 1000 R_in_1_7_3_16_bat_0_el
+   + 1000 R_out_1_7_3_16_bat_0_el = 0
+ sto_balance[1,7,3,17,bat,0]: - 990 S_1_7_3_16_bat_0
+   + 1000 S_1_7_3_17_bat_0 - 1000 R_in_1_7_3_17_bat_0_el
+   + 1000 R_out_1_7_3_17_bat_0_el = 0
+ sto_balance[1,7,3,18,bat,0]: - 990 S_1_7_3_17_bat_0
+   + 1000 S_1_7_3_18_bat_0 - 1000 R_in_1_7_3_18_bat_0_el
+   + 1000 R_out_1_7_3_18_bat_0_el = 0
+ sto_balance[1,7,3,19,bat,0]: - 990 S_1_7_3_18_bat_0
+   + 1000 S_1_7_3_19_bat_0 - 1000 R_in_1_7_3_19_bat_0_el
+   + 1000 R_out_1_7_3_19_bat_0_el = 0
+ sto_balance[1,7,3,20,bat,0]: - 990 S_1_7_3_19_bat_0
+   + 1000 S_1_7_3_20_bat_0 - 1000 R_in_1_7_3_20_bat_0_el
+   + 1000 R_out_1_7_3_20_bat_0_el = 0
+ sto_balance[1,7,3,21,bat,0]: - 990 S_1_7_3_20_bat_0
+   + 1000 S_1_7_3_21_bat_0 - 1000 R_in_1_7_3_21_bat_0_el
+   + 1000 R_out_1_7_3_21_bat_0_el = 0
+ sto_balance[1,7,3,22,bat,0]: - 990 S_1_7_3_21_bat_0
+   + 1000 S_1_7_3_22_bat_0 - 1000 R_in_1_7_3_22_bat_0_el
+   + 1000 R_out_1_7_3_22_bat_0_el = 0
+ sto_balance[1,7,3,23,bat,0]: - 990 S_1_7_3_22_bat_0
+   + 1000 S_1_7_3_23_bat_0 - 1000 R_in_1_7_3_23_bat_0_el
+   + 1000 R_out_1_7_3_23_bat_0_el = 0
+ max_size_sto[1,7,3,13,bat]: - 1000 E_avail_1_7_bat + 1000 S_1_7_3_13_bat_0
+   <= 0
+ max_size_sto[1,7,3,17,bat]: - 1000 E_avail_1_7_bat + 1000 S_1_7_3_17_bat_0
+   <= 0
+ energy_balance[1,7,3,0,el]:
+   34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_0_hp_geo_probe_el + 100 P_in_1_7_3_0_eh_el
+   + 100 P_in_1_7_3_0_hp_air_el + 100 P_in_1_7_3_0_hp_geo_col_el
+   - 100 P_out_1_7_3_0_chp_el - 100 P_out_1_7_3_0_el_converter_el
+   + 1000 R_in_1_7_3_0_bat_0_el - 1000 R_out_1_7_3_0_bat_0_el = 0
+ energy_balance[1,7,3,1,el]:
+   34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_1_hp_geo_probe_el + 100 P_in_1_7_3_1_eh_el
+   + 100 P_in_1_7_3_1_hp_air_el + 100 P_in_1_7_3_1_hp_geo_col_el
+   - 100 P_out_1_7_3_1_chp_el - 100 P_out_1_7_3_1_el_converter_el
+   + 1000 R_in_1_7_3_1_bat_0_el - 1000 R_out_1_7_3_1_bat_0_el = 0
+ energy_balance[1,7,3,2,el]:
+   34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 34.82382564911667 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_2_hp_geo_probe_el + 100 P_in_1_7_3_2_eh_el
+   + 100 P_in_1_7_3_2_hp_air_el + 100 P_in_1_7_3_2_hp_geo_col_el
+   - 100 P_out_1_7_3_2_chp_el - 100 P_out_1_7_3_2_el_converter_el
+   + 1000 R_in_1_7_3_2_bat_0_el - 1000 R_out_1_7_3_2_bat_0_el = 0
+ energy_balance[1,7,3,14,el]:
+   136.7862581237935 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 136.7862581237935 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_14_hp_geo_probe_el + 100 P_in_1_7_3_14_eh_el
+   + 100 P_in_1_7_3_14_hp_air_el + 100 P_in_1_7_3_14_hp_geo_col_el
+   - 100 P_out_1_7_3_14_chp_el - 100 P_out_1_7_3_14_el_converter_el
+   + 1000 R_in_1_7_3_14_bat_0_el - 1000 R_out_1_7_3_14_bat_0_el = 0
+ energy_balance[1,7,3,15,el]:
+   100.303322835321 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 100.303322835321 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_15_hp_geo_probe_el + 100 P_in_1_7_3_15_eh_el
+   + 100 P_in_1_7_3_15_hp_air_el + 100 P_in_1_7_3_15_hp_geo_col_el
+   - 100 P_out_1_7_3_15_chp_el - 100 P_out_1_7_3_15_el_converter_el
+   + 1000 R_in_1_7_3_15_bat_0_el - 1000 R_out_1_7_3_15_bat_0_el = 0
+ energy_balance[1,7,3,16,el]:
+   2206.772399141322 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 2206.772399141322 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_16_hp_geo_probe_el + 100 P_in_1_7_3_16_eh_el
+   + 100 P_in_1_7_3_16_hp_air_el + 100 P_in_1_7_3_16_hp_geo_col_el
+   - 100 P_out_1_7_3_16_chp_el - 100 P_out_1_7_3_16_el_converter_el
+   + 1000 R_in_1_7_3_16_bat_0_el - 1000 R_out_1_7_3_16_bat_0_el = 0
+ energy_balance[1,7,3,17,el]:
+   152.5601432269566 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 152.5601432269566 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_17_hp_geo_probe_el + 100 P_in_1_7_3_17_eh_el
+   + 100 P_in_1_7_3_17_hp_air_el + 100 P_in_1_7_3_17_hp_geo_col_el
+   - 100 P_out_1_7_3_17_chp_el - 100 P_out_1_7_3_17_el_converter_el
+   + 1000 R_in_1_7_3_17_bat_0_el - 1000 R_out_1_7_3_17_bat_0_el = 0
+ energy_balance[1,7,3,18,el]:
+   147.1626315626514 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 147.1626315626514 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_18_hp_geo_probe_el + 100 P_in_1_7_3_18_eh_el
+   + 100 P_in_1_7_3_18_hp_air_el + 100 P_in_1_7_3_18_hp_geo_col_el
+   - 100 P_out_1_7_3_18_chp_el - 100 P_out_1_7_3_18_el_converter_el
+   + 1000 R_in_1_7_3_18_bat_0_el - 1000 R_out_1_7_3_18_bat_0_el = 0
+ energy_balance[1,7,3,19,el]:
+   2220.600706920587 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 2220.600706920587 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_19_hp_geo_probe_el + 100 P_in_1_7_3_19_eh_el
+   + 100 P_in_1_7_3_19_hp_air_el + 100 P_in_1_7_3_19_hp_geo_col_el
+   - 100 P_out_1_7_3_19_chp_el - 100 P_out_1_7_3_19_el_converter_el
+   + 1000 R_in_1_7_3_19_bat_0_el - 1000 R_out_1_7_3_19_bat_0_el = 0
+ energy_balance[1,7,3,20,el]:
+   152.7736638628032 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 152.7736638628032 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_20_hp_geo_probe_el + 100 P_in_1_7_3_20_eh_el
+   + 100 P_in_1_7_3_20_hp_air_el + 100 P_in_1_7_3_20_hp_geo_col_el
+   - 100 P_out_1_7_3_20_chp_el - 100 P_out_1_7_3_20_el_converter_el
+   + 1000 R_in_1_7_3_20_bat_0_el - 1000 R_out_1_7_3_20_bat_0_el = 0
+ energy_balance[1,7,3,21,el]:
+   146.9825013712612 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 146.9825013712612 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_21_hp_geo_probe_el + 100 P_in_1_7_3_21_eh_el
+   + 100 P_in_1_7_3_21_hp_air_el + 100 P_in_1_7_3_21_hp_geo_col_el
+   - 100 P_out_1_7_3_21_chp_el - 100 P_out_1_7_3_21_el_converter_el
+   + 1000 R_in_1_7_3_21_bat_0_el - 1000 R_out_1_7_3_21_bat_0_el = 0
+ energy_balance[1,7,3,22,el]:
+   302.5382873106435 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 302.5382873106435 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_22_hp_geo_probe_el + 100 P_in_1_7_3_22_eh_el
+   + 100 P_in_1_7_3_22_hp_air_el + 100 P_in_1_7_3_22_hp_geo_col_el
+   - 100 P_out_1_7_3_22_chp_el - 100 P_out_1_7_3_22_el_converter_el
+   + 1000 R_in_1_7_3_22_bat_0_el - 1000 R_out_1_7_3_22_bat_0_el = 0
+ energy_balance[1,7,3,23,el]:
+   452.5906905979155 Y_1_7_('wall_1','roof_2','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_2','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_3','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_1','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_1','roof_3','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_2','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_3','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_1','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_2','roof_2','win_1')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_3')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_3')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_3')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_3')_ufh
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_1')_rad_33
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_1')_rad_11
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_1')_rad_22
+   + 452.5906905979155 Y_1_7_('wall_3','roof_1','win_1')_ufh
+   + 100 P_in_1_7_3_23_hp_geo_probe_el + 100 P_in_1_7_3_23_eh_el
+   + 100 P_in_1_7_3_23_hp_air_el + 100 P_in_1_7_3_23_hp_geo_col_el
+   - 100 P_out_1_7_3_23_chp_el - 100 P_out_1_7_3_23_el_converter_el
+   + 1000 R_in_1_7_3_23_bat_0_el - 1000 R_out_1_7_3_23_bat_0_el = 0
+ def_W_in[1,7,3,gas]: - 100 P_in_1_7_3_0_boi_gas_gas
+   - 100 P_in_1_7_3_0_chp_gas - 100 P_in_1_7_3_1_boi_gas_gas
+   - 100 P_in_1_7_3_1_chp_gas - 100 P_in_1_7_3_2_boi_gas_gas
+   - 100 P_in_1_7_3_2_chp_gas - 100 P_in_1_7_3_3_boi_gas_gas
+   - 100 P_in_1_7_3_3_chp_gas - 100 P_in_1_7_3_4_boi_gas_gas
+   - 100 P_in_1_7_3_4_chp_gas - 100 P_in_1_7_3_5_boi_gas_gas
+   - 100 P_in_1_7_3_5_chp_gas - 100 P_in_1_7_3_6_boi_gas_gas
+   - 100 P_in_1_7_3_6_chp_gas - 100 P_in_1_7_3_7_boi_gas_gas
+   - 100 P_in_1_7_3_7_chp_gas - 100 P_in_1_7_3_8_boi_gas_gas
+   - 100 P_in_1_7_3_8_chp_gas - 100 P_in_1_7_3_9_boi_gas_gas
+   - 100 P_in_1_7_3_9_chp_gas - 100 P_in_1_7_3_10_boi_gas_gas
+   - 100 P_in_1_7_3_10_chp_gas - 100 P_in_1_7_3_11_boi_gas_gas
+   - 100 P_in_1_7_3_11_chp_gas - 100 P_in_1_7_3_12_boi_gas_gas
+   - 100 P_in_1_7_3_12_chp_gas - 100 P_in_1_7_3_13_boi_gas_gas
+   - 100 P_in_1_7_3_13_chp_gas - 100 P_in_1_7_3_14_boi_gas_gas
+   - 100 P_in_1_7_3_14_chp_gas - 100 P_in_1_7_3_15_boi_gas_gas
+   - 100 P_in_1_7_3_15_chp_gas - 100 P_in_1_7_3_16_boi_gas_gas
+   - 100 P_in_1_7_3_16_chp_gas - 100 P_in_1_7_3_17_boi_gas_gas
+   - 100 P_in_1_7_3_17_chp_gas - 100 P_in_1_7_3_18_boi_gas_gas
+   - 100 P_in_1_7_3_18_chp_gas - 100 P_in_1_7_3_19_boi_gas_gas
+   - 100 P_in_1_7_3_19_chp_gas - 100 P_in_1_7_3_20_boi_gas_gas
+   - 100 P_in_1_7_3_20_chp_gas - 100 P_in_1_7_3_21_boi_gas_gas
+   - 100 P_in_1_7_3_21_chp_gas - 100 P_in_1_7_3_22_boi_gas_gas
+   - 100 P_in_1_7_3_22_chp_gas - 100 P_in_1_7_3_23_boi_gas_gas
+   - 100 P_in_1_7_3_23_chp_gas + 1000 W_in_1_7_3_gas = 0
+ def_W_in[1,7,3,el_grid]: - 100 P_in_1_7_3_0_el_converter_el_grid
+   - 100 P_in_1_7_3_1_el_converter_el_grid
+   - 100 P_in_1_7_3_2_el_converter_el_grid
+   - 100 P_in_1_7_3_3_el_converter_el_grid
+   - 100 P_in_1_7_3_4_el_converter_el_grid
+   - 100 P_in_1_7_3_5_el_converter_el_grid
+   - 100 P_in_1_7_3_6_el_converter_el_grid
+   - 100 P_in_1_7_3_7_el_converter_el_grid
+   - 100 P_in_1_7_3_8_el_converter_el_grid
+   - 100 P_in_1_7_3_9_el_converter_el_grid
+   - 100 P_in_1_7_3_10_el_converter_el_grid
+   - 100 P_in_1_7_3_11_el_converter_el_grid
+   - 100 P_in_1_7_3_12_el_converter_el_grid
+   - 100 P_in_1_7_3_13_el_converter_el_grid
+   - 100 P_in_1_7_3_14_el_converter_el_grid
+   - 100 P_in_1_7_3_15_el_converter_el_grid
+   - 100 P_in_1_7_3_16_el_converter_el_grid
+   - 100 P_in_1_7_3_17_el_converter_el_grid
+   - 100 P_in_1_7_3_18_el_converter_el_grid
+   - 100 P_in_1_7_3_19_el_converter_el_grid
+   - 100 P_in_1_7_3_20_el_converter_el_grid
+   - 100 P_in_1_7_3_21_el_converter_el_grid
+   - 100 P_in_1_7_3_22_el_converter_el_grid
+   - 100 P_in_1_7_3_23_el_converter_el_grid + 1000 W_in_1_7_3_el_grid = 0
+ C_en_ten_definition_sp[1,7]: - 7.483221620418828 W_in_1_7_0_th_dh
+   - 7.418478708097416 W_in_1_7_0_gas - 8.210743424496171 W_in_1_7_0_oil
+   - 4.249419842502403 W_in_1_7_0_pel
+   - 21.75126766840214 W_in_1_7_0_el_grid
+   - 15.55719806746643 W_in_1_7_0_el_hp_grid
+   - 4.018767166521222 W_in_1_7_1_th_dh - 3.983997824718983 W_in_1_7_1_gas
+   - 4.409473320562759 W_in_1_7_1_oil - 2.282095841343883 W_in_1_7_1_pel
+   - 11.68123634043818 W_in_1_7_1_el_grid
+   - 8.354791554750488 W_in_1_7_1_el_hp_grid
+   - 9.977628827225104 W_in_1_7_2_th_dh - 9.891304944129889 W_in_1_7_2_gas
+   - 10.94765789932823 W_in_1_7_2_oil - 5.665893123336538 W_in_1_7_2_pel
+   - 29.00169022453618 W_in_1_7_2_el_grid
+   - 20.7429307566219 W_in_1_7_2_el_hp_grid
+   - 11.91772332140776 W_in_1_7_3_th_dh - 11.81461423882181 W_in_1_7_3_gas
+   - 13.07636915753094 W_in_1_7_3_oil - 6.767594563985309 W_in_1_7_3_pel
+   - 34.64090776819599 W_in_1_7_3_el_grid
+   - 24.77627840374283 W_in_1_7_3_el_hp_grid
+   - 8.730425223821966 W_in_1_7_4_th_dh - 8.654891826113653 W_in_1_7_4_gas
+   - 9.579200661912198 W_in_1_7_4_oil - 4.957656482919471 W_in_1_7_4_pel
+   - 25.37647894646916 W_in_1_7_4_el_grid
+   - 18.15006441204416 W_in_1_7_4_el_hp_grid
+   - 8.453268867510157 W_in_1_7_5_th_dh - 8.380133355443377 W_in_1_7_5_gas
+   - 9.275099053597526 W_in_1_7_5_oil - 4.800270562826789 W_in_1_7_5_pel
+   - 24.57087644023204 W_in_1_7_5_el_grid
+   - 17.57387189102689 W_in_1_7_5_el_hp_grid + 100000 C_en_ten_1_7 = 0
+ Lambda_link[1,7]: 100000 Lambda_1_7 - C_warm_buf_1_7 - 100000 C_en_ten_1_7
+   >= 0
+ Theta_en_fossil_link[1,7]: 12.96 W_in_1_7_0_gas + 16.74 W_in_1_7_0_oil
+   + 6.96 W_in_1_7_1_gas + 8.99 W_in_1_7_1_oil + 17.28 W_in_1_7_2_gas
+   + 22.32 W_in_1_7_2_oil + 20.64 W_in_1_7_3_gas + 26.66 W_in_1_7_3_oil
+   + 15.12 W_in_1_7_4_gas + 19.53 W_in_1_7_4_oil + 14.64 W_in_1_7_5_gas
+   + 18.91 W_in_1_7_5_oil - 1000 Theta_en_fossil_1_7 <= 0
+Bounds
+ -infinity <= E_avail_1_7_bat <= 0
+ Y_1_7_('wall_1','roof_2','win_3')_rad_33 free
+ Y_1_7_('wall_1','roof_2','win_3')_rad_11 free
+ Y_1_7_('wall_1','roof_2','win_3')_rad_22 free
+ Y_1_7_('wall_1','roof_2','win_3')_ufh free
+ Y_1_7_('wall_1','roof_2','win_1')_rad_33 free
+ Y_1_7_('wall_1','roof_2','win_1')_rad_11 free
+ Y_1_7_('wall_1','roof_2','win_1')_rad_22 free
+ Y_1_7_('wall_1','roof_2','win_1')_ufh free
+ Y_1_7_('wall_1','roof_3','win_3')_rad_33 free
+ Y_1_7_('wall_1','roof_3','win_3')_rad_11 free
+ Y_1_7_('wall_1','roof_3','win_3')_rad_22 free
+ Y_1_7_('wall_1','roof_3','win_3')_ufh free
+ Y_1_7_('wall_2','roof_3','win_3')_rad_33 free
+ Y_1_7_('wall_2','roof_3','win_3')_rad_11 free
+ Y_1_7_('wall_2','roof_3','win_3')_rad_22 free
+ Y_1_7_('wall_2','roof_3','win_3')_ufh free
+ Y_1_7_('wall_2','roof_3','win_1')_rad_33 free
+ Y_1_7_('wall_2','roof_3','win_1')_rad_11 free
+ Y_1_7_('wall_2','roof_3','win_1')_rad_22 free
+ Y_1_7_('wall_2','roof_3','win_1')_ufh free
+ Y_1_7_('wall_1','roof_1','win_3')_rad_33 free
+ Y_1_7_('wall_1','roof_1','win_3')_rad_11 free
+ Y_1_7_('wall_1','roof_1','win_3')_rad_22 free
+ Y_1_7_('wall_1','roof_1','win_3')_ufh free
+ Y_1_7_('wall_1','roof_1','win_1')_rad_33 free
+ Y_1_7_('wall_1','roof_1','win_1')_rad_11 free
+ Y_1_7_('wall_1','roof_1','win_1')_rad_22 free
+ Y_1_7_('wall_1','roof_1','win_1')_ufh free
+ Y_1_7_('wall_1','roof_3','win_1')_rad_33 free
+ Y_1_7_('wall_1','roof_3','win_1')_rad_11 free
+ Y_1_7_('wall_1','roof_3','win_1')_rad_22 free
+ Y_1_7_('wall_1','roof_3','win_1')_ufh free
+ Y_1_7_('wall_3','roof_2','win_3')_rad_33 free
+ Y_1_7_('wall_3','roof_2','win_3')_rad_11 free
+ Y_1_7_('wall_3','roof_2','win_3')_rad_22 free
+ Y_1_7_('wall_3','roof_2','win_3')_ufh free
+ Y_1_7_('wall_3','roof_3','win_3')_rad_33 free
+ Y_1_7_('wall_3','roof_3','win_3')_rad_11 free
+ Y_1_7_('wall_3','roof_3','win_3')_rad_22 free
+ Y_1_7_('wall_3','roof_3','win_3')_ufh free
+ Y_1_7_('wall_3','roof_2','win_1')_rad_33 free
+ Y_1_7_('wall_3','roof_2','win_1')_rad_11 free
+ Y_1_7_('wall_3','roof_2','win_1')_rad_22 free
+ Y_1_7_('wall_3','roof_2','win_1')_ufh free
+ Y_1_7_('wall_2','roof_1','win_3')_rad_33 free
+ Y_1_7_('wall_2','roof_1','win_3')_rad_11 free
+ Y_1_7_('wall_2','roof_1','win_3')_rad_22 free
+ Y_1_7_('wall_2','roof_1','win_3')_ufh free
+ Y_1_7_('wall_3','roof_3','win_1')_rad_33 free
+ Y_1_7_('wall_3','roof_3','win_1')_rad_11 free
+ Y_1_7_('wall_3','roof_3','win_1')_rad_22 free
+ Y_1_7_('wall_3','roof_3','win_1')_ufh free
+ Y_1_7_('wall_2','roof_1','win_1')_rad_33 free
+ Y_1_7_('wall_2','roof_1','win_1')_rad_11 free
+ Y_1_7_('wall_2','roof_1','win_1')_rad_22 free
+ Y_1_7_('wall_2','roof_1','win_1')_ufh free
+ Y_1_7_('wall_2','roof_2','win_3')_rad_33 free
+ Y_1_7_('wall_2','roof_2','win_3')_rad_11 free
+ Y_1_7_('wall_2','roof_2','win_3')_rad_22 free
+ Y_1_7_('wall_2','roof_2','win_3')_ufh free
+ Y_1_7_('wall_2','roof_2','win_1')_rad_33 free
+ Y_1_7_('wall_2','roof_2','win_1')_rad_11 free
+ Y_1_7_('wall_2','roof_2','win_1')_rad_22 free
+ Y_1_7_('wall_2','roof_2','win_1')_ufh free
+ Y_1_7_('wall_3','roof_1','win_3')_rad_33 free
+ Y_1_7_('wall_3','roof_1','win_3')_rad_11 free
+ Y_1_7_('wall_3','roof_1','win_3')_rad_22 free
+ Y_1_7_('wall_3','roof_1','win_3')_ufh free
+ Y_1_7_('wall_3','roof_1','win_1')_rad_33 free
+ Y_1_7_('wall_3','roof_1','win_1')_rad_11 free
+ Y_1_7_('wall_3','roof_1','win_1')_rad_22 free
+ Y_1_7_('wall_3','roof_1','win_1')_ufh free
+ P_in_1_7_3_0_chp_gas free
+ P_in_1_7_3_0_el_converter_el_grid free
+ P_in_1_7_3_1_chp_gas free
+ P_in_1_7_3_1_el_converter_el_grid free
+ P_in_1_7_3_2_eh_el free
+ P_in_1_7_3_2_chp_gas free
+ P_in_1_7_3_2_el_converter_el_grid free
+ P_in_1_7_3_3_el_converter_el_grid free
+ P_in_1_7_3_14_eh_el free
+ P_in_1_7_3_14_chp_gas free
+ P_in_1_7_3_15_eh_el free
+ P_in_1_7_3_15_chp_gas free
+ P_in_1_7_3_16_chp_gas free
+ P_in_1_7_3_16_el_converter_el_grid free
+ P_in_1_7_3_17_chp_gas free
+ P_in_1_7_3_17_el_converter_el_grid free
+ P_in_1_7_3_18_eh_el free
+ P_in_1_7_3_18_chp_gas free
+ P_in_1_7_3_19_chp_gas free
+ P_in_1_7_3_19_el_converter_el_grid free
+ P_in_1_7_3_20_chp_gas free
+ P_in_1_7_3_20_el_converter_el_grid free
+ P_in_1_7_3_21_eh_el free
+ P_in_1_7_3_21_chp_gas free
+ P_in_1_7_3_22_eh_el free
+ P_in_1_7_3_22_chp_gas free
+ P_in_1_7_3_23_chp_gas free
+ P_in_1_7_3_23_el_converter_el_grid free
+ P_out_1_7_3_0_chp_el free
+ P_out_1_7_3_1_chp_el free
+ P_out_1_7_3_2_chp_el free
+ P_out_1_7_3_14_chp_el free
+ P_out_1_7_3_14_el_converter_el free
+ P_out_1_7_3_15_chp_el free
+ P_out_1_7_3_15_el_converter_el free
+ P_out_1_7_3_16_chp_el free
+ P_out_1_7_3_16_el_converter_el free
+ P_out_1_7_3_17_chp_el free
+ P_out_1_7_3_18_chp_el free
+ P_out_1_7_3_18_el_converter_el free
+ P_out_1_7_3_19_chp_el free
+ P_out_1_7_3_19_el_converter_el free
+ P_out_1_7_3_20_chp_el free
+ P_out_1_7_3_21_chp_el free
+ P_out_1_7_3_21_el_converter_el free
+ P_out_1_7_3_22_chp_el free
+ P_out_1_7_3_22_el_converter_el free
+ P_out_1_7_3_23_chp_el free
+ P_out_1_7_3_23_el_converter_el free
+ S_1_7_3_13_bat_0 free
+ S_1_7_3_14_bat_0 free
+ S_1_7_3_15_bat_0 free
+ S_1_7_3_17_bat_0 free
+ S_1_7_3_18_bat_0 free
+ S_1_7_3_20_bat_0 free
+ S_1_7_3_21_bat_0 free
+ S_1_7_3_22_bat_0 free
+ R_in_1_7_3_0_bat_0_el free
+ R_in_1_7_3_1_bat_0_el free
+ R_in_1_7_3_2_bat_0_el free
+ R_in_1_7_3_14_bat_0_el free
+ R_in_1_7_3_15_bat_0_el free
+ R_in_1_7_3_16_bat_0_el free
+ R_in_1_7_3_17_bat_0_el free
+ R_in_1_7_3_18_bat_0_el free
+ R_in_1_7_3_19_bat_0_el free
+ R_in_1_7_3_20_bat_0_el free
+ R_in_1_7_3_21_bat_0_el free
+ R_in_1_7_3_22_bat_0_el free
+ R_in_1_7_3_23_bat_0_el free
+ R_out_1_7_3_0_bat_0_el free
+ R_out_1_7_3_1_bat_0_el free
+ R_out_1_7_3_2_bat_0_el free
+ R_out_1_7_3_14_bat_0_el free
+ R_out_1_7_3_15_bat_0_el free
+ R_out_1_7_3_16_bat_0_el free
+ R_out_1_7_3_17_bat_0_el free
+ R_out_1_7_3_18_bat_0_el free
+ R_out_1_7_3_19_bat_0_el free
+ R_out_1_7_3_20_bat_0_el free
+ R_out_1_7_3_21_bat_0_el free
+ R_out_1_7_3_22_bat_0_el free
+ R_out_1_7_3_23_bat_0_el free
+ W_in_1_7_3_gas free
+ W_in_1_7_3_el_grid free
+ -infinity <= Lambda_1_7 <= -0.0209898697007116
+ -infinity <= Theta_en_fossil_1_7 <= 0
+ C_en_ten_1_7 free
+End

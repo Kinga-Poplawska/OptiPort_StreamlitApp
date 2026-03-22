@@ -16,6 +16,7 @@ COLUMN_TRANSLATIONS = {
     'num_floors': 'Stockwerke',
     'num_flats': 'Wohnungen',
     'persons_per_apartment': 'Personen pro Wohnung',
+    'persons_per_appartment': 'Personen pro Wohnung',
     
     # Envelope components
     'ex_wall': 'Wandklasse',
@@ -104,7 +105,9 @@ FILE_TRANSLATIONS = {
 TECHNOLOGY_TRANSLATIONS = {
     # Heating systems
     'boi_gas': 'Gaskessel',
+    'boi_ga': 'Gaskessel',  # Abbreviated variant
     'boi_oil': 'Ölkessel',
+    'boi_oi': 'Ölkessel',   # Abbreviated variant
     'boi_pel': 'Pelletkessel',
     'hp_air': 'Luft-Wärmepumpe',
     'hp_geo_probe': 'Erdwärmepumpe (Sonde)',
@@ -124,6 +127,9 @@ TECHNOLOGY_TRANSLATIONS = {
     'win_1': 'Fenster Klasse 1',
     'win_2': 'Fenster Klasse 2',
     'win_3': 'Fenster Klasse 3',
+    'hull_1': 'Gebäudehülle Klasse 1',
+    'hull_2': 'Gebäudehülle Klasse 2',
+    'hull_3': 'Gebäudehülle Klasse 3',
     
     # Distribution systems
     'rad_11': 'Heizkörpertyp 11',
@@ -132,8 +138,8 @@ TECHNOLOGY_TRANSLATIONS = {
     'ufh': 'Fußbodenheizung',
     
     # Storage systems
-    'tes': 'Wärmespeicher',
-    'tes_dhw': 'Warmwasserspeicher',
+    'tes': 'Pufferspeicher',
+    'tes_dhw': 'Trinkwarmwasserspeicher',
     'bat': 'Batterie',
     
     # Renewables
@@ -143,6 +149,15 @@ TECHNOLOGY_TRANSLATIONS = {
     
     # Connections
     '_connection': 'Netzanschluss',
+    'boi_gas_connection': 'Anschluss Gaskessel',
+    'boi_oil_connection': 'Anschluss Ölkessel',
+    'boi_pel_connection': 'Anschluss Pelletkessel',
+    'hp_air_connection': 'Anschluss Luft-Wärmepumpe',
+    'hp_geo_probe_connection': 'Anschluss Erdwärmepumpe (Sonde)',
+    'hp_geo_col_connection': 'Anschluss Erdwärmepumpe (Kollektor)',
+    'chp_connection': 'Anschluss BHKW',
+    'dh_connection': 'Anschluss Fernwärme',
+    'eh_connection': 'Anschluss Elektroheizung',
     
     # System descriptions
     'gas_boiler': 'Gaskessel',
@@ -163,6 +178,20 @@ TECHNOLOGY_TRANSLATIONS = {
     'battery': 'Batterie'
 }
 
+# Energy carrier translations
+ENERGY_CARRIER_TRANSLATIONS = {
+    'gas': 'Erdgas',
+    'biogas': 'Biogas',
+    'el_grid': 'Netzstrom',
+    'el_hp_grid': 'Strom (Wärmepumpe)',
+    'el_pv_grid': 'PV-Einspeisung',
+    'el_chp_grid': 'KWK-Einspeisung',
+    'oil': 'Heizöl',
+    'pel': 'Pellets',
+    'sol': 'Solarthermie',
+    'th_dh': 'Fernwärme',
+}
+
 def get_column_translation(column_name):
     """Get German translation for a column name"""
     return COLUMN_TRANSLATIONS.get(column_name, column_name)
@@ -177,3 +206,10 @@ def get_technology_translation(tech_name):
     if tech_name is None or tech_name.lower() == 'none' or tech_name.strip() == '':
         return '—'  # Unicode em dash
     return TECHNOLOGY_TRANSLATIONS.get(tech_name, tech_name)
+
+
+def get_energy_carrier_translation(carrier_name):
+    """Get German translation for an energy carrier name."""
+    if carrier_name is None:
+        return '—'
+    return ENERGY_CARRIER_TRANSLATIONS.get(carrier_name, carrier_name)

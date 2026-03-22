@@ -2,7 +2,7 @@
 Sidebar navigation component
 """
 import streamlit as st
-from typing import Dict, List
+from typing import Dict
 
 class Sidebar:
     """Main sidebar navigation component"""
@@ -13,29 +13,36 @@ class Sidebar:
         
     def render(self) -> str:
         """Render sidebar and return selected page"""
-        
+
+        pages = [
+            "Über das Projekt",
+            "Portfolio-Übersicht",
+            "Optimierungsergebnisse",
+        ]
+
+        # Sync radio to programmatically set page (e.g. from a button click)
+        current = st.session_state.get("current_page", pages[0])
+        default_index = pages.index(current) if current in pages else 0
+
         with st.sidebar:
             # App header
             st.title(f"{self.app_icon} {self.app_title}")
             st.markdown("---")
-            
+
             # Navigation menu
             st.subheader("Navigation")
-            
+
             page = st.radio(
                 "Wähle eine Seite:",
-                [
-                    "Portfolio-Übersicht",
-                    "Optimierungsergebnisse", 
-                    "Neues Portfolio"
-                ],
-                key="navigation_radio"
+                pages,
+                index=default_index,
+                key="navigation_radio",
             )
-            
+
             # Footer
             st.markdown("---")
             st.caption("OptiPort WebApp Prototyp")
-            
+
         return page
 
 class StatusIndicator:

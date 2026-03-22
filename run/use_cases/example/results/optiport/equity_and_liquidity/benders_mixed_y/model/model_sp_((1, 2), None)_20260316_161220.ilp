@@ -1,0 +1,150 @@
+\ Model benders_sp_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ sto_balance[1,2,0,9,tes,0]: 9.618386457307269 E_avail_1_2_tes
+   - 997.6399820923939 S_1_2_0_8_tes_0 + 1000 S_1_2_0_9_tes_0
+   - 1000 R_in_1_2_0_9_tes_0_th_pre_tes_0 - 1000 R_in_1_2_0_9_tes_0_th
+   + 1000 R_out_1_2_0_9_tes_0_th_pre_tes_0
+   + 1000 R_out_1_2_0_9_tes_0_th_pre_tes_1
+   + 1000 R_out_1_2_0_9_tes_0_th_pre_tes_2
+   + 1000 R_out_1_2_0_9_tes_0_th_pre_tes_3
+   + 1000 R_out_1_2_0_9_tes_0_th_pre_tes_4 + 1000 R_out_1_2_0_9_tes_0_th
+   = 0
+ sto_balance[1,2,0,9,tes,1]: - 0.3390356819387472 E_avail_1_2_tes
+   - 2.360017907606089 S_1_2_0_8_tes_0 - 998.0706041019633 S_1_2_0_8_tes_1
+   + 1000 S_1_2_0_9_tes_1 - 1000 R_in_1_2_0_9_tes_1_th_pre_tes_1
+   - 1000 R_in_1_2_0_9_tes_1_th + 1000 R_out_1_2_0_9_tes_1_th_pre_tes_0
+   + 1000 R_out_1_2_0_9_tes_1_th_pre_tes_1
+   + 1000 R_out_1_2_0_9_tes_1_th_pre_tes_2
+   + 1000 R_out_1_2_0_9_tes_1_th_pre_tes_3
+   + 1000 R_out_1_2_0_9_tes_1_th_pre_tes_4 + 1000 R_out_1_2_0_9_tes_1_th
+   = 0
+ sto_balance[1,2,0,9,tes,2]: - 1.929395898036712 S_1_2_0_8_tes_1
+   - 998.5012261115327 S_1_2_0_8_tes_2 + 1000 S_1_2_0_9_tes_2
+   - 1000 R_in_1_2_0_9_tes_2_th_pre_tes_2 - 1000 R_in_1_2_0_9_tes_2_th
+   + 1000 R_out_1_2_0_9_tes_2_th_pre_tes_0
+   + 1000 R_out_1_2_0_9_tes_2_th_pre_tes_1
+   + 1000 R_out_1_2_0_9_tes_2_th_pre_tes_2
+   + 1000 R_out_1_2_0_9_tes_2_th_pre_tes_3
+   + 1000 R_out_1_2_0_9_tes_2_th_pre_tes_4 + 1000 R_out_1_2_0_9_tes_2_th
+   = 0
+ sto_balance[1,2,0,9,tes,3]: - 1.498773888467334 S_1_2_0_8_tes_2
+   - 998.931848121102 S_1_2_0_8_tes_3 + 1000 S_1_2_0_9_tes_3
+   - 1000 R_in_1_2_0_9_tes_3_th_pre_tes_3 - 1000 R_in_1_2_0_9_tes_3_th
+   + 1000 R_out_1_2_0_9_tes_3_th_pre_tes_0
+   + 1000 R_out_1_2_0_9_tes_3_th_pre_tes_1
+   + 1000 R_out_1_2_0_9_tes_3_th_pre_tes_2
+   + 1000 R_out_1_2_0_9_tes_3_th_pre_tes_3
+   + 1000 R_out_1_2_0_9_tes_3_th_pre_tes_4 + 1000 R_out_1_2_0_9_tes_3_th
+   = 0
+ sto_balance[1,2,0,9,tes,4]: - 9.279350775368524 E_avail_1_2_tes
+   - 1.068151878897956 S_1_2_0_8_tes_3 - 1000 S_1_2_0_8_tes_4
+   + 1000 S_1_2_0_9_tes_4 - 1000 R_in_1_2_0_9_tes_4_th_pre_tes_4
+   - 1000 R_in_1_2_0_9_tes_4_th + 1000 R_out_1_2_0_9_tes_4_th_pre_tes_0
+   + 1000 R_out_1_2_0_9_tes_4_th_pre_tes_1
+   + 1000 R_out_1_2_0_9_tes_4_th_pre_tes_2
+   + 1000 R_out_1_2_0_9_tes_4_th_pre_tes_3
+   + 1000 R_out_1_2_0_9_tes_4_th_pre_tes_4 + 1000 R_out_1_2_0_9_tes_4_th
+   = 0
+ max_size_sto[1,2,0,8,tes]: - 10000 E_avail_1_2_tes + 1000 S_1_2_0_8_tes_0
+   + 1000 S_1_2_0_8_tes_1 + 1000 S_1_2_0_8_tes_2 + 1000 S_1_2_0_8_tes_3
+   + 1000 S_1_2_0_8_tes_4 <= 0
+ min_state_of_charge[1,2,0,9,tes]: 1000 S_1_2_0_9_tes_0
+   + 1000 S_1_2_0_9_tes_1 + 1000 S_1_2_0_9_tes_2 + 1000 S_1_2_0_9_tes_3
+   + 1000 S_1_2_0_9_tes_4 >= 0
+ mass_balance_in_out[1,2,0,9,tes,th_pre_tes_2]:
+   1000 R_in_1_2_0_9_tes_2_th_pre_tes_2
+   - 1000 R_out_1_2_0_9_tes_0_th_pre_tes_2
+   - 1000 R_out_1_2_0_9_tes_1_th_pre_tes_2
+   - 1000 R_out_1_2_0_9_tes_2_th_pre_tes_2
+   - 1000 R_out_1_2_0_9_tes_3_th_pre_tes_2
+   - 1000 R_out_1_2_0_9_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,2,0,9,tes,th_pre_tes_3]:
+   1000 R_in_1_2_0_9_tes_3_th_pre_tes_3
+   - 1000 R_out_1_2_0_9_tes_0_th_pre_tes_3
+   - 1000 R_out_1_2_0_9_tes_1_th_pre_tes_3
+   - 1000 R_out_1_2_0_9_tes_2_th_pre_tes_3
+   - 1000 R_out_1_2_0_9_tes_3_th_pre_tes_3
+   - 1000 R_out_1_2_0_9_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,2,0,9,tes,th_pre_tes_0]:
+   1000 R_in_1_2_0_9_tes_0_th_pre_tes_0
+   - 1000 R_out_1_2_0_9_tes_0_th_pre_tes_0
+   - 1000 R_out_1_2_0_9_tes_1_th_pre_tes_0
+   - 1000 R_out_1_2_0_9_tes_2_th_pre_tes_0
+   - 1000 R_out_1_2_0_9_tes_3_th_pre_tes_0
+   - 1000 R_out_1_2_0_9_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,2,0,9,tes,th]: 1000 R_in_1_2_0_9_tes_0_th
+   + 1000 R_in_1_2_0_9_tes_1_th + 1000 R_in_1_2_0_9_tes_2_th
+   + 1000 R_in_1_2_0_9_tes_3_th + 1000 R_in_1_2_0_9_tes_4_th
+   - 1000 R_out_1_2_0_9_tes_0_th - 1000 R_out_1_2_0_9_tes_1_th
+   - 1000 R_out_1_2_0_9_tes_2_th - 1000 R_out_1_2_0_9_tes_3_th
+   - 1000 R_out_1_2_0_9_tes_4_th = 0
+ mass_balance_in_out[1,2,0,9,tes,th_pre_tes_4]:
+   1000 R_in_1_2_0_9_tes_4_th_pre_tes_4
+   - 1000 R_out_1_2_0_9_tes_0_th_pre_tes_4
+   - 1000 R_out_1_2_0_9_tes_1_th_pre_tes_4
+   - 1000 R_out_1_2_0_9_tes_2_th_pre_tes_4
+   - 1000 R_out_1_2_0_9_tes_3_th_pre_tes_4
+   - 1000 R_out_1_2_0_9_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,2,0,9,tes,th_pre_tes_1]:
+   1000 R_in_1_2_0_9_tes_1_th_pre_tes_1
+   - 1000 R_out_1_2_0_9_tes_0_th_pre_tes_1
+   - 1000 R_out_1_2_0_9_tes_1_th_pre_tes_1
+   - 1000 R_out_1_2_0_9_tes_2_th_pre_tes_1
+   - 1000 R_out_1_2_0_9_tes_3_th_pre_tes_1
+   - 1000 R_out_1_2_0_9_tes_4_th_pre_tes_1 = 0
+Bounds
+ -infinity <= E_avail_1_2_tes <= 0
+ S_1_2_0_8_tes_0 free
+ S_1_2_0_8_tes_1 free
+ S_1_2_0_8_tes_2 free
+ S_1_2_0_8_tes_3 free
+ S_1_2_0_8_tes_4 free
+ S_1_2_0_9_tes_0 free
+ S_1_2_0_9_tes_1 free
+ S_1_2_0_9_tes_2 free
+ S_1_2_0_9_tes_3 free
+ S_1_2_0_9_tes_4 free
+ R_in_1_2_0_9_tes_0_th_pre_tes_0 free
+ R_in_1_2_0_9_tes_0_th free
+ R_in_1_2_0_9_tes_1_th_pre_tes_1 free
+ R_in_1_2_0_9_tes_1_th free
+ R_in_1_2_0_9_tes_2_th_pre_tes_2 free
+ R_in_1_2_0_9_tes_2_th free
+ R_in_1_2_0_9_tes_3_th_pre_tes_3 free
+ R_in_1_2_0_9_tes_3_th free
+ R_in_1_2_0_9_tes_4_th_pre_tes_4 free
+ R_in_1_2_0_9_tes_4_th free
+ R_out_1_2_0_9_tes_0_th_pre_tes_0 free
+ R_out_1_2_0_9_tes_0_th_pre_tes_1 free
+ R_out_1_2_0_9_tes_0_th_pre_tes_2 free
+ R_out_1_2_0_9_tes_0_th_pre_tes_3 free
+ R_out_1_2_0_9_tes_0_th_pre_tes_4 free
+ R_out_1_2_0_9_tes_0_th free
+ R_out_1_2_0_9_tes_1_th_pre_tes_0 free
+ R_out_1_2_0_9_tes_1_th_pre_tes_1 free
+ R_out_1_2_0_9_tes_1_th_pre_tes_2 free
+ R_out_1_2_0_9_tes_1_th_pre_tes_3 free
+ R_out_1_2_0_9_tes_1_th_pre_tes_4 free
+ R_out_1_2_0_9_tes_1_th free
+ R_out_1_2_0_9_tes_2_th_pre_tes_0 free
+ R_out_1_2_0_9_tes_2_th_pre_tes_1 free
+ R_out_1_2_0_9_tes_2_th_pre_tes_2 free
+ R_out_1_2_0_9_tes_2_th_pre_tes_3 free
+ R_out_1_2_0_9_tes_2_th_pre_tes_4 free
+ R_out_1_2_0_9_tes_2_th free
+ R_out_1_2_0_9_tes_3_th_pre_tes_0 free
+ R_out_1_2_0_9_tes_3_th_pre_tes_1 free
+ R_out_1_2_0_9_tes_3_th_pre_tes_2 free
+ R_out_1_2_0_9_tes_3_th_pre_tes_3 free
+ R_out_1_2_0_9_tes_3_th_pre_tes_4 free
+ R_out_1_2_0_9_tes_3_th free
+ R_out_1_2_0_9_tes_4_th_pre_tes_0 free
+ R_out_1_2_0_9_tes_4_th_pre_tes_1 free
+ R_out_1_2_0_9_tes_4_th_pre_tes_2 free
+ R_out_1_2_0_9_tes_4_th_pre_tes_3 free
+ R_out_1_2_0_9_tes_4_th_pre_tes_4 free
+ R_out_1_2_0_9_tes_4_th free
+End

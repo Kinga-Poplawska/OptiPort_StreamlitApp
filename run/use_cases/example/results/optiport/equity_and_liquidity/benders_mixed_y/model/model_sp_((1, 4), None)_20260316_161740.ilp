@@ -1,0 +1,1799 @@
+\ Model benders_sp_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ linking_building_eff_state_hull_measure[1,4,roof_3]: - X_avail_1_4_roof_3
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_3')_ufh
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_3')_ufh
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_3')_ufh
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_11 = 0
+ linking_building_eff_state_hull_measure[1,4,wall_2]: - X_avail_1_4_wall_2
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_3')_ufh
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_3')_ufh
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_3')_ufh
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_11 = 0
+ linking_building_eff_state_hull_measure[1,4,win_1]: - X_avail_1_4_win_1
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_11 = 0
+ linking_building_eff_state_dis_measure[1,4,rad_22]: - X_avail_1_4_rad_22
+   + Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_22 = 0
+ linking_building_eff_state_dis_measure[1,4,rad_33]: - X_avail_1_4_rad_33
+   + Y_1_4_('wall_1','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_33 = 0
+ linking_building_eff_state_dis_measure[1,4,rad_11]: - X_avail_1_4_rad_11
+   + Y_1_4_('wall_1','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_11 = 0
+ exactly_one_building_eff[1,4]: Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_1','win_3')_ufh
+   + Y_1_4_('wall_1','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_3')_ufh
+   + Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_2','win_3')_ufh
+   + Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_3')_ufh
+   + Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_3')_ufh
+   + Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_2','roof_1','win_3')_ufh
+   + Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_2','win_3')_ufh
+   + Y_1_4_('wall_1','roof_2','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_33
+   + Y_1_4_('wall_3','roof_1','win_3')_ufh
+   + Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   + Y_1_4_('wall_1','roof_3','win_3')_ufh
+   + Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + Y_1_4_('wall_2','roof_2','win_1')_rad_11 = 1
+ output_energy_constraint[1,4,1,7,boi_gas]: 1000 E_avail_1_4_boi_gas
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_1 - 100 P_out_1_4_1_7_boi_gas_dhw
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_3
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_2
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_0
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_4 >= 0
+ output_energy_constraint[1,4,1,7,chp]: 1000 E_avail_1_4_chp
+   - 100 P_out_1_4_1_7_chp_el_chp_grid - 100 P_out_1_4_1_7_chp_th_pre_tes_1
+   - 56.88622754491018 P_out_1_4_1_7_chp_el - 100 P_out_1_4_1_7_chp_dhw
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_3
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_2
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_0
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_4 >= 0
+ output_energy_constraint[1,4,1,7,hp_geo_probe]:
+   1000 E_avail_1_4_hp_geo_probe
+   - 97.48473726835878 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_1
+   - 100.7878791787677 P_out_1_4_1_7_hp_geo_probe_dhw
+   - 105.1908529873807 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_3
+   - 98.99611527870894 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_2
+   - 99.39155186091506 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_0
+   - 112.7162585812749 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_4 >= 0
+ output_energy_constraint[1,4,1,7,boi_pel]: 1000 E_avail_1_4_boi_pel
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_1 - 100 P_out_1_4_1_7_boi_pel_dhw
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_3
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_2
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_0
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_4 >= 0
+ output_energy_constraint[1,4,1,7,eh]: 1000 E_avail_1_4_eh
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_1 - 100 P_out_1_4_1_7_eh_dhw
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_3 - 100 P_out_1_4_1_7_eh_th_pre_tes_2
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_0 - 100 P_out_1_4_1_7_eh_th_pre_tes_4
+   >= 0
+ output_energy_constraint[1,4,1,7,hp_geo_col]: 1000 E_avail_1_4_hp_geo_col
+   - 130.5372031409342 P_out_1_4_1_7_hp_geo_col_th_pre_tes_1
+   - 131.5689687716508 P_out_1_4_1_7_hp_geo_col_dhw
+   - 146.2828984450871 P_out_1_4_1_7_hp_geo_col_th_pre_tes_3
+   - 134.8940100923186 P_out_1_4_1_7_hp_geo_col_th_pre_tes_2
+   - 130.7535313484122 P_out_1_4_1_7_hp_geo_col_th_pre_tes_0
+   - 160.5475566356792 P_out_1_4_1_7_hp_geo_col_th_pre_tes_4 >= 0
+ output_energy_constraint[1,4,1,7,dh]: 1000 E_avail_1_4_dh
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_1 - 100 P_out_1_4_1_7_dh_dhw
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_3 - 100 P_out_1_4_1_7_dh_th_pre_tes_2
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_0 - 100 P_out_1_4_1_7_dh_th_pre_tes_4
+   >= 0
+ output_energy_constraint[1,4,1,7,hp_air]: 1000 E_avail_1_4_hp_air
+   - 112.2342287188444 P_out_1_4_1_7_hp_air_th_pre_tes_1
+   - 117.9872803401174 P_out_1_4_1_7_hp_air_dhw
+   - 103.2916109685679 P_out_1_4_1_7_hp_air_th_pre_tes_3
+   - 107.0382367770904 P_out_1_4_1_7_hp_air_th_pre_tes_2
+   - 116.252588105179 P_out_1_4_1_7_hp_air_th_pre_tes_0
+   - 100.1052222361772 P_out_1_4_1_7_hp_air_th_pre_tes_4 >= 0
+ energy_transformation_coproduction[1,4,1,7,chp]:
+   100 P_out_1_4_1_7_chp_el_chp_grid - 67 P_out_1_4_1_7_chp_th_pre_tes_1
+   + 100 P_out_1_4_1_7_chp_el - 67 P_out_1_4_1_7_chp_dhw
+   - 67 P_out_1_4_1_7_chp_th_pre_tes_3 - 67 P_out_1_4_1_7_chp_th_pre_tes_2
+   - 67 P_out_1_4_1_7_chp_th_pre_tes_0 - 67 P_out_1_4_1_7_chp_th_pre_tes_4
+   = 0
+ sto_balance[1,4,1,7,tes_dhw,0]: 50 E_avail_1_4_tes_dhw
+   - 995 S_1_4_1_6_tes_dhw_0 + 1000 S_1_4_1_7_tes_dhw_0
+   - 1000 R_in_1_4_1_7_tes_dhw_0_dhw + 1000 R_out_1_4_1_7_tes_dhw_0_dhw
+   = 0
+ sto_balance[1,4,1,7,tes,0]: 10.268686521466 E_avail_1_4_tes
+   - 997.7369299038517 S_1_4_1_6_tes_0 + 1000 S_1_4_1_7_tes_0
+   - 1000 R_in_1_4_1_7_tes_0_th_pre_tes_0 - 1000 R_in_1_4_1_7_tes_0_th
+   + 1000 R_out_1_4_1_7_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_1_7_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_1_7_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_1_7_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_1_7_tes_0_th_pre_tes_4 + 1000 R_out_1_4_1_7_tes_0_th
+   = 0
+ sto_balance[1,4,1,7,tes,1]: - 0.3475922617559755 E_avail_1_4_tes
+   - 2.263070096148319 S_1_4_1_6_tes_0 - 998.1675519134211 S_1_4_1_6_tes_1
+   + 1000 S_1_4_1_7_tes_1 - 1000 R_in_1_4_1_7_tes_1_th_pre_tes_1
+   - 1000 R_in_1_4_1_7_tes_1_th + 1000 R_out_1_4_1_7_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_1_7_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_1_7_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_1_7_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_1_7_tes_1_th_pre_tes_4 + 1000 R_out_1_4_1_7_tes_1_th
+   = 0
+ sto_balance[1,4,1,7,tes,2]: - 1.832448086578942 S_1_4_1_6_tes_1
+   - 998.5981739229904 S_1_4_1_6_tes_2 + 1000 S_1_4_1_7_tes_2
+   - 1000 R_in_1_4_1_7_tes_2_th_pre_tes_2 - 1000 R_in_1_4_1_7_tes_2_th
+   + 1000 R_out_1_4_1_7_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_1_7_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_1_7_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_1_7_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_1_7_tes_2_th_pre_tes_4 + 1000 R_out_1_4_1_7_tes_2_th
+   = 0
+ sto_balance[1,4,1,7,tes,3]: - 1.401826077009564 S_1_4_1_6_tes_2
+   - 999.0287959325598 S_1_4_1_6_tes_3 + 1000 S_1_4_1_7_tes_3
+   - 1000 R_in_1_4_1_7_tes_3_th_pre_tes_3 - 1000 R_in_1_4_1_7_tes_3_th
+   + 1000 R_out_1_4_1_7_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_1_7_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_1_7_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_1_7_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_1_7_tes_3_th_pre_tes_4 + 1000 R_out_1_4_1_7_tes_3_th
+   = 0
+ sto_balance[1,4,4,10,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_9_tes_0 + 1000 S_1_4_4_10_tes_0
+   - 1000 R_in_1_4_4_10_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_10_tes_0_th
+   + 1000 R_out_1_4_4_10_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_10_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_10_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_10_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_10_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_10_tes_0_th
+   = 0
+ sto_balance[1,4,4,10,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_9_tes_0 - 997.9176096694109 S_1_4_4_9_tes_1
+   + 1000 S_1_4_4_10_tes_1 - 1000 R_in_1_4_4_10_tes_1_th_pre_tes_1
+   - 1000 R_in_1_4_4_10_tes_1_th + 1000 R_out_1_4_4_10_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_10_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_10_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_10_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_10_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_10_tes_1_th
+   = 0
+ sto_balance[1,4,4,10,tes,2]: - 2.082390330589078 S_1_4_4_9_tes_1
+   - 998.3482316789803 S_1_4_4_9_tes_2 + 1000 S_1_4_4_10_tes_2
+   - 1000 R_in_1_4_4_10_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_10_tes_2_th
+   + 1000 R_out_1_4_4_10_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_10_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_10_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_10_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_10_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_10_tes_2_th
+   = 0
+ sto_balance[1,4,4,10,tes,3]: - 1.651768321019699 S_1_4_4_9_tes_2
+   - 998.7788536885497 S_1_4_4_9_tes_3 + 1000 S_1_4_4_10_tes_3
+   - 1000 R_in_1_4_4_10_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_10_tes_3_th
+   + 1000 R_out_1_4_4_10_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_10_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_10_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_10_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_10_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_10_tes_3_th
+   = 0
+ sto_balance[1,4,4,11,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_10_tes_0 + 1000 S_1_4_4_11_tes_0
+   - 1000 R_in_1_4_4_11_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_11_tes_0_th
+   + 1000 R_out_1_4_4_11_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_11_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_11_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_11_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_11_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_11_tes_0_th
+   = 0
+ sto_balance[1,4,4,11,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_10_tes_0
+   - 997.9176096694109 S_1_4_4_10_tes_1 + 1000 S_1_4_4_11_tes_1
+   - 1000 R_in_1_4_4_11_tes_1_th_pre_tes_1 - 1000 R_in_1_4_4_11_tes_1_th
+   + 1000 R_out_1_4_4_11_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_11_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_11_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_11_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_11_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_11_tes_1_th
+   = 0
+ sto_balance[1,4,4,11,tes,2]: - 2.082390330589078 S_1_4_4_10_tes_1
+   - 998.3482316789803 S_1_4_4_10_tes_2 + 1000 S_1_4_4_11_tes_2
+   - 1000 R_in_1_4_4_11_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_11_tes_2_th
+   + 1000 R_out_1_4_4_11_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_11_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_11_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_11_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_11_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_11_tes_2_th
+   = 0
+ sto_balance[1,4,4,11,tes,3]: - 1.651768321019699 S_1_4_4_10_tes_2
+   - 998.7788536885497 S_1_4_4_10_tes_3 + 1000 S_1_4_4_11_tes_3
+   - 1000 R_in_1_4_4_11_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_11_tes_3_th
+   + 1000 R_out_1_4_4_11_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_11_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_11_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_11_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_11_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_11_tes_3_th
+   = 0
+ sto_balance[1,4,4,11,tes,4]: - 8.419854320831632 E_avail_1_4_tes
+   - 1.221146311450321 S_1_4_4_10_tes_3 - 1000 S_1_4_4_10_tes_4
+   + 1000 S_1_4_4_11_tes_4 - 1000 R_in_1_4_4_11_tes_4_th_pre_tes_4
+   - 1000 R_in_1_4_4_11_tes_4_th + 1000 R_out_1_4_4_11_tes_4_th_pre_tes_0
+   + 1000 R_out_1_4_4_11_tes_4_th_pre_tes_1
+   + 1000 R_out_1_4_4_11_tes_4_th_pre_tes_2
+   + 1000 R_out_1_4_4_11_tes_4_th_pre_tes_3
+   + 1000 R_out_1_4_4_11_tes_4_th_pre_tes_4 + 1000 R_out_1_4_4_11_tes_4_th
+   = 0
+ sto_balance[1,4,4,12,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_11_tes_0 + 1000 S_1_4_4_12_tes_0
+   - 1000 R_in_1_4_4_12_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_12_tes_0_th
+   + 1000 R_out_1_4_4_12_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_12_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_12_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_12_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_12_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_12_tes_0_th
+   = 0
+ sto_balance[1,4,4,12,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_11_tes_0
+   - 997.9176096694109 S_1_4_4_11_tes_1 + 1000 S_1_4_4_12_tes_1
+   - 1000 R_in_1_4_4_12_tes_1_th_pre_tes_1 - 1000 R_in_1_4_4_12_tes_1_th
+   + 1000 R_out_1_4_4_12_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_12_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_12_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_12_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_12_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_12_tes_1_th
+   = 0
+ sto_balance[1,4,4,12,tes,2]: - 2.082390330589078 S_1_4_4_11_tes_1
+   - 998.3482316789803 S_1_4_4_11_tes_2 + 1000 S_1_4_4_12_tes_2
+   - 1000 R_in_1_4_4_12_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_12_tes_2_th
+   + 1000 R_out_1_4_4_12_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_12_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_12_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_12_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_12_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_12_tes_2_th
+   = 0
+ sto_balance[1,4,4,12,tes,3]: - 1.651768321019699 S_1_4_4_11_tes_2
+   - 998.7788536885497 S_1_4_4_11_tes_3 + 1000 S_1_4_4_12_tes_3
+   - 1000 R_in_1_4_4_12_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_12_tes_3_th
+   + 1000 R_out_1_4_4_12_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_12_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_12_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_12_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_12_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_12_tes_3_th
+   = 0
+ sto_balance[1,4,4,12,tes,4]: - 8.419854320831632 E_avail_1_4_tes
+   - 1.221146311450321 S_1_4_4_11_tes_3 - 1000 S_1_4_4_11_tes_4
+   + 1000 S_1_4_4_12_tes_4 - 1000 R_in_1_4_4_12_tes_4_th_pre_tes_4
+   - 1000 R_in_1_4_4_12_tes_4_th + 1000 R_out_1_4_4_12_tes_4_th_pre_tes_0
+   + 1000 R_out_1_4_4_12_tes_4_th_pre_tes_1
+   + 1000 R_out_1_4_4_12_tes_4_th_pre_tes_2
+   + 1000 R_out_1_4_4_12_tes_4_th_pre_tes_3
+   + 1000 R_out_1_4_4_12_tes_4_th_pre_tes_4 + 1000 R_out_1_4_4_12_tes_4_th
+   = 0
+ sto_balance[1,4,4,13,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_12_tes_0 + 1000 S_1_4_4_13_tes_0
+   - 1000 R_in_1_4_4_13_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_13_tes_0_th
+   + 1000 R_out_1_4_4_13_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_13_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_13_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_13_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_13_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_13_tes_0_th
+   = 0
+ sto_balance[1,4,4,13,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_12_tes_0
+   - 997.9176096694109 S_1_4_4_12_tes_1 + 1000 S_1_4_4_13_tes_1
+   - 1000 R_in_1_4_4_13_tes_1_th_pre_tes_1 - 1000 R_in_1_4_4_13_tes_1_th
+   + 1000 R_out_1_4_4_13_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_13_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_13_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_13_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_13_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_13_tes_1_th
+   = 0
+ sto_balance[1,4,4,13,tes,2]: - 2.082390330589078 S_1_4_4_12_tes_1
+   - 998.3482316789803 S_1_4_4_12_tes_2 + 1000 S_1_4_4_13_tes_2
+   - 1000 R_in_1_4_4_13_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_13_tes_2_th
+   + 1000 R_out_1_4_4_13_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_13_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_13_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_13_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_13_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_13_tes_2_th
+   = 0
+ sto_balance[1,4,4,13,tes,3]: - 1.651768321019699 S_1_4_4_12_tes_2
+   - 998.7788536885497 S_1_4_4_12_tes_3 + 1000 S_1_4_4_13_tes_3
+   - 1000 R_in_1_4_4_13_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_13_tes_3_th
+   + 1000 R_out_1_4_4_13_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_13_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_13_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_13_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_13_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_13_tes_3_th
+   = 0
+ sto_balance[1,4,4,13,tes,4]: - 8.419854320831632 E_avail_1_4_tes
+   - 1.221146311450321 S_1_4_4_12_tes_3 - 1000 S_1_4_4_12_tes_4
+   + 1000 S_1_4_4_13_tes_4 - 1000 R_in_1_4_4_13_tes_4_th_pre_tes_4
+   - 1000 R_in_1_4_4_13_tes_4_th + 1000 R_out_1_4_4_13_tes_4_th_pre_tes_0
+   + 1000 R_out_1_4_4_13_tes_4_th_pre_tes_1
+   + 1000 R_out_1_4_4_13_tes_4_th_pre_tes_2
+   + 1000 R_out_1_4_4_13_tes_4_th_pre_tes_3
+   + 1000 R_out_1_4_4_13_tes_4_th_pre_tes_4 + 1000 R_out_1_4_4_13_tes_4_th
+   = 0
+ sto_balance[1,4,4,14,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_13_tes_0 + 1000 S_1_4_4_14_tes_0
+   - 1000 R_in_1_4_4_14_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_14_tes_0_th
+   + 1000 R_out_1_4_4_14_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_14_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_14_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_14_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_14_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_14_tes_0_th
+   = 0
+ sto_balance[1,4,4,14,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_13_tes_0
+   - 997.9176096694109 S_1_4_4_13_tes_1 + 1000 S_1_4_4_14_tes_1
+   - 1000 R_in_1_4_4_14_tes_1_th_pre_tes_1 - 1000 R_in_1_4_4_14_tes_1_th
+   + 1000 R_out_1_4_4_14_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_14_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_14_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_14_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_14_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_14_tes_1_th
+   = 0
+ sto_balance[1,4,4,14,tes,2]: - 2.082390330589078 S_1_4_4_13_tes_1
+   - 998.3482316789803 S_1_4_4_13_tes_2 + 1000 S_1_4_4_14_tes_2
+   - 1000 R_in_1_4_4_14_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_14_tes_2_th
+   + 1000 R_out_1_4_4_14_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_14_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_14_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_14_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_14_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_14_tes_2_th
+   = 0
+ sto_balance[1,4,4,14,tes,3]: - 1.651768321019699 S_1_4_4_13_tes_2
+   - 998.7788536885497 S_1_4_4_13_tes_3 + 1000 S_1_4_4_14_tes_3
+   - 1000 R_in_1_4_4_14_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_14_tes_3_th
+   + 1000 R_out_1_4_4_14_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_14_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_14_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_14_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_14_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_14_tes_3_th
+   = 0
+ sto_balance[1,4,4,14,tes,4]: - 8.419854320831632 E_avail_1_4_tes
+   - 1.221146311450321 S_1_4_4_13_tes_3 - 1000 S_1_4_4_13_tes_4
+   + 1000 S_1_4_4_14_tes_4 - 1000 R_in_1_4_4_14_tes_4_th_pre_tes_4
+   - 1000 R_in_1_4_4_14_tes_4_th + 1000 R_out_1_4_4_14_tes_4_th_pre_tes_0
+   + 1000 R_out_1_4_4_14_tes_4_th_pre_tes_1
+   + 1000 R_out_1_4_4_14_tes_4_th_pre_tes_2
+   + 1000 R_out_1_4_4_14_tes_4_th_pre_tes_3
+   + 1000 R_out_1_4_4_14_tes_4_th_pre_tes_4 + 1000 R_out_1_4_4_14_tes_4_th
+   = 0
+ sto_balance[1,4,4,15,tes,0]: 8.74743004989922 E_avail_1_4_tes
+   - 997.4869876598416 S_1_4_4_14_tes_0 + 1000 S_1_4_4_15_tes_0
+   - 1000 R_in_1_4_4_15_tes_0_th_pre_tes_0 - 1000 R_in_1_4_4_15_tes_0_th
+   + 1000 R_out_1_4_4_15_tes_0_th_pre_tes_0
+   + 1000 R_out_1_4_4_15_tes_0_th_pre_tes_1
+   + 1000 R_out_1_4_4_15_tes_0_th_pre_tes_2
+   + 1000 R_out_1_4_4_15_tes_0_th_pre_tes_3
+   + 1000 R_out_1_4_4_15_tes_0_th_pre_tes_4 + 1000 R_out_1_4_4_15_tes_0_th
+   = 0
+ sto_balance[1,4,4,15,tes,1]: - 0.3275757290675964 E_avail_1_4_tes
+   - 2.513012340158456 S_1_4_4_14_tes_0
+   - 997.9176096694109 S_1_4_4_14_tes_1 + 1000 S_1_4_4_15_tes_1
+   - 1000 R_in_1_4_4_15_tes_1_th_pre_tes_1 - 1000 R_in_1_4_4_15_tes_1_th
+   + 1000 R_out_1_4_4_15_tes_1_th_pre_tes_0
+   + 1000 R_out_1_4_4_15_tes_1_th_pre_tes_1
+   + 1000 R_out_1_4_4_15_tes_1_th_pre_tes_2
+   + 1000 R_out_1_4_4_15_tes_1_th_pre_tes_3
+   + 1000 R_out_1_4_4_15_tes_1_th_pre_tes_4 + 1000 R_out_1_4_4_15_tes_1_th
+   = 0
+ sto_balance[1,4,4,15,tes,2]: - 2.082390330589078 S_1_4_4_14_tes_1
+   - 998.3482316789803 S_1_4_4_14_tes_2 + 1000 S_1_4_4_15_tes_2
+   - 1000 R_in_1_4_4_15_tes_2_th_pre_tes_2 - 1000 R_in_1_4_4_15_tes_2_th
+   + 1000 R_out_1_4_4_15_tes_2_th_pre_tes_0
+   + 1000 R_out_1_4_4_15_tes_2_th_pre_tes_1
+   + 1000 R_out_1_4_4_15_tes_2_th_pre_tes_2
+   + 1000 R_out_1_4_4_15_tes_2_th_pre_tes_3
+   + 1000 R_out_1_4_4_15_tes_2_th_pre_tes_4 + 1000 R_out_1_4_4_15_tes_2_th
+   = 0
+ sto_balance[1,4,4,15,tes,3]: - 1.651768321019699 S_1_4_4_14_tes_2
+   - 998.7788536885497 S_1_4_4_14_tes_3 + 1000 S_1_4_4_15_tes_3
+   - 1000 R_in_1_4_4_15_tes_3_th_pre_tes_3 - 1000 R_in_1_4_4_15_tes_3_th
+   + 1000 R_out_1_4_4_15_tes_3_th_pre_tes_0
+   + 1000 R_out_1_4_4_15_tes_3_th_pre_tes_1
+   + 1000 R_out_1_4_4_15_tes_3_th_pre_tes_2
+   + 1000 R_out_1_4_4_15_tes_3_th_pre_tes_3
+   + 1000 R_out_1_4_4_15_tes_3_th_pre_tes_4 + 1000 R_out_1_4_4_15_tes_3_th
+   = 0
+ sto_balance[1,4,4,15,tes,4]: - 8.419854320831632 E_avail_1_4_tes
+   - 1.221146311450321 S_1_4_4_14_tes_3 - 1000 S_1_4_4_14_tes_4
+   + 1000 S_1_4_4_15_tes_4 - 1000 R_in_1_4_4_15_tes_4_th_pre_tes_4
+   - 1000 R_in_1_4_4_15_tes_4_th + 1000 R_out_1_4_4_15_tes_4_th_pre_tes_0
+   + 1000 R_out_1_4_4_15_tes_4_th_pre_tes_1
+   + 1000 R_out_1_4_4_15_tes_4_th_pre_tes_2
+   + 1000 R_out_1_4_4_15_tes_4_th_pre_tes_3
+   + 1000 R_out_1_4_4_15_tes_4_th_pre_tes_4 + 1000 R_out_1_4_4_15_tes_4_th
+   = 0
+ max_size_sto[1,4,1,6,tes_dhw]: - 10000 E_avail_1_4_tes_dhw
+   + 1000 S_1_4_1_6_tes_dhw_0 <= 0
+ max_size_sto[1,4,1,6,tes]: - 10000 E_avail_1_4_tes + 1000 S_1_4_1_6_tes_0
+   + 1000 S_1_4_1_6_tes_1 + 1000 S_1_4_1_6_tes_2 + 1000 S_1_4_1_6_tes_3
+   + 1000 S_1_4_1_6_tes_4 <= 0
+ max_size_sto[1,4,4,15,tes]: - 10000 E_avail_1_4_tes
+   + 1000 S_1_4_4_15_tes_0 + 1000 S_1_4_4_15_tes_1 + 1000 S_1_4_4_15_tes_2
+   + 1000 S_1_4_4_15_tes_3 + 1000 S_1_4_4_15_tes_4 <= 0
+ min_state_of_charge[1,4,1,7,tes_dhw]:
+   - 7142.857142857143 E_avail_1_4_tes_dhw + 1000 S_1_4_1_7_tes_dhw_0 >= 0
+ mass_balance_in_out[1,4,1,7,tes,th_pre_tes_1]:
+   1000 R_in_1_4_1_7_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_1_7_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_1_7_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_1_7_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_1_7_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_1_7_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,1,7,tes,th_pre_tes_3]:
+   1000 R_in_1_4_1_7_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_1_7_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_1_7_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_1_7_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_1_7_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_1_7_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,1,7,tes,th_pre_tes_2]:
+   1000 R_in_1_4_1_7_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_1_7_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_1_7_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_1_7_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_1_7_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_1_7_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,1,7,tes,th_pre_tes_0]:
+   1000 R_in_1_4_1_7_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_1_7_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_1_7_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_1_7_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_1_7_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_1_7_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,1,7,tes,th]: 1000 R_in_1_4_1_7_tes_0_th
+   + 1000 R_in_1_4_1_7_tes_1_th + 1000 R_in_1_4_1_7_tes_2_th
+   + 1000 R_in_1_4_1_7_tes_3_th + 1000 R_in_1_4_1_7_tes_4_th
+   - 1000 R_out_1_4_1_7_tes_0_th - 1000 R_out_1_4_1_7_tes_1_th
+   - 1000 R_out_1_4_1_7_tes_2_th - 1000 R_out_1_4_1_7_tes_3_th
+   - 1000 R_out_1_4_1_7_tes_4_th = 0
+ mass_balance_in_out[1,4,3,3,tes,th]: 1000 R_in_1_4_3_3_tes_0_th
+   + 1000 R_in_1_4_3_3_tes_1_th + 1000 R_in_1_4_3_3_tes_2_th
+   + 1000 R_in_1_4_3_3_tes_3_th + 1000 R_in_1_4_3_3_tes_4_th
+   - 1000 R_out_1_4_3_3_tes_0_th - 1000 R_out_1_4_3_3_tes_1_th
+   - 1000 R_out_1_4_3_3_tes_2_th - 1000 R_out_1_4_3_3_tes_3_th
+   - 1000 R_out_1_4_3_3_tes_4_th = 0
+ mass_balance_in_out[1,4,4,10,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_10_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_10_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_10_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_10_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_10_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_10_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,10,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_10_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_10_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_10_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_10_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_10_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_10_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,10,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_10_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_10_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_10_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_10_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_10_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_10_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,10,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_10_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_10_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_10_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_10_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_10_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_10_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,10,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_10_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_10_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_10_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_10_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_10_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_10_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,10,tes,th]: 1000 R_in_1_4_4_10_tes_0_th
+   + 1000 R_in_1_4_4_10_tes_1_th + 1000 R_in_1_4_4_10_tes_2_th
+   + 1000 R_in_1_4_4_10_tes_3_th + 1000 R_in_1_4_4_10_tes_4_th
+   - 1000 R_out_1_4_4_10_tes_0_th - 1000 R_out_1_4_4_10_tes_1_th
+   - 1000 R_out_1_4_4_10_tes_2_th - 1000 R_out_1_4_4_10_tes_3_th
+   - 1000 R_out_1_4_4_10_tes_4_th = 0
+ mass_balance_in_out[1,4,4,11,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_11_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_11_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_11_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_11_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_11_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_11_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,11,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_11_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_11_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_11_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_11_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_11_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_11_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,11,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_11_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_11_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_11_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_11_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_11_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_11_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,11,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_11_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_11_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_11_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_11_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_11_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_11_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,11,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_11_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_11_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_11_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_11_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_11_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_11_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,11,tes,th]: 1000 R_in_1_4_4_11_tes_0_th
+   + 1000 R_in_1_4_4_11_tes_1_th + 1000 R_in_1_4_4_11_tes_2_th
+   + 1000 R_in_1_4_4_11_tes_3_th + 1000 R_in_1_4_4_11_tes_4_th
+   - 1000 R_out_1_4_4_11_tes_0_th - 1000 R_out_1_4_4_11_tes_1_th
+   - 1000 R_out_1_4_4_11_tes_2_th - 1000 R_out_1_4_4_11_tes_3_th
+   - 1000 R_out_1_4_4_11_tes_4_th = 0
+ mass_balance_in_out[1,4,4,12,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_12_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_12_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_12_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_12_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_12_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_12_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,12,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_12_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_12_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_12_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_12_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_12_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_12_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,12,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_12_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_12_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_12_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_12_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_12_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_12_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,12,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_12_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_12_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_12_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_12_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_12_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_12_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,12,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_12_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_12_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_12_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_12_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_12_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_12_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,12,tes,th]: 1000 R_in_1_4_4_12_tes_0_th
+   + 1000 R_in_1_4_4_12_tes_1_th + 1000 R_in_1_4_4_12_tes_2_th
+   + 1000 R_in_1_4_4_12_tes_3_th + 1000 R_in_1_4_4_12_tes_4_th
+   - 1000 R_out_1_4_4_12_tes_0_th - 1000 R_out_1_4_4_12_tes_1_th
+   - 1000 R_out_1_4_4_12_tes_2_th - 1000 R_out_1_4_4_12_tes_3_th
+   - 1000 R_out_1_4_4_12_tes_4_th = 0
+ mass_balance_in_out[1,4,4,13,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_13_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_13_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_13_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_13_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_13_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_13_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,13,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_13_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_13_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_13_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_13_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_13_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_13_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,13,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_13_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_13_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_13_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_13_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_13_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_13_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,13,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_13_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_13_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_13_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_13_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_13_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_13_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,13,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_13_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_13_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_13_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_13_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_13_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_13_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,13,tes,th]: 1000 R_in_1_4_4_13_tes_0_th
+   + 1000 R_in_1_4_4_13_tes_1_th + 1000 R_in_1_4_4_13_tes_2_th
+   + 1000 R_in_1_4_4_13_tes_3_th + 1000 R_in_1_4_4_13_tes_4_th
+   - 1000 R_out_1_4_4_13_tes_0_th - 1000 R_out_1_4_4_13_tes_1_th
+   - 1000 R_out_1_4_4_13_tes_2_th - 1000 R_out_1_4_4_13_tes_3_th
+   - 1000 R_out_1_4_4_13_tes_4_th = 0
+ mass_balance_in_out[1,4,4,14,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_14_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_14_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_14_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_14_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_14_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_14_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,14,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_14_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_14_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_14_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_14_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_14_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_14_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,14,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_14_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_14_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_14_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_14_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_14_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_14_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,14,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_14_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_14_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_14_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_14_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_14_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_14_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,14,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_14_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_14_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_14_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_14_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_14_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_14_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,14,tes,th]: 1000 R_in_1_4_4_14_tes_0_th
+   + 1000 R_in_1_4_4_14_tes_1_th + 1000 R_in_1_4_4_14_tes_2_th
+   + 1000 R_in_1_4_4_14_tes_3_th + 1000 R_in_1_4_4_14_tes_4_th
+   - 1000 R_out_1_4_4_14_tes_0_th - 1000 R_out_1_4_4_14_tes_1_th
+   - 1000 R_out_1_4_4_14_tes_2_th - 1000 R_out_1_4_4_14_tes_3_th
+   - 1000 R_out_1_4_4_14_tes_4_th = 0
+ mass_balance_in_out[1,4,4,15,tes,th_pre_tes_1]:
+   1000 R_in_1_4_4_15_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_15_tes_0_th_pre_tes_1
+   - 1000 R_out_1_4_4_15_tes_1_th_pre_tes_1
+   - 1000 R_out_1_4_4_15_tes_2_th_pre_tes_1
+   - 1000 R_out_1_4_4_15_tes_3_th_pre_tes_1
+   - 1000 R_out_1_4_4_15_tes_4_th_pre_tes_1 = 0
+ mass_balance_in_out[1,4,4,15,tes,th_pre_tes_3]:
+   1000 R_in_1_4_4_15_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_15_tes_0_th_pre_tes_3
+   - 1000 R_out_1_4_4_15_tes_1_th_pre_tes_3
+   - 1000 R_out_1_4_4_15_tes_2_th_pre_tes_3
+   - 1000 R_out_1_4_4_15_tes_3_th_pre_tes_3
+   - 1000 R_out_1_4_4_15_tes_4_th_pre_tes_3 = 0
+ mass_balance_in_out[1,4,4,15,tes,th_pre_tes_2]:
+   1000 R_in_1_4_4_15_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_15_tes_0_th_pre_tes_2
+   - 1000 R_out_1_4_4_15_tes_1_th_pre_tes_2
+   - 1000 R_out_1_4_4_15_tes_2_th_pre_tes_2
+   - 1000 R_out_1_4_4_15_tes_3_th_pre_tes_2
+   - 1000 R_out_1_4_4_15_tes_4_th_pre_tes_2 = 0
+ mass_balance_in_out[1,4,4,15,tes,th_pre_tes_0]:
+   1000 R_in_1_4_4_15_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_15_tes_0_th_pre_tes_0
+   - 1000 R_out_1_4_4_15_tes_1_th_pre_tes_0
+   - 1000 R_out_1_4_4_15_tes_2_th_pre_tes_0
+   - 1000 R_out_1_4_4_15_tes_3_th_pre_tes_0
+   - 1000 R_out_1_4_4_15_tes_4_th_pre_tes_0 = 0
+ mass_balance_in_out[1,4,4,15,tes,th_pre_tes_4]:
+   1000 R_in_1_4_4_15_tes_4_th_pre_tes_4
+   - 1000 R_out_1_4_4_15_tes_0_th_pre_tes_4
+   - 1000 R_out_1_4_4_15_tes_1_th_pre_tes_4
+   - 1000 R_out_1_4_4_15_tes_2_th_pre_tes_4
+   - 1000 R_out_1_4_4_15_tes_3_th_pre_tes_4
+   - 1000 R_out_1_4_4_15_tes_4_th_pre_tes_4 = 0
+ mass_balance_in_out[1,4,4,15,tes,th]: 1000 R_in_1_4_4_15_tes_0_th
+   + 1000 R_in_1_4_4_15_tes_1_th + 1000 R_in_1_4_4_15_tes_2_th
+   + 1000 R_in_1_4_4_15_tes_3_th + 1000 R_in_1_4_4_15_tes_4_th
+   - 1000 R_out_1_4_4_15_tes_0_th - 1000 R_out_1_4_4_15_tes_1_th
+   - 1000 R_out_1_4_4_15_tes_2_th - 1000 R_out_1_4_4_15_tes_3_th
+   - 1000 R_out_1_4_4_15_tes_4_th = 0
+ fixing_energy_storage_inflow[1,4,0,17,tes,3]:
+   - 199.6493266857954 Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   - 251.6975772207221 Y_1_4_('wall_1','roof_1','win_3')_rad_33
+   - 201.3003783145066 Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   - 187.1190456316768 Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   - 30.80304366111765 Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   - 134.1391513369734 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   - 273.8181124017642 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   - 224.401998076385 Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   - 232.5510097317552 Y_1_4_('wall_3','roof_2','win_3')_rad_33
+   - 11.59313059999241 Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   - 138.326296103034 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   - 272.3915036853414 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   - 156.7184783257618 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   - 276.3629429254394 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   - 205.8526884883499 Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   - 157.7032098377755 Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   - 59.33981646572053 Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   - 146.2441757954157 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   - 223.8095425249064 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   - 212.0515532513201 Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   - 267.6378248168003 Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   - 212.0515532513201 Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   - 267.6378248168003 Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   - 156.7184783257618 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   - 276.3629429254394 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   - 148.6630849902491 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   - 212.0685244214824 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   - 199.6493266857954 Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   - 251.6975772207221 Y_1_4_('wall_1','roof_2','win_3')_rad_33
+   - 224.401998076385 Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   - 232.5510097317552 Y_1_4_('wall_3','roof_1','win_3')_rad_33
+   - 11.59313059999241 Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   - 134.1391513369734 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   - 273.8181124017642 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   - 192.1872104350417 Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   - 178.8271461288584 Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   - 28.87182723237777 Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   - 162.901527489275 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   - 206.9754489223153 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   - 138.326296103034 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   - 272.3915036853414 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + 1000 R_in_1_4_0_17_tes_3_th = 0
+ fixing_energy_storage_inflow[1,4,1,17,tes,2]:
+   - 45.72647610083356 Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   - 214.0893913501416 Y_1_4_('wall_1','roof_1','win_3')_rad_11
+   - 10.63536460996535 Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   - 135.5492927179102 Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   - 135.5542173993226 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   - 2.240099531269471 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   - 128.8410078812542 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   - 17.72120403819961 Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   - 160.2528845275617 Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   - 132.7110017231341 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   - 136.7622538292743 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   - 105.8797737154642 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   - 169.7530250362385 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   - 80.30328977978003 Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   - 79.81924281281555 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   - 152.7781622334193 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   - 54.12454574917975 Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   - 237.1502623086892 Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   - 54.12454574917975 Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   - 237.1502623086892 Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   - 105.8797737154642 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   - 169.7530250362385 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   - 76.63041664058977 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   - 158.8345261026767 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   - 45.72647610083356 Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   - 214.0893913501416 Y_1_4_('wall_1','roof_2','win_3')_rad_11
+   - 17.72120403819961 Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   - 160.2528845275617 Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   - 135.5542173993226 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   - 2.240099531269471 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   - 128.8410078812542 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   - 7.453118026619749 Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   - 122.0056094470074 Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   - 53.72668457718914 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   - 181.106034380901 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   - 132.7110017231341 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   - 136.7622538292743 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 1000 R_in_1_4_1_17_tes_2_th = 0
+ fixing_energy_storage_inflow[1,4,3,3,tes,1]: 1000 R_in_1_4_3_3_tes_1_th
+   = 0
+ fixing_energy_storage_inflow[1,4,3,3,tes,2]:
+   - 18.12159904668287 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   - 18.12159904668287 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + 1000 R_in_1_4_3_3_tes_2_th = 0
+ fixing_energy_storage_inflow[1,4,3,3,tes,3]:
+   - 48.82700978926297 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   - 38.01023038438963 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   - 59.88327129970923 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   - 37.18938849283217 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   - 28.92453437928709 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   - 45.36026104902247 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   - 76.8195300923451 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   - 59.47816596688484 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   - 59.47276270954939 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   - 22.52518192350256 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   - 17.54441850507346 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   - 27.15375381172328 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   - 76.8195300923451 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   - 59.47816596688484 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   - 59.47276270954939 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   - 14.63686915242996 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   - 11.30995942558221 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   - 17.59998843764535 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   - 48.82700978926297 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   - 38.01023038438963 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   - 59.88327129970923 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   - 43.84621344834447 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   - 34.26032239729873 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   - 53.46105948450504 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   - 37.18938849283217 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   - 28.92453437928709 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   - 45.36026104902247 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 1000 R_in_1_4_3_3_tes_3_th = 0
+ fixing_energy_storage_inflow[1,4,3,3,tes,4]:
+   - 32.16018445088737 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   - 57.18055963030352 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   - 161.4854220917324 Y_1_4_('wall_1','roof_2','win_1')_ufh
+   - 0.7751115491765476 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   - 34.37824710445549 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   - 55.83803842143292 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   - 154.4991812084506 Y_1_4_('wall_2','roof_1','win_1')_ufh
+   - 7.762882948876689 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   - 24.63403448839392 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   - 57.69666999715534 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   - 172.9225110049359 Y_1_4_('wall_3','roof_1','win_1')_ufh
+   - 36.55919074248285 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   - 53.21791752352568 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   - 130.9820304723015 Y_1_4_('wall_1','roof_3','win_1')_ufh
+   - 16.19872649391617 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   - 24.63403448839392 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   - 57.69666999715534 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   - 172.9225110049359 Y_1_4_('wall_3','roof_2','win_1')_ufh
+   - 35.60235515129396 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   - 49.27094643342765 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   - 119.9770708275764 Y_1_4_('wall_2','roof_3','win_1')_ufh
+   - 18.98989342308393 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   - 32.16018445088737 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   - 57.18055963030352 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   - 161.4854220917324 Y_1_4_('wall_1','roof_1','win_1')_ufh
+   - 0.7751115491765476 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   - 34.52187483386831 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   - 58.09143679530671 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   - 149.3122802122894 Y_1_4_('wall_3','roof_3','win_1')_ufh
+   - 5.085583488499533 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   - 34.37824710445549 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   - 55.83803842143292 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   - 154.4991812084506 Y_1_4_('wall_2','roof_2','win_1')_ufh
+   - 7.762882948876689 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 1000 R_in_1_4_3_3_tes_4_th = 0
+ energy_balance[1,4,1,7,th_pre_tes_1]:
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_1
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_1
+   - 100 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_1
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_1
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_1
+   - 100 P_out_1_4_1_7_hp_geo_col_th_pre_tes_1
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_1
+   - 100 P_out_1_4_1_7_hp_air_th_pre_tes_1
+   + 50970.09115603033 R_in_1_4_1_7_tes_1_th_pre_tes_1
+   - 60219.38078430379 R_out_1_4_1_7_tes_0_th_pre_tes_1
+   - 50970.09115603033 R_out_1_4_1_7_tes_1_th_pre_tes_1
+   - 41720.80152775687 R_out_1_4_1_7_tes_2_th_pre_tes_1
+   - 32471.51189948342 R_out_1_4_1_7_tes_3_th_pre_tes_1
+   - 23222.22227120995 R_out_1_4_1_7_tes_4_th_pre_tes_1 = 0
+ energy_balance[1,4,1,7,dhw]:
+   1239.724139594736 Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_2','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_3')_ufh
+   + 1239.724139594736 Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + 1239.724139594736 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   - 100 P_out_1_4_1_7_boi_gas_dhw - 100 P_out_1_4_1_7_chp_dhw
+   - 100 P_out_1_4_1_7_hp_geo_probe_dhw - 100 P_out_1_4_1_7_boi_pel_dhw
+   - 100 P_out_1_4_1_7_eh_dhw - 100 P_out_1_4_1_7_hp_geo_col_dhw
+   - 100 P_out_1_4_1_7_dh_dhw - 100 P_out_1_4_1_7_hp_air_dhw
+   + 1000 R_in_1_4_1_7_tes_dhw_0_dhw - 1000 R_out_1_4_1_7_tes_dhw_0_dhw
+   = 0
+ energy_balance[1,4,1,7,th_pre_tes_3]:
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_3
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_3
+   - 100 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_3
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_3
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_3
+   - 100 P_out_1_4_1_7_hp_geo_col_th_pre_tes_3
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_3
+   - 100 P_out_1_4_1_7_hp_air_th_pre_tes_3
+   + 32471.51189948342 R_in_1_4_1_7_tes_3_th_pre_tes_3
+   - 60219.38078430379 R_out_1_4_1_7_tes_0_th_pre_tes_3
+   - 50970.09115603033 R_out_1_4_1_7_tes_1_th_pre_tes_3
+   - 41720.80152775687 R_out_1_4_1_7_tes_2_th_pre_tes_3
+   - 32471.51189948342 R_out_1_4_1_7_tes_3_th_pre_tes_3
+   - 23222.22227120995 R_out_1_4_1_7_tes_4_th_pre_tes_3 = 0
+ energy_balance[1,4,1,7,th_pre_tes_2]:
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_2
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_2
+   - 100 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_2
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_2
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_2
+   - 100 P_out_1_4_1_7_hp_geo_col_th_pre_tes_2
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_2
+   - 100 P_out_1_4_1_7_hp_air_th_pre_tes_2
+   + 41720.80152775687 R_in_1_4_1_7_tes_2_th_pre_tes_2
+   - 60219.38078430379 R_out_1_4_1_7_tes_0_th_pre_tes_2
+   - 50970.09115603033 R_out_1_4_1_7_tes_1_th_pre_tes_2
+   - 41720.80152775687 R_out_1_4_1_7_tes_2_th_pre_tes_2
+   - 32471.51189948342 R_out_1_4_1_7_tes_3_th_pre_tes_2
+   - 23222.22227120995 R_out_1_4_1_7_tes_4_th_pre_tes_2 = 0
+ energy_balance[1,4,1,7,th_pre_tes_0]:
+   - 100 P_out_1_4_1_7_boi_gas_th_pre_tes_0
+   - 100 P_out_1_4_1_7_chp_th_pre_tes_0
+   - 100 P_out_1_4_1_7_hp_geo_probe_th_pre_tes_0
+   - 100 P_out_1_4_1_7_boi_pel_th_pre_tes_0
+   - 100 P_out_1_4_1_7_eh_th_pre_tes_0
+   - 100 P_out_1_4_1_7_hp_geo_col_th_pre_tes_0
+   - 100 P_out_1_4_1_7_dh_th_pre_tes_0
+   - 100 P_out_1_4_1_7_hp_air_th_pre_tes_0
+   + 60219.38078430379 R_in_1_4_1_7_tes_0_th_pre_tes_0
+   - 60219.38078430379 R_out_1_4_1_7_tes_0_th_pre_tes_0
+   - 50970.09115603033 R_out_1_4_1_7_tes_1_th_pre_tes_0
+   - 41720.80152775687 R_out_1_4_1_7_tes_2_th_pre_tes_0
+   - 32471.51189948342 R_out_1_4_1_7_tes_3_th_pre_tes_0
+   - 23222.22227120995 R_out_1_4_1_7_tes_4_th_pre_tes_0 = 0
+ energy_balance[1,4,1,7,th]:
+   2395.70166015625 Y_1_4_('wall_1','roof_1','win_3')_rad_22
+   + 2395.70166015625 Y_1_4_('wall_1','roof_1','win_3')_rad_33
+   + 2395.701666782956 Y_1_4_('wall_1','roof_1','win_3')_ufh
+   + 2395.70166015625 Y_1_4_('wall_1','roof_1','win_3')_rad_11
+   + 2157.343017578125 Y_1_4_('wall_2','roof_3','win_3')_rad_22
+   + 2157.343017578125 Y_1_4_('wall_2','roof_3','win_3')_rad_33
+   + 2157.343021740501 Y_1_4_('wall_2','roof_3','win_3')_ufh
+   + 2157.343017578125 Y_1_4_('wall_2','roof_3','win_3')_rad_11
+   + 3088.68505859375 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + 3088.68505859375 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + 3088.685074650524 Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + 3088.68505859375 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + 2126.423095703125 Y_1_4_('wall_3','roof_2','win_3')_rad_22
+   + 2126.423095703125 Y_1_4_('wall_3','roof_2','win_3')_rad_33
+   + 2126.423099575054 Y_1_4_('wall_3','roof_2','win_3')_ufh
+   + 2126.423095703125 Y_1_4_('wall_3','roof_2','win_3')_rad_11
+   + 3039.612060546875 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + 3039.612060546875 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + 3039.61207582495 Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + 3039.612060546875 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + 2827.1181640625 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + 2827.1181640625 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + 2827.118176163786 Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + 2827.1181640625 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + 1936.8037109375 Y_1_4_('wall_3','roof_3','win_3')_rad_22
+   + 1936.8037109375 Y_1_4_('wall_3','roof_3','win_3')_rad_33
+   + 1936.803713175023 Y_1_4_('wall_3','roof_3','win_3')_ufh
+   + 1936.8037109375 Y_1_4_('wall_3','roof_3','win_3')_rad_11
+   + 2906.367919921875 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + 2906.367919921875 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + 2906.367933170881 Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + 2906.367919921875 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + 2345.195068359375 Y_1_4_('wall_2','roof_2','win_3')_rad_22
+   + 2345.195068359375 Y_1_4_('wall_2','roof_2','win_3')_rad_33
+   + 2345.195074430602 Y_1_4_('wall_2','roof_2','win_3')_ufh
+   + 2345.195068359375 Y_1_4_('wall_2','roof_2','win_3')_rad_11
+   + 2345.195068359375 Y_1_4_('wall_2','roof_1','win_3')_rad_22
+   + 2345.195068359375 Y_1_4_('wall_2','roof_1','win_3')_rad_33
+   + 2345.195074430602 Y_1_4_('wall_2','roof_1','win_3')_ufh
+   + 2345.195068359375 Y_1_4_('wall_2','roof_1','win_3')_rad_11
+   + 2827.1181640625 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + 2827.1181640625 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + 2827.118176163786 Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + 2827.1181640625 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + 2856.9482421875 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + 2856.9482421875 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + 2856.94825471562 Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + 2856.9482421875 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + 2395.70166015625 Y_1_4_('wall_1','roof_2','win_3')_rad_22
+   + 2395.70166015625 Y_1_4_('wall_1','roof_2','win_3')_rad_33
+   + 2395.701666782956 Y_1_4_('wall_1','roof_2','win_3')_ufh
+   + 2395.70166015625 Y_1_4_('wall_1','roof_2','win_3')_rad_11
+   + 2126.423095703125 Y_1_4_('wall_3','roof_1','win_3')_rad_22
+   + 2126.423095703125 Y_1_4_('wall_3','roof_1','win_3')_rad_33
+   + 2126.423099575054 Y_1_4_('wall_3','roof_1','win_3')_ufh
+   + 2126.423095703125 Y_1_4_('wall_3','roof_1','win_3')_rad_11
+   + 3088.68505859375 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + 3088.68505859375 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + 3088.685074650524 Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + 3088.68505859375 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + 2208.12451171875 Y_1_4_('wall_1','roof_3','win_3')_rad_22
+   + 2208.12451171875 Y_1_4_('wall_1','roof_3','win_3')_rad_33
+   + 2208.124516372707 Y_1_4_('wall_1','roof_3','win_3')_ufh
+   + 2208.12451171875 Y_1_4_('wall_1','roof_3','win_3')_rad_11
+   + 2642.792724609375 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + 2642.792724609375 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + 2642.79273421174 Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + 2642.792724609375 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + 3039.612060546875 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + 3039.612060546875 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + 3039.61207582495 Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + 3039.612060546875 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 60219.38078430379 R_in_1_4_1_7_tes_0_th
+   + 50970.09115603033 R_in_1_4_1_7_tes_1_th
+   + 41720.80152775687 R_in_1_4_1_7_tes_2_th
+   + 32471.51189948342 R_in_1_4_1_7_tes_3_th
+   + 23222.22227120995 R_in_1_4_1_7_tes_4_th
+   - 60219.38078430379 R_out_1_4_1_7_tes_0_th
+   - 50970.09115603033 R_out_1_4_1_7_tes_1_th
+   - 41720.80152775687 R_out_1_4_1_7_tes_2_th
+   - 32471.51189948342 R_out_1_4_1_7_tes_3_th
+   - 23222.22227120995 R_out_1_4_1_7_tes_4_th = 0
+ energy_balance[1,4,3,3,th]:
+   860.89013671875 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + 860.89013671875 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + 860.8901476900739 Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + 860.89013671875 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + 823.64599609375 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + 823.64599609375 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + 823.6460059718796 Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + 823.64599609375 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + 921.862060546875 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + 921.862060546875 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + 921.8620734286036 Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + 921.862060546875 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + 698.2744140625 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + 698.2744140625 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + 698.2744206717995 Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + 698.2744140625 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + 921.862060546875 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + 921.862060546875 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + 921.8620734286036 Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + 921.862060546875 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + 639.606201171875 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + 639.606201171875 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + 639.606206469226 Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + 639.606201171875 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + 860.89013671875 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + 860.89013671875 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + 860.8901476900739 Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + 860.89013671875 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + 795.9942626953125 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + 795.9942626953125 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + 795.9942717979894 Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + 795.9942626953125 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + 823.64599609375 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + 823.64599609375 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + 823.6460059718796 Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + 823.64599609375 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 43092.01070237713 R_in_1_4_3_3_tes_0_th
+   + 38124.56358262867 R_in_1_4_3_3_tes_1_th
+   + 33157.11646288022 R_in_1_4_3_3_tes_2_th
+   + 28189.66934313178 R_in_1_4_3_3_tes_3_th
+   + 23222.22222338333 R_in_1_4_3_3_tes_4_th
+   - 43092.01070237713 R_out_1_4_3_3_tes_0_th
+   - 38124.56358262867 R_out_1_4_3_3_tes_1_th
+   - 33157.11646288022 R_out_1_4_3_3_tes_2_th
+   - 28189.66934313178 R_out_1_4_3_3_tes_3_th
+   - 23222.22222338333 R_out_1_4_3_3_tes_4_th = 0
+ energy_balance[1,4,4,10,th_pre_tes_1]:
+   - 100 P_out_1_4_4_10_boi_gas_th_pre_tes_1
+   - 100 P_out_1_4_4_10_chp_th_pre_tes_1
+   - 100 P_out_1_4_4_10_hp_geo_probe_th_pre_tes_1
+   - 100 P_out_1_4_4_10_boi_pel_th_pre_tes_1
+   - 100 P_out_1_4_4_10_eh_th_pre_tes_1
+   - 100 P_out_1_4_4_10_hp_geo_col_th_pre_tes_1
+   - 100 P_out_1_4_4_10_dh_th_pre_tes_1
+   - 100 P_out_1_4_4_10_hp_air_th_pre_tes_1
+   + 42196.97096394651 R_in_1_4_4_10_tes_1_th_pre_tes_1
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th_pre_tes_1
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th_pre_tes_1
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th_pre_tes_1
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th_pre_tes_1
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th_pre_tes_1 = 0
+ energy_balance[1,4,4,10,th_pre_tes_3]:
+   - 100 P_out_1_4_4_10_boi_gas_th_pre_tes_3
+   - 100 P_out_1_4_4_10_chp_th_pre_tes_3
+   - 100 P_out_1_4_4_10_hp_geo_probe_th_pre_tes_3
+   - 100 P_out_1_4_4_10_boi_pel_th_pre_tes_3
+   - 100 P_out_1_4_4_10_eh_th_pre_tes_3
+   - 100 P_out_1_4_4_10_hp_geo_col_th_pre_tes_3
+   - 100 P_out_1_4_4_10_dh_th_pre_tes_3
+   - 100 P_out_1_4_4_10_hp_air_th_pre_tes_3
+   + 29547.13847023772 R_in_1_4_4_10_tes_3_th_pre_tes_3
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th_pre_tes_3
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th_pre_tes_3
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th_pre_tes_3
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th_pre_tes_3
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th_pre_tes_3 = 0
+ energy_balance[1,4,4,10,th_pre_tes_2]:
+   - 100 P_out_1_4_4_10_boi_gas_th_pre_tes_2
+   - 100 P_out_1_4_4_10_chp_th_pre_tes_2
+   - 100 P_out_1_4_4_10_hp_geo_probe_th_pre_tes_2
+   - 100 P_out_1_4_4_10_boi_pel_th_pre_tes_2
+   - 100 P_out_1_4_4_10_eh_th_pre_tes_2
+   - 100 P_out_1_4_4_10_hp_geo_col_th_pre_tes_2
+   - 100 P_out_1_4_4_10_dh_th_pre_tes_2
+   - 100 P_out_1_4_4_10_hp_air_th_pre_tes_2
+   + 35872.05471709211 R_in_1_4_4_10_tes_2_th_pre_tes_2
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th_pre_tes_2
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th_pre_tes_2
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th_pre_tes_2
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th_pre_tes_2
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th_pre_tes_2 = 0
+ energy_balance[1,4,4,10,th_pre_tes_0]:
+   - 100 P_out_1_4_4_10_boi_gas_th_pre_tes_0
+   - 100 P_out_1_4_4_10_chp_th_pre_tes_0
+   - 100 P_out_1_4_4_10_hp_geo_probe_th_pre_tes_0
+   - 100 P_out_1_4_4_10_boi_pel_th_pre_tes_0
+   - 100 P_out_1_4_4_10_eh_th_pre_tes_0
+   - 100 P_out_1_4_4_10_hp_geo_col_th_pre_tes_0
+   - 100 P_out_1_4_4_10_dh_th_pre_tes_0
+   - 100 P_out_1_4_4_10_hp_air_th_pre_tes_0
+   + 48521.88721080089 R_in_1_4_4_10_tes_0_th_pre_tes_0
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th_pre_tes_0
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th_pre_tes_0
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th_pre_tes_0
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th_pre_tes_0
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th_pre_tes_0 = 0
+ energy_balance[1,4,4,10,th_pre_tes_4]:
+   - 100 P_out_1_4_4_10_boi_gas_th_pre_tes_4
+   - 100 P_out_1_4_4_10_chp_th_pre_tes_4
+   - 100 P_out_1_4_4_10_hp_geo_probe_th_pre_tes_4
+   - 100 P_out_1_4_4_10_boi_pel_th_pre_tes_4
+   - 100 P_out_1_4_4_10_eh_th_pre_tes_4
+   - 100 P_out_1_4_4_10_hp_geo_col_th_pre_tes_4
+   - 100 P_out_1_4_4_10_dh_th_pre_tes_4
+   - 100 P_out_1_4_4_10_hp_air_th_pre_tes_4
+   + 23222.22222338333 R_in_1_4_4_10_tes_4_th_pre_tes_4
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th_pre_tes_4
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th_pre_tes_4
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th_pre_tes_4
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th_pre_tes_4
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th_pre_tes_4 = 0
+ energy_balance[1,4,4,10,th]:
+   551.0154418945313 Y_1_4_('wall_1','roof_2','win_1')_rad_22
+   + 551.0154534601775 Y_1_4_('wall_1','roof_2','win_1')_rad_33
+   + 551.0154444587432 Y_1_4_('wall_1','roof_2','win_1')_ufh
+   + 551.0154418945313 Y_1_4_('wall_1','roof_2','win_1')_rad_11
+   + 523.2524503167182 Y_1_4_('wall_2','roof_1','win_1')_rad_22
+   + 523.2524511761385 Y_1_4_('wall_2','roof_1','win_1')_rad_33
+   + 523.2524436102063 Y_1_4_('wall_2','roof_1','win_1')_ufh
+   + 523.25244140625 Y_1_4_('wall_2','roof_1','win_1')_rad_11
+   + 600.4682006835938 Y_1_4_('wall_3','roof_1','win_1')_rad_22
+   + 600.4682006835938 Y_1_4_('wall_3','roof_1','win_1')_rad_33
+   + 600.4682039502446 Y_1_4_('wall_3','roof_1','win_1')_ufh
+   + 600.4682006835938 Y_1_4_('wall_3','roof_1','win_1')_rad_11
+   + 437.0386721856947 Y_1_4_('wall_1','roof_3','win_1')_rad_22
+   + 437.0386728017274 Y_1_4_('wall_1','roof_3','win_1')_rad_33
+   + 437.0386670130135 Y_1_4_('wall_1','roof_3','win_1')_ufh
+   + 437.0386706211898 Y_1_4_('wall_1','roof_3','win_1')_rad_11
+   + 600.4682006835938 Y_1_4_('wall_3','roof_2','win_1')_rad_22
+   + 600.4682006835938 Y_1_4_('wall_3','roof_2','win_1')_rad_33
+   + 600.4682039502446 Y_1_4_('wall_3','roof_2','win_1')_ufh
+   + 600.4682006835938 Y_1_4_('wall_3','roof_2','win_1')_rad_11
+   + 408.9574637509328 Y_1_4_('wall_2','roof_3','win_1')_rad_22
+   + 408.9574642409565 Y_1_4_('wall_2','roof_3','win_1')_rad_33
+   + 408.9574594751937 Y_1_4_('wall_2','roof_3','win_1')_ufh
+   + 408.9574624740478 Y_1_4_('wall_2','roof_3','win_1')_rad_11
+   + 551.0154418945313 Y_1_4_('wall_1','roof_1','win_1')_rad_22
+   + 551.0154534601775 Y_1_4_('wall_1','roof_1','win_1')_rad_33
+   + 551.0154444587432 Y_1_4_('wall_1','roof_1','win_1')_ufh
+   + 551.0154418945313 Y_1_4_('wall_1','roof_1','win_1')_rad_11
+   + 485.4162078939756 Y_1_4_('wall_3','roof_3','win_1')_rad_22
+   + 485.4162088165228 Y_1_4_('wall_3','roof_3','win_1')_rad_33
+   + 485.4162004829358 Y_1_4_('wall_3','roof_3','win_1')_ufh
+   + 485.4161987304688 Y_1_4_('wall_3','roof_3','win_1')_rad_11
+   + 523.2524503167182 Y_1_4_('wall_2','roof_2','win_1')_rad_22
+   + 523.2524511761385 Y_1_4_('wall_2','roof_2','win_1')_rad_33
+   + 523.2524436102063 Y_1_4_('wall_2','roof_2','win_1')_ufh
+   + 523.25244140625 Y_1_4_('wall_2','roof_2','win_1')_rad_11
+   + 48521.88721080089 R_in_1_4_4_10_tes_0_th
+   + 42196.97096394651 R_in_1_4_4_10_tes_1_th
+   + 35872.05471709211 R_in_1_4_4_10_tes_2_th
+   + 29547.13847023772 R_in_1_4_4_10_tes_3_th
+   + 23222.22222338333 R_in_1_4_4_10_tes_4_th
+   - 48521.88721080089 R_out_1_4_4_10_tes_0_th
+   - 42196.97096394651 R_out_1_4_4_10_tes_1_th
+   - 35872.05471709211 R_out_1_4_4_10_tes_2_th
+   - 29547.13847023772 R_out_1_4_4_10_tes_3_th
+   - 23222.22222338333 R_out_1_4_4_10_tes_4_th = 0
+Bounds
+ -infinity <= X_avail_1_4_roof_3 <= 0
+ X_avail_1_4_wall_2 >= 1
+ X_avail_1_4_win_1 >= 1
+ -infinity <= X_avail_1_4_rad_22 <= 0
+ -infinity <= X_avail_1_4_rad_33 <= 0
+ -infinity <= X_avail_1_4_rad_11 <= 1
+ -infinity <= E_avail_1_4_tes_dhw <= 0.00387832601592497
+ -infinity <= E_avail_1_4_chp <= 0
+ -infinity <= E_avail_1_4_boi_pel <= 0
+ -infinity <= E_avail_1_4_eh <= 3.466371938603411
+ -infinity <= E_avail_1_4_dh <= 0
+ -infinity <= E_avail_1_4_hp_geo_probe <= 0
+ -infinity <= E_avail_1_4_boi_gas <= 0
+ -infinity <= E_avail_1_4_tes <= 0
+ -infinity <= E_avail_1_4_hp_geo_col <= 0
+ -infinity <= E_avail_1_4_hp_air <= 0
+ Y_1_4_('wall_2','roof_3','win_3')_rad_11 free
+ Y_1_4_('wall_2','roof_1','win_1')_rad_22 free
+ Y_1_4_('wall_2','roof_1','win_1')_rad_33 free
+ Y_1_4_('wall_2','roof_1','win_1')_ufh free
+ Y_1_4_('wall_2','roof_1','win_1')_rad_11 free
+ Y_1_4_('wall_3','roof_1','win_1')_rad_11 free
+ Y_1_4_('wall_3','roof_3','win_3')_rad_33 free
+ Y_1_4_('wall_3','roof_3','win_3')_ufh free
+ Y_1_4_('wall_3','roof_3','win_3')_rad_11 free
+ Y_1_4_('wall_2','roof_2','win_3')_rad_11 free
+ Y_1_4_('wall_2','roof_1','win_3')_rad_11 free
+ Y_1_4_('wall_3','roof_2','win_1')_rad_11 free
+ Y_1_4_('wall_3','roof_3','win_1')_rad_11 free
+ Y_1_4_('wall_2','roof_2','win_1')_rad_22 free
+ Y_1_4_('wall_2','roof_2','win_1')_rad_33 free
+ Y_1_4_('wall_2','roof_2','win_1')_ufh free
+ Y_1_4_('wall_2','roof_2','win_1')_rad_11 free
+ P_out_1_4_1_7_boi_gas_th_pre_tes_1 free
+ P_out_1_4_1_7_boi_gas_dhw free
+ P_out_1_4_1_7_boi_gas_th_pre_tes_3 free
+ P_out_1_4_1_7_boi_gas_th_pre_tes_2 free
+ P_out_1_4_1_7_boi_gas_th_pre_tes_0 free
+ P_out_1_4_1_7_chp_th_pre_tes_1 free
+ P_out_1_4_1_7_chp_el free
+ P_out_1_4_1_7_chp_dhw free
+ P_out_1_4_1_7_chp_th_pre_tes_3 free
+ P_out_1_4_1_7_chp_th_pre_tes_2 free
+ P_out_1_4_1_7_chp_th_pre_tes_0 free
+ P_out_1_4_1_7_hp_geo_probe_th_pre_tes_1 free
+ P_out_1_4_1_7_boi_pel_th_pre_tes_1 free
+ P_out_1_4_1_7_boi_pel_dhw free
+ P_out_1_4_1_7_boi_pel_th_pre_tes_3 free
+ P_out_1_4_1_7_boi_pel_th_pre_tes_2 free
+ P_out_1_4_1_7_boi_pel_th_pre_tes_0 free
+ P_out_1_4_1_7_eh_th_pre_tes_1 free
+ P_out_1_4_1_7_eh_dhw free
+ P_out_1_4_1_7_eh_th_pre_tes_3 free
+ P_out_1_4_1_7_eh_th_pre_tes_2 free
+ P_out_1_4_1_7_eh_th_pre_tes_0 free
+ P_out_1_4_1_7_hp_geo_col_th_pre_tes_1 free
+ P_out_1_4_1_7_dh_th_pre_tes_1 free
+ P_out_1_4_1_7_dh_dhw free
+ P_out_1_4_1_7_dh_th_pre_tes_3 free
+ P_out_1_4_1_7_dh_th_pre_tes_2 free
+ P_out_1_4_1_7_dh_th_pre_tes_0 free
+ P_out_1_4_1_7_hp_air_th_pre_tes_3 free
+ S_1_4_1_6_tes_dhw_0 free
+ S_1_4_1_6_tes_0 free
+ S_1_4_1_7_tes_dhw_0 free
+ S_1_4_4_10_tes_0 free
+ S_1_4_4_11_tes_0 free
+ S_1_4_4_11_tes_1 free
+ S_1_4_4_11_tes_2 free
+ S_1_4_4_11_tes_3 free
+ S_1_4_4_11_tes_4 free
+ S_1_4_4_12_tes_0 free
+ S_1_4_4_12_tes_1 free
+ S_1_4_4_12_tes_2 free
+ S_1_4_4_12_tes_3 free
+ S_1_4_4_12_tes_4 free
+ S_1_4_4_13_tes_0 free
+ S_1_4_4_13_tes_1 free
+ S_1_4_4_13_tes_2 free
+ S_1_4_4_13_tes_3 free
+ S_1_4_4_13_tes_4 free
+ S_1_4_4_14_tes_0 free
+ S_1_4_4_14_tes_1 free
+ S_1_4_4_14_tes_2 free
+ S_1_4_4_14_tes_3 free
+ S_1_4_4_14_tes_4 free
+ S_1_4_4_15_tes_0 free
+ S_1_4_4_15_tes_1 free
+ S_1_4_4_15_tes_2 free
+ S_1_4_4_15_tes_3 free
+ S_1_4_4_15_tes_4 free
+ R_in_1_4_1_7_tes_dhw_0_dhw free
+ R_in_1_4_1_7_tes_0_th_pre_tes_0 free
+ R_in_1_4_1_7_tes_0_th free
+ R_in_1_4_1_7_tes_1_th_pre_tes_1 free
+ R_in_1_4_1_7_tes_1_th free
+ R_in_1_4_1_7_tes_2_th_pre_tes_2 free
+ R_in_1_4_1_7_tes_2_th free
+ R_in_1_4_1_7_tes_3_th_pre_tes_3 free
+ R_in_1_4_1_7_tes_3_th free
+ R_in_1_4_1_7_tes_4_th free
+ R_in_1_4_3_3_tes_0_th free
+ R_in_1_4_3_3_tes_1_th free
+ R_in_1_4_3_3_tes_2_th free
+ R_in_1_4_3_3_tes_3_th free
+ R_in_1_4_3_3_tes_4_th free
+ R_in_1_4_4_10_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_10_tes_0_th free
+ R_in_1_4_4_10_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_10_tes_1_th free
+ R_in_1_4_4_10_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_10_tes_2_th free
+ R_in_1_4_4_10_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_10_tes_3_th free
+ R_in_1_4_4_10_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_10_tes_4_th free
+ R_in_1_4_4_11_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_11_tes_0_th free
+ R_in_1_4_4_11_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_11_tes_1_th free
+ R_in_1_4_4_11_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_11_tes_2_th free
+ R_in_1_4_4_11_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_11_tes_3_th free
+ R_in_1_4_4_11_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_11_tes_4_th free
+ R_in_1_4_4_12_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_12_tes_0_th free
+ R_in_1_4_4_12_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_12_tes_1_th free
+ R_in_1_4_4_12_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_12_tes_2_th free
+ R_in_1_4_4_12_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_12_tes_3_th free
+ R_in_1_4_4_12_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_12_tes_4_th free
+ R_in_1_4_4_13_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_13_tes_0_th free
+ R_in_1_4_4_13_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_13_tes_1_th free
+ R_in_1_4_4_13_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_13_tes_2_th free
+ R_in_1_4_4_13_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_13_tes_3_th free
+ R_in_1_4_4_13_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_13_tes_4_th free
+ R_in_1_4_4_14_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_14_tes_0_th free
+ R_in_1_4_4_14_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_14_tes_1_th free
+ R_in_1_4_4_14_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_14_tes_2_th free
+ R_in_1_4_4_14_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_14_tes_3_th free
+ R_in_1_4_4_14_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_14_tes_4_th free
+ R_in_1_4_4_15_tes_0_th_pre_tes_0 free
+ R_in_1_4_4_15_tes_0_th free
+ R_in_1_4_4_15_tes_1_th_pre_tes_1 free
+ R_in_1_4_4_15_tes_1_th free
+ R_in_1_4_4_15_tes_2_th_pre_tes_2 free
+ R_in_1_4_4_15_tes_2_th free
+ R_in_1_4_4_15_tes_3_th_pre_tes_3 free
+ R_in_1_4_4_15_tes_3_th free
+ R_in_1_4_4_15_tes_4_th_pre_tes_4 free
+ R_in_1_4_4_15_tes_4_th free
+ R_out_1_4_1_7_tes_dhw_0_dhw free
+ R_out_1_4_1_7_tes_0_th_pre_tes_0 free
+ R_out_1_4_1_7_tes_0_th_pre_tes_1 free
+ R_out_1_4_1_7_tes_0_th_pre_tes_2 free
+ R_out_1_4_1_7_tes_0_th_pre_tes_3 free
+ R_out_1_4_1_7_tes_0_th free
+ R_out_1_4_1_7_tes_1_th_pre_tes_0 free
+ R_out_1_4_1_7_tes_1_th_pre_tes_1 free
+ R_out_1_4_1_7_tes_1_th_pre_tes_2 free
+ R_out_1_4_1_7_tes_1_th_pre_tes_3 free
+ R_out_1_4_1_7_tes_1_th free
+ R_out_1_4_1_7_tes_2_th_pre_tes_0 free
+ R_out_1_4_1_7_tes_2_th_pre_tes_1 free
+ R_out_1_4_1_7_tes_2_th_pre_tes_2 free
+ R_out_1_4_1_7_tes_2_th_pre_tes_3 free
+ R_out_1_4_1_7_tes_2_th free
+ R_out_1_4_1_7_tes_3_th_pre_tes_0 free
+ R_out_1_4_1_7_tes_3_th_pre_tes_1 free
+ R_out_1_4_1_7_tes_3_th_pre_tes_2 free
+ R_out_1_4_1_7_tes_3_th_pre_tes_3 free
+ R_out_1_4_1_7_tes_3_th free
+ R_out_1_4_1_7_tes_4_th_pre_tes_0 free
+ R_out_1_4_1_7_tes_4_th_pre_tes_1 free
+ R_out_1_4_1_7_tes_4_th_pre_tes_2 free
+ R_out_1_4_1_7_tes_4_th_pre_tes_3 free
+ R_out_1_4_1_7_tes_4_th free
+ R_out_1_4_3_3_tes_0_th free
+ R_out_1_4_4_10_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_10_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_10_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_10_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_10_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_10_tes_0_th free
+ R_out_1_4_4_10_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_10_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_10_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_10_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_10_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_10_tes_1_th free
+ R_out_1_4_4_10_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_10_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_10_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_10_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_10_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_10_tes_2_th free
+ R_out_1_4_4_10_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_10_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_10_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_10_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_10_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_10_tes_3_th free
+ R_out_1_4_4_10_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_10_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_10_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_10_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_10_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_10_tes_4_th free
+ R_out_1_4_4_11_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_11_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_11_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_11_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_11_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_11_tes_0_th free
+ R_out_1_4_4_11_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_11_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_11_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_11_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_11_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_11_tes_1_th free
+ R_out_1_4_4_11_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_11_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_11_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_11_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_11_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_11_tes_2_th free
+ R_out_1_4_4_11_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_11_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_11_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_11_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_11_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_11_tes_3_th free
+ R_out_1_4_4_11_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_11_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_11_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_11_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_11_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_11_tes_4_th free
+ R_out_1_4_4_12_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_12_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_12_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_12_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_12_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_12_tes_0_th free
+ R_out_1_4_4_12_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_12_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_12_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_12_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_12_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_12_tes_1_th free
+ R_out_1_4_4_12_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_12_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_12_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_12_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_12_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_12_tes_2_th free
+ R_out_1_4_4_12_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_12_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_12_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_12_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_12_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_12_tes_3_th free
+ R_out_1_4_4_12_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_12_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_12_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_12_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_12_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_12_tes_4_th free
+ R_out_1_4_4_13_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_13_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_13_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_13_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_13_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_13_tes_0_th free
+ R_out_1_4_4_13_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_13_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_13_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_13_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_13_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_13_tes_1_th free
+ R_out_1_4_4_13_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_13_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_13_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_13_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_13_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_13_tes_2_th free
+ R_out_1_4_4_13_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_13_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_13_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_13_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_13_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_13_tes_3_th free
+ R_out_1_4_4_13_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_13_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_13_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_13_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_13_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_13_tes_4_th free
+ R_out_1_4_4_14_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_14_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_14_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_14_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_14_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_14_tes_0_th free
+ R_out_1_4_4_14_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_14_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_14_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_14_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_14_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_14_tes_1_th free
+ R_out_1_4_4_14_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_14_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_14_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_14_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_14_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_14_tes_2_th free
+ R_out_1_4_4_14_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_14_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_14_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_14_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_14_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_14_tes_3_th free
+ R_out_1_4_4_14_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_14_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_14_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_14_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_14_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_14_tes_4_th free
+ R_out_1_4_4_15_tes_0_th_pre_tes_0 free
+ R_out_1_4_4_15_tes_0_th_pre_tes_1 free
+ R_out_1_4_4_15_tes_0_th_pre_tes_2 free
+ R_out_1_4_4_15_tes_0_th_pre_tes_3 free
+ R_out_1_4_4_15_tes_0_th_pre_tes_4 free
+ R_out_1_4_4_15_tes_0_th free
+ R_out_1_4_4_15_tes_1_th_pre_tes_0 free
+ R_out_1_4_4_15_tes_1_th_pre_tes_1 free
+ R_out_1_4_4_15_tes_1_th_pre_tes_2 free
+ R_out_1_4_4_15_tes_1_th_pre_tes_3 free
+ R_out_1_4_4_15_tes_1_th_pre_tes_4 free
+ R_out_1_4_4_15_tes_1_th free
+ R_out_1_4_4_15_tes_2_th_pre_tes_0 free
+ R_out_1_4_4_15_tes_2_th_pre_tes_1 free
+ R_out_1_4_4_15_tes_2_th_pre_tes_2 free
+ R_out_1_4_4_15_tes_2_th_pre_tes_3 free
+ R_out_1_4_4_15_tes_2_th_pre_tes_4 free
+ R_out_1_4_4_15_tes_2_th free
+ R_out_1_4_4_15_tes_3_th_pre_tes_0 free
+ R_out_1_4_4_15_tes_3_th_pre_tes_1 free
+ R_out_1_4_4_15_tes_3_th_pre_tes_2 free
+ R_out_1_4_4_15_tes_3_th_pre_tes_3 free
+ R_out_1_4_4_15_tes_3_th_pre_tes_4 free
+ R_out_1_4_4_15_tes_3_th free
+ R_out_1_4_4_15_tes_4_th_pre_tes_0 free
+ R_out_1_4_4_15_tes_4_th_pre_tes_1 free
+ R_out_1_4_4_15_tes_4_th_pre_tes_2 free
+ R_out_1_4_4_15_tes_4_th_pre_tes_3 free
+ R_out_1_4_4_15_tes_4_th_pre_tes_4 free
+ R_out_1_4_4_15_tes_4_th free
+End

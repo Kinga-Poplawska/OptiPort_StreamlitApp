@@ -4,9 +4,30 @@ Main Streamlit application for OptiPort MILP Optimization Interface
 import streamlit as st
 import logging
 import sys
-import os
 import warnings
 from pathlib import Path
+
+# Force black fonts on all Plotly charts while keeping Streamlit's theme
+_original_plotly_chart = st.plotly_chart
+def _plotly_chart_black_font(fig, *args, **kwargs):
+    if hasattr(fig, "update_layout"):
+        fig.update_layout(
+            font=dict(color="black"),
+            xaxis=dict(title_font_color="black", tickfont_color="black"),
+            yaxis=dict(title_font_color="black", tickfont_color="black"),
+        )
+        if hasattr(fig, "for_each_xaxis"):
+            fig.for_each_xaxis(
+                lambda axis: axis.update(title_font_color="black", tickfont_color="black")
+            )
+        if hasattr(fig, "for_each_yaxis"):
+            fig.for_each_yaxis(
+                lambda axis: axis.update(title_font_color="black", tickfont_color="black")
+            )
+        if getattr(fig.layout, "annotations", None):
+            fig.update_annotations(font=dict(color="black"))
+    return _original_plotly_chart(fig, *args, **kwargs)
+st.plotly_chart = _plotly_chart_black_font
 # Bedingte PyCharm Remote Debugger Verbindung
 try:
     import pydevd_pycharm
@@ -15,7 +36,7 @@ try:
     print("🐛 Mit PyCharm Remote Debugger verbunden")
 except ImportError:
     # pydevd_pycharm nicht installiert - normaler Betrieb
-    pass
+    pydevd_pycharm = None  # noqa: F841
 except ConnectionRefusedError:
     # Remote Debugger nicht aktiv - normaler Betrieb
     print("ℹ️ PyCharm Remote Debugger nicht aktiv - normaler Betrieb")
@@ -41,36 +62,35 @@ logger = logging.getLogger(__name__)
 
 # Import application components
 from config.app_config import APP_TITLE, APP_ICON, LAYOUT, INITIAL_SIDEBAR_STATE
-from core.instance_manager import InstanceManager
+from core.instance_manager import UseCaseManager
 from components.sidebar import Sidebar
-from components.pages.instance_overview import InstanceOverviewPage, InstanceCreatorPage
+from components.pages.about import AboutPage
+from components.pages.instance_overview import InstanceOverviewPage
 from components.pages.optimization_results import OptimizationResultsPage
+
 
 class OptiPortApp:
     """Main application class for the OptiPort visualization interface"""
     
     def __init__(self):
-        self.instance_manager = InstanceManager()
+        self.use_case_manager = UseCaseManager()
         self.sidebar = Sidebar(APP_TITLE, APP_ICON)
 
         # Initialize pages
-        self.instance_overview_page = InstanceOverviewPage(self.instance_manager)
-        self.results_page = OptimizationResultsPage(self.instance_manager)
-        self.creator_page = InstanceCreatorPage(self.instance_manager)
-        
+        self.about_page = AboutPage()
+        self.instance_overview_page = InstanceOverviewPage(self.use_case_manager)
+        self.results_page = OptimizationResultsPage(self.use_case_manager)
+
         # Session state initialization
         self._initialize_session_state()
 
     def _initialize_session_state(self):
         """Initialize Streamlit session state variables"""
         if "current_page" not in st.session_state:
-            st.session_state.current_page = "Portfolio-Übersicht"
-        
+            st.session_state.current_page = "Über das Projekt"
+
         if "selected_instance" not in st.session_state:
             st.session_state.selected_instance = None
-            
-        if "advanced_view" not in st.session_state:
-            st.session_state.advanced_view = False
 
 
     def run(self):
@@ -90,16 +110,14 @@ class OptiPortApp:
         # Custom CSS for better styling
         self._apply_custom_css()
         
-        # Global Advanced View Toggle - at the very top
-        self._render_global_advanced_toggle()
-        
         # Render sidebar and get selected page
         selected_page = self.sidebar.render()
-        
-        # Update session state if page changed
+
+        # Only update current_page from sidebar if user explicitly clicked the radio.
+        # Programmatic navigation (buttons) sets current_page before rerun, so we
+        # must not overwrite it with the (now-synced) sidebar value.
         if selected_page != st.session_state.current_page:
             st.session_state.current_page = selected_page
-            # Rerun to update the page title
             st.rerun()
         
         # Route to appropriate page
@@ -283,74 +301,33 @@ class OptiPortApp:
             color: #334155 !important;
         }
         
-        /* Advanced View Toggle Container Styling */
-        .advanced-toggle-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 10px 15px;
-            background-color: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-            min-width: fit-content;
-            white-space: nowrap;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        .advanced-toggle-container > div {
-            white-space: nowrap !important;
-        }
-        
-        .advanced-toggle-container label {
-            white-space: nowrap !important;
-            overflow: visible !important;
-            text-overflow: clip !important;
-        }
-        
         /* Success/Error message styling - enhanced version above */
         </style>
         """, unsafe_allow_html=True)
     
-    def _render_global_advanced_toggle(self):
-        """Render the global advanced view toggle in the top-right corner"""
-        # Use a styled container to prevent label wrapping
-        st.markdown('<div class="advanced-toggle-container">', unsafe_allow_html=True)
-        
-        # Use more balanced columns for better responsive behavior
-        col1, col2 = st.columns([5, 2])
-        
-        with col2:
-            advanced_view = st.toggle(
-                "Erweiterte Ansicht",
-                value=st.session_state.get('advanced_view', False),
-                key='global_advanced_view',
-                help="Erweiterte Funktionen in der App ein-/ausschalten"
-            )
-            st.session_state['advanced_view'] = advanced_view
-        
-        st.markdown('</div>', unsafe_allow_html=True)
-    
     def _render_page(self, page_name: str):
         """Render the selected page"""
-        
+
         try:
-            if page_name == "Portfolio-Übersicht":
-                selected_instance = self.instance_overview_page.render()
-                st.session_state.selected_instance = selected_instance
-                
+            if page_name == "Über das Projekt":
+                self.about_page.render()
+
+            elif page_name == "Portfolio-Übersicht":
+                selected_use_case = self.instance_overview_page.render()
+                if selected_use_case:
+                    st.session_state["selected_use_case"] = selected_use_case
+
             elif page_name == "Optimierungsergebnisse":
-                self.results_page.render(st.session_state.selected_instance)
-                
-            elif page_name == "Neues Portfolio":
-                self.creator_page.render()
-                
+                selected_use_case = st.session_state.get("selected_use_case", None)
+                self.results_page.render(selected_use_case)
+
+
             else:
-                st.error(f"Unknown page: {page_name}")
-                
+                st.error(f"Unbekannte Seite: {page_name}")
+
         except Exception as e:
             logger.error(f"Error rendering page {page_name}: {e}")
-            st.error(f"An error occurred while rendering the page: {e}")
+            st.error(f"Fehler beim Rendern der Seite: {e}")
             st.exception(e)
 
 def main():

@@ -1,0 +1,39 @@
+\ Model benders_sp_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ output_energy_constraint[1,1,0,15,chp]: 1000 E_avail_1_1_chp
+   - 100 P_out_1_1_0_15_chp_th_pre_tes_2
+   - 100 P_out_1_1_0_15_chp_th_pre_tes_3
+   - 100 P_out_1_1_0_15_chp_th_pre_tes_0
+   - 100 P_out_1_1_0_15_chp_el_chp_grid
+   - 100 P_out_1_1_0_15_chp_th_pre_tes_4
+   - 56.88622754491018 P_out_1_1_0_15_chp_el - 100 P_out_1_1_0_15_chp_dhw
+   - 100 P_out_1_1_0_15_chp_th_pre_tes_1 >= 0
+ conversion_efficiency[1,1,0,15,chp]: 100 P_in_1_1_0_15_chp_gas
+   - 175.7894736842105 P_out_1_1_0_15_chp_th_pre_tes_2
+   - 175.7894736842105 P_out_1_1_0_15_chp_th_pre_tes_3
+   - 175.7894736842105 P_out_1_1_0_15_chp_th_pre_tes_0
+   - 175.7894736842105 P_out_1_1_0_15_chp_el_chp_grid
+   - 175.7894736842105 P_out_1_1_0_15_chp_th_pre_tes_4
+   - 262.3723487824038 P_out_1_1_0_15_chp_el
+   - 175.7894736842105 P_out_1_1_0_15_chp_dhw
+   - 175.7894736842105 P_out_1_1_0_15_chp_th_pre_tes_1 = 0
+ energy_transformation_coproduction[1,1,0,15,chp]:
+   - 67 P_out_1_1_0_15_chp_th_pre_tes_2
+   - 67 P_out_1_1_0_15_chp_th_pre_tes_3
+   - 67 P_out_1_1_0_15_chp_th_pre_tes_0
+   + 100 P_out_1_1_0_15_chp_el_chp_grid
+   - 67 P_out_1_1_0_15_chp_th_pre_tes_4 + 100 P_out_1_1_0_15_chp_el
+   - 67 P_out_1_1_0_15_chp_dhw - 67 P_out_1_1_0_15_chp_th_pre_tes_1 = 0
+Bounds
+ -infinity <= E_avail_1_1_chp <= 0
+ P_out_1_1_0_15_chp_th_pre_tes_2 free
+ P_out_1_1_0_15_chp_th_pre_tes_3 free
+ P_out_1_1_0_15_chp_th_pre_tes_0 free
+ P_out_1_1_0_15_chp_th_pre_tes_4 free
+ P_out_1_1_0_15_chp_el free
+ P_out_1_1_0_15_chp_dhw free
+ P_out_1_1_0_15_chp_th_pre_tes_1 free
+End
