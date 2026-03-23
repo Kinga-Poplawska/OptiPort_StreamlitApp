@@ -1,0 +1,31 @@
+building_id;measure;availability_constraint;installation_constraint;always_available
+1;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+2;boi_oil, hp_geo_col, hp_geo_probe, boi_pel;Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End;tes_dhw
+3;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+4;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+5;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+6;boi_oil, dh;Start-End, Start-End;Start-End, Start-End;tes_dhw
+7;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+8;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+9;boi_oil, dh;Start-End, Start-End;Start-End, Start-End;tes_dhw
+10;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+11;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+12;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+13;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+14;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+15;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+16;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+17;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+18;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+19;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+20;boi_oil, hp_geo_col, hp_geo_probe, boi_pel;Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End;tes_dhw
+21;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+22;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+23;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+24;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+25;boi_oil, dh;Start-End, Start-End;Start-End, Start-End;tes_dhw
+26;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+27;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+28;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+29;boi_oil, hp_geo_col, hp_geo_probe, dh, boi_pel;Start-End, Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End, Start-End;tes_dhw
+30;boi_oil, hp_geo_col, hp_geo_probe, boi_pel;Start-End, Start-End, Start-End, Start-End;Start-End, Start-End, Start-End, Start-End;tes_dhw
